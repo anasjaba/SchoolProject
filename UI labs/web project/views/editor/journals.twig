@@ -1,0 +1,44 @@
+{% extends "base.twig" %}
+{% set active_page = "editor_journals" %}
+
+{% block title %}Journals{% endblock %}
+
+{% block content %}
+  <h1 class="page-header">Journals</h1>
+
+  <!-- Table -->
+  <table class="table">
+
+    <thead>
+        <tr>
+            <th> Journal </th>
+            <th> New submissions </th>
+            <th> Submissions in editing </th>
+            <th> Submission in reviewing </th>
+        </tr>
+    </thead>
+
+    <tr>
+        <td> <a href="{{ app.url_generator.generate('editor_dashboard') }}">La Gazette du Sorcier</a> </td>
+        <td> <a href ="{{ app.url_generator.generate('editor_unassigned') }}"><span class="badge">4</span></a> </td>
+        <td> <a href ="{{ app.url_generator.generate('editor_inediting') }}"><span class="badge">2</span></a> </td>
+        <td> <a href ="{{ app.url_generator.generate('editor_inreview') }}"><span class="badge disable">0</span></a> </td>
+    </tr>
+
+    <tr>
+        <td> <a href="{{ app.url_generator.generate('editor_dashboard') }}">La revue scientologie</a> </td>
+        <td> <a href ="{{ app.url_generator.generate('editor_unassigned') }}"><span class="badge">5</span></a> </td>
+        <td> <a href ="{{ app.url_generator.generate('editor_inediting') }}"><span class="badge">4</span></a> </td>
+        <td> <a href ="{{ app.url_generator.generate('editor_inreview') }}"><span class="badge">1</span></a> </td>
+    </tr>
+
+    <tr>
+        <td> <a href="{{ app.url_generator.generate('editor_dashboard') }}">Interface et encore plus</a> </td>
+        <td> <a href ="{{ app.url_generator.generate('editor_unassigned') }}"><span class="badge disable">0</span></a> </td>
+        <td> <a href ="{{ app.url_generator.generate('editor_inediting') }}"><span class="badge disable">0</span></a> </td>
+        <td> <a href ="{{ app.url_generator.generate('editor_inreview') }}"><span class="badge disable">0</span></a> </td>
+    </tr>
+
+  </table>
+
+{% endblock %}

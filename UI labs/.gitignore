@@ -1,0 +1,7 @@
+*.zip
+*.class
+*.properties
+*.xml
+*.mf
+*build\/classes\/\.netbeans_*
+*.jar

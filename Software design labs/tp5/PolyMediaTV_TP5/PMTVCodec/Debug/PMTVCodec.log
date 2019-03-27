@@ -1,0 +1,13 @@
+﻿La génération a démarré 2015-03-23 09:01:11.
+     1>Projet "X:\Bureau\PolyMediaTV_TP5_VS2010\PolyMediaTV_TP5_VS2010\PolyMediaTV\PMTVCodec\PMTVCodec.vcxproj" sur le nœud 5 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt PMTVCodec_CodecFactory.cpp
+         PMTVCodec_CodecFactory.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"X:\Bureau\PolyMediaTV_TP5_VS2010\PolyMediaTV_TP5_VS2010\PolyMediaTV\Debug\PMTVCodec.lib" /NOLOGO Debug\PMTVCodec_CodecFactory.obj
+         PMTVCodec.vcxproj -> X:\Bureau\PolyMediaTV_TP5_VS2010\PolyMediaTV_TP5_VS2010\PolyMediaTV\Debug\PMTVCodec.lib
+     1>Génération du projet "X:\Bureau\PolyMediaTV_TP5_VS2010\PolyMediaTV_TP5_VS2010\PolyMediaTV\PMTVCodec\PMTVCodec.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:02.47

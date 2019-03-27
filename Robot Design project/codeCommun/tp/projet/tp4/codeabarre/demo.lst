@@ -1,0 +1,1676 @@
+GAS LISTING /tmp/ccXI1DPL.s 			page 1
+
+
+   1               		.file	"demo.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/usagers/fechab/inf1995-0723/inf1995-0723/codeCommun/tp/projet/tp4/codeabarre/",100,0,4,.L
+   8               		.stabs	"demo.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/ccXI1DPL.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"char16_t:t(0,54)=r(0,54);0;0177777;",128,0,0,0
+  70               		.stabs	"char32_t:t(0,55)=@s32;r(0,55);0;037777777777;",128,0,0,0
+  71               		.stabs	"bool:t(0,56)=@s8;-16;",128,0,0,0
+  72               		.stabs	"__vtbl_ptr_type:t(0,57)=*(0,58)=f(0,9)",128,0,0,0
+  73               		.stabs	"decltype(nullptr):t(0,59)=(0,59)",128,0,0,0
+  74               		.stabs	"size_t:t(0,60)=(0,12)",128,0,212,0
+  75               		.stabs	"._0:Tt(0,61)=s4quot:(0,9),0,16;rem:(0,9),16,16;;",128,0,68,0
+  76               		.stabs	"div_t:t(0,61)",128,0,71,0
+  77               		.stabs	"._1:Tt(0,62)=s8quot:(0,15),0,32;rem:(0,15),32,32;;",128,0,74,0
+  78               		.stabs	"ldiv_t:t(0,62)",128,0,77,0
+  79               		.stabs	"__compar_fn_t:t(0,63)=(0,64)=*(0,65)=f(0,9)",128,0,80,0
+  80               		.stabs	"int8_t:t(0,66)=(0,16)",128,0,121,0
+  81               		.stabs	"uint8_t:t(0,67)=(0,13)",128,0,122,0
+  82               		.stabs	"int16_t:t(0,68)=(0,9)",128,0,123,0
+  83               		.stabs	"uint16_t:t(0,69)=(0,12)",128,0,124,0
+  84               		.stabs	"int32_t:t(0,70)=(0,15)",128,0,125,0
+  85               		.stabs	"uint32_t:t(0,71)=(0,11)",128,0,126,0
+  86               		.stabs	"int64_t:t(0,72)=(0,14)",128,0,128,0
+  87               		.stabs	"uint64_t:t(0,73)=(0,10)",128,0,129,0
+  88               		.stabs	"intptr_t:t(0,74)=(0,68)",128,0,142,0
+  89               		.stabs	"uintptr_t:t(0,75)=(0,69)",128,0,147,0
+  90               		.stabs	"int_least8_t:t(0,76)=(0,66)",128,0,159,0
+  91               		.stabs	"uint_least8_t:t(0,77)=(0,67)",128,0,164,0
+  92               		.stabs	"int_least16_t:t(0,78)=(0,68)",128,0,169,0
+  93               		.stabs	"uint_least16_t:t(0,79)=(0,69)",128,0,174,0
+  94               		.stabs	"int_least32_t:t(0,80)=(0,70)",128,0,179,0
+  95               		.stabs	"uint_least32_t:t(0,81)=(0,71)",128,0,184,0
+  96               		.stabs	"int_least64_t:t(0,82)=(0,72)",128,0,192,0
+  97               		.stabs	"uint_least64_t:t(0,83)=(0,73)",128,0,199,0
+  98               		.stabs	"int_fast8_t:t(0,84)=(0,66)",128,0,213,0
+  99               		.stabs	"uint_fast8_t:t(0,85)=(0,67)",128,0,218,0
+ 100               		.stabs	"int_fast16_t:t(0,86)=(0,68)",128,0,223,0
+ 101               		.stabs	"uint_fast16_t:t(0,87)=(0,69)",128,0,228,0
+ 102               		.stabs	"int_fast32_t:t(0,88)=(0,70)",128,0,233,0
+ 103               		.stabs	"uint_fast32_t:t(0,89)=(0,71)",128,0,238,0
+ 104               		.stabs	"int_fast64_t:t(0,90)=(0,72)",128,0,246,0
+ 105               		.stabs	"uint_fast64_t:t(0,91)=(0,73)",128,0,253,0
+ 106               		.stabs	"intmax_t:t(0,92)=(0,72)",128,0,273,0
+ 107               		.stabs	"uintmax_t:t(0,93)=(0,73)",128,0,278,0
+ 108               		.stabs	"int_farptr_t:t(0,94)=(0,70)",128,0,77,0
+ 109               		.stabs	"uint_farptr_t:t(0,95)=(0,71)",128,0,81,0
+ 110               		.stabs	"._2:Tt(0,96)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 111               		.stabs	"__fuse_t:t(0,96)",128,0,244,0
+ 112               		.stabs	"LCM:Tt(0,97)=s10_last_index:/0(0,67),0,8;_last_bc_index:/0(0,67),8,8;_blink_en:/0(0,56),16
+ 113               		.stabs	"_ZL1wv:f(0,4)",36,0,14,_ZL1wv
+ 114               		.type	_ZL1wv, @function
+GAS LISTING /tmp/ccXI1DPL.s 			page 3
+
+
+ 115               	_ZL1wv:
+ 116               		.stabd	46,0,0
+   1:demo.cpp      **** // Auteur : Philippe Proulx (philippe.proulx@polymtl.ca)
+   2:demo.cpp      **** // Test du framework C++ pour afficheur LCD LCM-SO1602DTR/M.
+   3:demo.cpp      **** 
+   4:demo.cpp      **** #include <stdlib.h>
+   5:demo.cpp      **** #include <avr/io.h>
+   6:demo.cpp      **** # define F_CPU 8000000UL
+   7:demo.cpp      **** 
+   8:demo.cpp      **** #include "lcm_so1602dtr_m_fw.h"
+   9:demo.cpp      **** #include "customprocs.h"
+  10:demo.cpp      **** 
+  11:demo.cpp      **** #define DEMO_DDR	DDRC // `Data Direction Register' AVR occupé par l'aff.
+  12:demo.cpp      **** #define DEMO_PORT	PORTC // Port AVR occupé par l'afficheur
+  13:demo.cpp      **** 
+  14:demo.cpp      **** void static inline w(void) {
+ 117               		.stabn	68,0,14,.LM0-.LFBB1
+ 118               	.LM0:
+ 119               	.LFBB1:
+ 120               	/* prologue: function */
+ 121               	/* frame size = 0 */
+ 122               	/* stack size = 0 */
+ 123               	.L__stack_usage = 0
+  15:demo.cpp      **** 	cp_wait_ms(2000);
+ 124               		.stabn	68,0,15,.LM1-.LFBB1
+ 125               	.LM1:
+ 126 0000 80ED      		ldi r24,lo8(-48)
+ 127 0002 97E0      		ldi r25,lo8(7)
+ 128 0004 0C94 0000 		jmp _Z10cp_wait_msj
+ 129               		.size	_ZL1wv, .-_ZL1wv
+ 130               	.Lscope1:
+ 131               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 132               		.stabd	78,0,0
+ 133               		.section	.rodata.str1.1,"aMS",@progbits,1
+ 134               	.LC2:
+ 135 0000 2007 0504 		.string	" \007\005\004\003\002\002\001\001\001\002\002\003\004\005\007                 \007\005\00
+ 135      0302 0201 
+ 135      0101 0202 
+ 135      0304 0507 
+ 135      2020 2020 
+ 136               	.LC3:
+ 137 0031 2020 2020 		.string	"                 \b\002\003\004\005\005\006\006\006\005\005\004\003\002\b                
+ 137      2020 2020 
+ 137      2020 2020 
+ 137      2020 2020 
+ 137      2008 0203 
+ 138               		.text
+ 139               		.stabs	"_ZL4waveR3LCMjj:f(0,4)",36,0,224,_ZL4waveR3LCMjj
+ 140               		.stabs	"lcm:P(0,105)",64,0,224,14
+ 141               		.stabs	"rep:P(0,69)",64,0,224,8
+ 142               		.stabs	"ms_interval:P(0,69)",64,0,224,6
+ 143               		.type	_ZL4waveR3LCMjj, @function
+ 144               	_ZL4waveR3LCMjj:
+ 145               		.stabd	46,0,0
+  16:demo.cpp      **** }
+  17:demo.cpp      **** 
+  18:demo.cpp      **** // Plus gros démos :
+GAS LISTING /tmp/ccXI1DPL.s 			page 4
+
+
+  19:demo.cpp      **** static void banner(LCM&, char*, uint16_t);
+  20:demo.cpp      **** static void wave(LCM&, uint16_t, uint16_t);
+  21:demo.cpp      **** 
+  22:demo.cpp      **** int main(void) {	
+  23:demo.cpp      **** 	// Création de l'objet (l'afficheur est connecté sur le port DEMO_PORT)
+  24:demo.cpp      **** 	LCM disp(&DEMO_DDR, &DEMO_PORT);
+  25:demo.cpp      **** 	
+  26:demo.cpp      **** 	// Écriture d'un simple caractère au début de la première ligne
+  27:demo.cpp      **** 	disp.put('p');
+  28:demo.cpp      **** 	w();
+  29:demo.cpp      **** 
+  30:demo.cpp      **** 	// Ajout d'autres caractères
+  31:demo.cpp      **** 	disp.put('h').put('i').put('l').put(';');
+  32:demo.cpp      **** 	w();
+  33:demo.cpp      **** 	
+  34:demo.cpp      **** 	// Nettoyage de l'affichage
+  35:demo.cpp      **** 	disp.clear();
+  36:demo.cpp      **** 	w();
+  37:demo.cpp      **** 	
+  38:demo.cpp      **** 	// Affichage d'une chaîne sur la première ligne, à la case 2
+  39:demo.cpp      **** 	disp.write("premiere !", 2);
+  40:demo.cpp      **** 	w();
+  41:demo.cpp      **** 	
+  42:demo.cpp      **** 	// Ajout d'une sous-chaîne à la suite
+  43:demo.cpp      **** 	disp << "woooowww !!";
+  44:demo.cpp      **** 	w();
+  45:demo.cpp      **** 	
+  46:demo.cpp      **** 	// Suppression des 9 caractères précédents
+  47:demo.cpp      **** 	disp -= 9;
+  48:demo.cpp      **** 	w();
+  49:demo.cpp      **** 	
+  50:demo.cpp      **** 	// Remplacement du contenu actuel par une nouvelle chaîne
+  51:demo.cpp      **** 	disp = "nouveau truc ";
+  52:demo.cpp      **** 	w();
+  53:demo.cpp      **** 	
+  54:demo.cpp      **** 	// Ajout de trois nombres hexadécimaux avec des espaces entre chaque
+  55:demo.cpp      **** 	disp << 215 << ' ' << -179 << ' ' << 6;
+  56:demo.cpp      **** 	w();
+  57:demo.cpp      **** 	
+  58:demo.cpp      **** 	// Nettoyage de l'affichage et ajout de quelques trucs absolus (cases
+  59:demo.cpp      **** 	// 27 et 13)
+  60:demo.cpp      **** 	disp.clear();
+  61:demo.cpp      **** 	disp[27] = "allo";
+  62:demo.cpp      **** 	disp[13] = "oh oui !";
+  63:demo.cpp      **** 	w();
+  64:demo.cpp      **** 	
+  65:demo.cpp      **** 	// Affichage d'une chaîne, à la case 5
+  66:demo.cpp      **** 	// de la deuxième ligne, en effaçant le contenu actuel
+  67:demo.cpp      **** 	disp.write("\x7e yeah! \x7f", LCM_FW_HALF_CH + 5, true);
+  68:demo.cpp      **** 	w();
+  69:demo.cpp      **** 	
+  70:demo.cpp      **** 	// Fixage de l'index `blink'/curseur à la case 9 et activation du
+  71:demo.cpp      **** 	// `blink'
+  72:demo.cpp      **** 	disp.set_bc_index(9);
+  73:demo.cpp      **** 	disp.en_blink(true);
+  74:demo.cpp      **** 	w();
+  75:demo.cpp      **** 	
+GAS LISTING /tmp/ccXI1DPL.s 			page 5
+
+
+  76:demo.cpp      **** 	// Activation du curseur (le matériel limite son index au même que celui
+  77:demo.cpp      **** 	// du `blink')
+  78:demo.cpp      **** 	disp.en_cur(true);
+  79:demo.cpp      **** 	w();
+  80:demo.cpp      **** 	
+  81:demo.cpp      **** 	// Désactivation du `blink'
+  82:demo.cpp      **** 	disp.en_blink(false);
+  83:demo.cpp      **** 	w();
+  84:demo.cpp      **** 	
+  85:demo.cpp      **** 	// Parcours de la case 0 à la dernière case avec le curseur
+  86:demo.cpp      **** 	for (uint8_t i = 0; i < LCM_FW_TOT_CH; ++i) {
+  87:demo.cpp      **** 		disp.set_bc_index(i);
+  88:demo.cpp      **** 		cp_wait_ms(200);
+  89:demo.cpp      **** 	}
+  90:demo.cpp      **** 	w();
+  91:demo.cpp      **** 	
+  92:demo.cpp      **** 	// Parcours de la dernière case à la case 0 avec le `blink'
+  93:demo.cpp      **** 	disp.en_cur(false);
+  94:demo.cpp      **** 	disp.en_blink(true);
+  95:demo.cpp      **** 	for (int8_t i = LCM_FW_TOT_CH; i >= 0; --i) {
+  96:demo.cpp      **** 		disp.set_bc_index(i);
+  97:demo.cpp      **** 		cp_wait_ms(200);
+  98:demo.cpp      **** 	}
+  99:demo.cpp      **** 	w();
+ 100:demo.cpp      **** 	
+ 101:demo.cpp      **** 	// Désactivation du `blink'
+ 102:demo.cpp      **** 	disp.en_blink(false);
+ 103:demo.cpp      **** 	
+ 104:demo.cpp      **** 	// Démo : bannière de texte sur la première ligne
+ 105:demo.cpp      **** 	banner(disp, (char*) "bonjour le monde. voici une banniere de texte !",
+ 106:demo.cpp      **** 		200);
+ 107:demo.cpp      **** 	w();
+ 108:demo.cpp      **** 	
+ 109:demo.cpp      **** 	// Création d'un caractère personnalisé à l'index 3 (les 1 sont des
+ 110:demo.cpp      **** 	// pixels actifs et les 0 inactifs)
+ 111:demo.cpp      **** 	uint8_t cc [] = {
+ 112:demo.cpp      **** 		0x04, //   #
+ 113:demo.cpp      **** 		0x0a, //  # #
+ 114:demo.cpp      **** 		0x1f, // #####
+ 115:demo.cpp      **** 		0x04, //   #
+ 116:demo.cpp      **** 		0x04, //   #
+ 117:demo.cpp      **** 		0x04, //   #
+ 118:demo.cpp      **** 		0x04, //   #
+ 119:demo.cpp      **** 		0x03 //     ##
+ 120:demo.cpp      **** 	};
+ 121:demo.cpp      **** 	disp.build_cc(3, cc);
+ 122:demo.cpp      **** 	
+ 123:demo.cpp      **** 	// Affichage du dernier caractère personnalisé à la case 7 en effaçant
+ 124:demo.cpp      **** 	// le contenu actuel
+ 125:demo.cpp      **** 	disp.write("\x03", 7, true);
+ 126:demo.cpp      **** 	w();
+ 127:demo.cpp      **** 	
+ 128:demo.cpp      **** 	// Création d'un autre caractère personnalisé à l'index 7, mais de
+ 129:demo.cpp      **** 	// façon programmatique, et remplissage de la deuxième ligne
+ 130:demo.cpp      **** 	for (uint8_t i = 0; i < 8; ++i) {
+ 131:demo.cpp      **** 		cc[i] = _BV(i) >> (i > 4 ? 5 : 0);
+ 132:demo.cpp      **** 	}
+GAS LISTING /tmp/ccXI1DPL.s 			page 6
+
+
+ 133:demo.cpp      **** 	disp.build_cc(7, cc);
+ 134:demo.cpp      **** 	for (uint8_t i = LCM_FW_HALF_CH; i < LCM_FW_TOT_CH; ++i) {
+ 135:demo.cpp      **** 		disp.write("\x07", i);
+ 136:demo.cpp      **** 	}
+ 137:demo.cpp      **** 	w();
+ 138:demo.cpp      **** 	
+ 139:demo.cpp      **** 	// Démo : grosse vague rapide, 10 fois
+ 140:demo.cpp      **** 	wave(disp, 10, 10);
+ 141:demo.cpp      **** 	w();
+ 142:demo.cpp      **** 	
+ 143:demo.cpp      **** 	// Grosse vague, moins rapide, 5 fois
+ 144:demo.cpp      **** 	wave(disp, 5, 40);
+ 145:demo.cpp      **** 	w();
+ 146:demo.cpp      **** 	
+ 147:demo.cpp      **** 	// Affichage de tous les caractères possibles une fois par case (noter
+ 148:demo.cpp      **** 	// la rapidité d'exécution)
+ 149:demo.cpp      **** 	disp.clear();
+ 150:demo.cpp      **** 	for (uint8_t i = 0; i < LCM_FW_TOT_CH; ++i) {
+ 151:demo.cpp      **** 		for (char c = 0x21; c <= 0xdf; ++c) {
+ 152:demo.cpp      **** 			disp.put(c);
+ 153:demo.cpp      **** 			disp -= 1;
+ 154:demo.cpp      **** 		}
+ 155:demo.cpp      **** 		disp.put(0xff);
+ 156:demo.cpp      **** 	}
+ 157:demo.cpp      **** 	w();
+ 158:demo.cpp      **** 	
+ 159:demo.cpp      **** 	// Fin de la démonstration (avec définition d'un 'é' à l'index 4)
+ 160:demo.cpp      **** 	uint8_t cc2 [] = {
+ 161:demo.cpp      **** 		0x02, //    #
+ 162:demo.cpp      **** 		0x04, //   #
+ 163:demo.cpp      **** 		0x0e, //  ###
+ 164:demo.cpp      **** 		0x11, // #   #
+ 165:demo.cpp      **** 		0x1f, // #####
+ 166:demo.cpp      **** 		0x10, // #
+ 167:demo.cpp      **** 		0x0e, //  ###
+ 168:demo.cpp      **** 		0x00 //
+ 169:demo.cpp      **** 	};
+ 170:demo.cpp      **** 	disp.build_cc(4, cc2);
+ 171:demo.cpp      **** 	char end [] = "Fin de la d\x04mo !";
+ 172:demo.cpp      **** 	disp = end;
+ 173:demo.cpp      **** 	disp << end;
+ 174:demo.cpp      **** 	
+ 175:demo.cpp      **** 	return 0;
+ 176:demo.cpp      **** }
+ 177:demo.cpp      **** 
+ 178:demo.cpp      **** /**
+ 179:demo.cpp      ****  * Fonction pour démo - bannière de texte.
+ 180:demo.cpp      ****  *
+ 181:demo.cpp      ****  * @param lcm		Référence vers un LCM
+ 182:demo.cpp      ****  * @param text		Texte à afficher (jeu de caractères de l'afficheur)
+ 183:demo.cpp      ****  * @param ms_interval	Intervalle en millisecondes entre chaque décallage
+ 184:demo.cpp      ****  */
+ 185:demo.cpp      **** static void banner(LCM& lcm, char* text, uint16_t ms_interval) {
+ 186:demo.cpp      **** 	uint8_t start = 0, stop = 1, index = 0;
+ 187:demo.cpp      **** 	uint16_t msg_len = cp_strlen(text);
+ 188:demo.cpp      **** 	char t_char = 0;
+ 189:demo.cpp      **** 	
+GAS LISTING /tmp/ccXI1DPL.s 			page 7
+
+
+ 190:demo.cpp      **** 	lcm.clear();
+ 191:demo.cpp      **** 	cp_wait_ms(ms_interval);
+ 192:demo.cpp      **** 	
+ 193:demo.cpp      **** 	while (stop <= msg_len && start < msg_len - 1) {
+ 194:demo.cpp      **** 		if (stop <= LCM_FW_HALF_CH) {
+ 195:demo.cpp      **** 			index = LCM_FW_HALF_CH - stop;
+ 196:demo.cpp      **** 		} else {
+ 197:demo.cpp      ****            	++start;
+ 198:demo.cpp      **** 			index = 0;
+ 199:demo.cpp      **** 		}
+ 200:demo.cpp      **** 		
+ 201:demo.cpp      **** 		t_char = text[stop];
+ 202:demo.cpp      **** 		text[stop] = 0;
+ 203:demo.cpp      **** 		lcm.write(text + start, index, stop == msg_len);
+ 204:demo.cpp      **** 		text[stop] = t_char;
+ 205:demo.cpp      **** 
+ 206:demo.cpp      **** 		if (stop != msg_len) {
+ 207:demo.cpp      **** 			++stop;
+ 208:demo.cpp      **** 		}
+ 209:demo.cpp      **** 
+ 210:demo.cpp      **** 		cp_wait_ms(ms_interval);
+ 211:demo.cpp      **** 	}
+ 212:demo.cpp      **** 	
+ 213:demo.cpp      **** 	lcm.clear();
+ 214:demo.cpp      **** 	cp_wait_ms(ms_interval);
+ 215:demo.cpp      **** }
+ 216:demo.cpp      **** 
+ 217:demo.cpp      **** /**
+ 218:demo.cpp      ****  * Fonction pour démo - vague.
+ 219:demo.cpp      ****  *
+ 220:demo.cpp      ****  * @param lcm		Référence vers un LCM
+ 221:demo.cpp      ****  * @param rep		Nombre de répétitions
+ 222:demo.cpp      ****  * @param ms_interval	Intervalle en millisecondes entre chaque mouvement
+ 223:demo.cpp      ****  */
+ 224:demo.cpp      **** static void wave(LCM& lcm, uint16_t rep, uint16_t ms_interval) {
+ 146               		.stabn	68,0,224,.LM2-.LFBB2
+ 147               	.LM2:
+ 148               	.LFBB2:
+ 149 0008 2F92      		push r2
+ 150 000a 3F92      		push r3
+ 151 000c 4F92      		push r4
+ 152 000e 5F92      		push r5
+ 153 0010 6F92      		push r6
+ 154 0012 7F92      		push r7
+ 155 0014 8F92      		push r8
+ 156 0016 9F92      		push r9
+ 157 0018 AF92      		push r10
+ 158 001a BF92      		push r11
+ 159 001c CF92      		push r12
+ 160 001e DF92      		push r13
+ 161 0020 EF92      		push r14
+ 162 0022 FF92      		push r15
+ 163 0024 0F93      		push r16
+ 164 0026 1F93      		push r17
+ 165 0028 CF93      		push r28
+ 166 002a DF93      		push r29
+ 167 002c CDB7      		in r28,__SP_L__
+GAS LISTING /tmp/ccXI1DPL.s 			page 8
+
+
+ 168 002e DEB7      		in r29,__SP_H__
+ 169 0030 CB56      		subi r28,107
+ 170 0032 D109      		sbc r29,__zero_reg__
+ 171 0034 0FB6      		in __tmp_reg__,__SREG__
+ 172 0036 F894      		cli
+ 173 0038 DEBF      		out __SP_H__,r29
+ 174 003a 0FBE      		out __SREG__,__tmp_reg__
+ 175 003c CDBF      		out __SP_L__,r28
+ 176               	/* prologue: function */
+ 177               	/* frame size = 107 */
+ 178               	/* stack size = 125 */
+ 179               	.L__stack_usage = 125
+ 180 003e 7C01      		movw r14,r24
+ 181 0040 4B01      		movw r8,r22
+ 182 0042 3A01      		movw r6,r20
+ 183               		.stabn	68,0,224,.LM3-.LFBB2
+ 184               	.LM3:
+ 185 0044 8E01      		movw r16,r28
+ 186 0046 0D59      		subi r16,-99
+ 187 0048 1F4F      		sbci r17,-1
+ 188               	.LBB3:
+ 189               	.LBB4:
+ 225:demo.cpp      **** 	uint8_t t_per [8];
+ 226:demo.cpp      **** 	
+ 227:demo.cpp      **** 	for (uint8_t i = 0; i < 8; ++i) {
+ 190               		.stabn	68,0,227,.LM4-.LFBB2
+ 191               	.LM4:
+ 192 004a D12C      		mov r13,__zero_reg__
+ 193               	.LBB5:
+ 194               	.LBB6:
+ 228:demo.cpp      **** 		for (uint8_t j = 0; j < 8; ++j) {
+ 229:demo.cpp      **** 			if (j == i) {
+ 230:demo.cpp      **** 				t_per[j] = 0xff;
+ 195               		.stabn	68,0,230,.LM5-.LFBB2
+ 196               	.LM5:
+ 197 004c CC24      		clr r12
+ 198 004e CA94      		dec r12
+ 199               	.L3:
+ 200               	.LBE6:
+ 201               	.LBE5:
+ 202               	.LBE4:
+ 203               	.LBE3:
+ 224:demo.cpp      **** static void wave(LCM& lcm, uint16_t rep, uint16_t ms_interval) {
+ 204               		.stabn	68,0,224,.LM6-.LFBB2
+ 205               	.LM6:
+ 206 0050 FE01      		movw r30,r28
+ 207 0052 ED59      		subi r30,-99
+ 208 0054 FF4F      		sbci r31,-1
+ 209 0056 80E0      		ldi r24,0
+ 210               	.L8:
+ 211               	.LBB12:
+ 212               	.LBB9:
+ 213               	.LBB8:
+ 214               	.LBB7:
+ 229:demo.cpp      **** 			if (j == i) {
+ 215               		.stabn	68,0,229,.LM7-.LFBB2
+ 216               	.LM7:
+GAS LISTING /tmp/ccXI1DPL.s 			page 9
+
+
+ 217 0058 8D11      		cpse r24,r13
+ 218 005a 00C0      		rjmp .L4
+ 219               		.stabn	68,0,230,.LM8-.LFBB2
+ 220               	.LM8:
+ 221 005c D801      		movw r26,r16
+ 222 005e CC92      		st X,r12
+ 223 0060 00C0      		rjmp .L5
+ 224               	.L4:
+ 231:demo.cpp      **** 			} else {
+ 232:demo.cpp      **** 				t_per[j] = 0;
+ 225               		.stabn	68,0,232,.LM9-.LFBB2
+ 226               	.LM9:
+ 227 0062 1082      		st Z,__zero_reg__
+ 228               	.L5:
+ 228:demo.cpp      **** 		for (uint8_t j = 0; j < 8; ++j) {
+ 229               		.stabn	68,0,228,.LM10-.LFBB2
+ 230               	.LM10:
+ 231 0064 8F5F      		subi r24,lo8(-(1))
+ 232 0066 3196      		adiw r30,1
+ 233 0068 8830      		cpi r24,lo8(8)
+ 234 006a 01F4      		brne .L8
+ 235               	.LBE7:
+ 233:demo.cpp      **** 			}
+ 234:demo.cpp      **** 		}
+ 235:demo.cpp      **** 		lcm.build_cc(i, t_per);
+ 236               		.stabn	68,0,235,.LM11-.LFBB2
+ 237               	.LM11:
+ 238 006c AE01      		movw r20,r28
+ 239 006e 4D59      		subi r20,-99
+ 240 0070 5F4F      		sbci r21,-1
+ 241 0072 6D2D      		mov r22,r13
+ 242 0074 C701      		movw r24,r14
+ 243 0076 0E94 0000 		call _ZN3LCM8build_ccEhPKh
+ 244               	.LBE8:
+ 227:demo.cpp      **** 	for (uint8_t i = 0; i < 8; ++i) {
+ 245               		.stabn	68,0,227,.LM12-.LFBB2
+ 246               	.LM12:
+ 247 007a D394      		inc r13
+ 248 007c 0F5F      		subi r16,-1
+ 249 007e 1F4F      		sbci r17,-1
+ 250 0080 B8E0      		ldi r27,lo8(8)
+ 251 0082 DB12      		cpse r13,r27
+ 252 0084 00C0      		rjmp .L3
+ 253               	.LBE9:
+ 236:demo.cpp      **** 	}
+ 237:demo.cpp      **** 	
+ 238:demo.cpp      **** 	char custom_l1 [] = "\x20\x07\x05\x04\x03\x02\x02\x01\x01\x01\x02\x02"
+ 239:demo.cpp      **** 		"\x03\x04\x05\x07\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20"
+ 240:demo.cpp      **** 		"\x20\x20\x20\x20\x20\x20\x07\x05\x04\x03\x02\x02\x01\x01\x01"
+ 241:demo.cpp      **** 		"\x02\x02\x03\x04\x05\x07";
+ 254               		.stabn	68,0,241,.LM13-.LFBB2
+ 255               	.LM13:
+ 256 0086 81E3      		ldi r24,lo8(49)
+ 257 0088 E0E0      		ldi r30,lo8(.LC2)
+ 258 008a F0E0      		ldi r31,hi8(.LC2)
+ 259 008c DE01      		movw r26,r28
+ 260 008e D296      		adiw r26,50
+GAS LISTING /tmp/ccXI1DPL.s 			page 10
+
+
+ 261               		0:
+ 262 0090 0190      		ld r0,Z+
+ 263 0092 0D92      		st X+,r0
+ 264 0094 8A95      		dec r24
+ 265 0096 01F4      		brne 0b
+ 242:demo.cpp      **** 	char custom_l2 [] = "\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20"
+ 243:demo.cpp      **** 		"\x20\x20\x20\x20\x20\x08\x02\x03\x04\x05\x05\x06\x06\x06\x05"
+ 244:demo.cpp      **** 		"\x05\x04\x03\x02\x08\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20"
+ 245:demo.cpp      **** 		"\x20\x20\x20\x20\x20\x20";
+ 266               		.stabn	68,0,245,.LM14-.LFBB2
+ 267               	.LM14:
+ 268 0098 81E3      		ldi r24,lo8(49)
+ 269 009a E0E0      		ldi r30,lo8(.LC3)
+ 270 009c F0E0      		ldi r31,hi8(.LC3)
+ 271 009e DE01      		movw r26,r28
+ 272 00a0 1196      		adiw r26,1
+ 273               		0:
+ 274 00a2 0190      		ld r0,Z+
+ 275 00a4 0D92      		st X+,r0
+ 276 00a6 8A95      		dec r24
+ 277 00a8 01F4      		brne 0b
+ 246:demo.cpp      **** 
+ 247:demo.cpp      **** 	char t_char;
+ 248:demo.cpp      **** 	
+ 249:demo.cpp      **** 	lcm.clear();
+ 278               		.stabn	68,0,249,.LM15-.LFBB2
+ 279               	.LM15:
+ 280 00aa C701      		movw r24,r14
+ 281 00ac 0E94 0000 		call _ZN3LCM5clearEv
+ 282               	.LBB10:
+ 250:demo.cpp      **** 	
+ 251:demo.cpp      **** 	for (uint16_t k = 0; k < rep; ++k) {
+ 283               		.stabn	68,0,251,.LM16-.LFBB2
+ 284               	.LM16:
+ 285 00b0 A12C      		mov r10,__zero_reg__
+ 286 00b2 B12C      		mov r11,__zero_reg__
+ 287 00b4 82E3      		ldi r24,lo8(50)
+ 288 00b6 282E      		mov r2,r24
+ 289 00b8 312C      		mov r3,__zero_reg__
+ 290 00ba 2C0E      		add r2,r28
+ 291 00bc 3D1E      		adc r3,r29
+ 292 00be E0E1      		ldi r30,16
+ 293 00c0 2E0E      		add r2,r30
+ 294 00c2 311C      		adc r3,__zero_reg__
+ 295 00c4 92E3      		ldi r25,lo8(50)
+ 296 00c6 492E      		mov r4,r25
+ 297 00c8 512C      		mov r5,__zero_reg__
+ 298 00ca 4C0E      		add r4,r28
+ 299 00cc 5D1E      		adc r5,r29
+ 300 00ce F0E3      		ldi r31,48
+ 301 00d0 4F0E      		add r4,r31
+ 302 00d2 511C      		adc r5,__zero_reg__
+ 303               	.L9:
+ 304               		.stabn	68,0,251,.LM17-.LFBB2
+ 305               	.LM17:
+ 306 00d4 A814      		cp r10,r8
+ 307 00d6 B904      		cpc r11,r9
+GAS LISTING /tmp/ccXI1DPL.s 			page 11
+
+
+ 308 00d8 01F0      		breq .L11
+ 309 00da 8101      		movw r16,r2
+ 310 00dc CE01      		movw r24,r28
+ 311 00de 4196      		adiw r24,17
+ 312 00e0 6C01      		movw r12,r24
+ 313               	.L12:
+ 314               	.LBB11:
+ 252:demo.cpp      **** 		for (uint8_t i = 0; i < LCM_FW_TOT_CH; ++i) {
+ 253:demo.cpp      **** 			t_char = custom_l1[i + 16];
+ 315               		.stabn	68,0,253,.LM18-.LFBB2
+ 316               	.LM18:
+ 317 00e2 D801      		movw r26,r16
+ 318 00e4 3C91      		ld r19,X
+ 254:demo.cpp      **** 			custom_l1[i + LCM_FW_HALF_CH] = 0;
+ 319               		.stabn	68,0,254,.LM19-.LFBB2
+ 320               	.LM19:
+ 321 00e6 1C92      		st X,__zero_reg__
+ 322 00e8 B801      		movw r22,r16
+ 323 00ea 6051      		subi r22,16
+ 324 00ec 7109      		sbc r23,__zero_reg__
+ 255:demo.cpp      **** 			
+ 256:demo.cpp      **** 			lcm.write(custom_l1 + i, 0);
+ 325               		.stabn	68,0,256,.LM20-.LFBB2
+ 326               	.LM20:
+ 327 00ee 20E0      		ldi r18,0
+ 328 00f0 40E0      		ldi r20,0
+ 329 00f2 C701      		movw r24,r14
+ 330 00f4 AC96      		adiw r28,107-63
+ 331 00f6 3FAF      		std Y+63,r19
+ 332 00f8 AC97      		sbiw r28,107-63
+ 333 00fa 0E94 0000 		call _ZN3LCM5writeEPKchb
+ 257:demo.cpp      **** 			
+ 258:demo.cpp      **** 			custom_l1[i + LCM_FW_HALF_CH] = t_char;
+ 334               		.stabn	68,0,258,.LM21-.LFBB2
+ 335               	.LM21:
+ 336 00fe AC96      		adiw r28,107-63
+ 337 0100 3FAD      		ldd r19,Y+63
+ 338 0102 AC97      		sbiw r28,107-63
+ 339 0104 F801      		movw r30,r16
+ 340 0106 3193      		st Z+,r19
+ 341 0108 8F01      		movw r16,r30
+ 259:demo.cpp      **** 			t_char = custom_l2[i + LCM_FW_HALF_CH];
+ 342               		.stabn	68,0,259,.LM22-.LFBB2
+ 343               	.LM22:
+ 344 010a D601      		movw r26,r12
+ 345 010c 3C91      		ld r19,X
+ 260:demo.cpp      **** 			custom_l2[i + LCM_FW_HALF_CH] = 0;
+ 346               		.stabn	68,0,260,.LM23-.LFBB2
+ 347               	.LM23:
+ 348 010e 1C92      		st X,__zero_reg__
+ 349 0110 B601      		movw r22,r12
+ 350 0112 6051      		subi r22,16
+ 351 0114 7109      		sbc r23,__zero_reg__
+ 261:demo.cpp      **** 			
+ 262:demo.cpp      **** 			lcm.write(custom_l2 + i, 16);
+ 352               		.stabn	68,0,262,.LM24-.LFBB2
+ 353               	.LM24:
+GAS LISTING /tmp/ccXI1DPL.s 			page 12
+
+
+ 354 0116 20E0      		ldi r18,0
+ 355 0118 40E1      		ldi r20,lo8(16)
+ 356 011a C701      		movw r24,r14
+ 357 011c AC96      		adiw r28,107-63
+ 358 011e 3FAF      		std Y+63,r19
+ 359 0120 AC97      		sbiw r28,107-63
+ 360 0122 0E94 0000 		call _ZN3LCM5writeEPKchb
+ 263:demo.cpp      **** 			
+ 264:demo.cpp      **** 			custom_l2[i + LCM_FW_HALF_CH] = t_char;
+ 361               		.stabn	68,0,264,.LM25-.LFBB2
+ 362               	.LM25:
+ 363 0126 AC96      		adiw r28,107-63
+ 364 0128 3FAD      		ldd r19,Y+63
+ 365 012a AC97      		sbiw r28,107-63
+ 366 012c F601      		movw r30,r12
+ 367 012e 3193      		st Z+,r19
+ 368 0130 6F01      		movw r12,r30
+ 265:demo.cpp      **** 			
+ 266:demo.cpp      **** 			cp_wait_ms(ms_interval);
+ 369               		.stabn	68,0,266,.LM26-.LFBB2
+ 370               	.LM26:
+ 371 0132 C301      		movw r24,r6
+ 372 0134 0E94 0000 		call _Z10cp_wait_msj
+ 252:demo.cpp      **** 		for (uint8_t i = 0; i < LCM_FW_TOT_CH; ++i) {
+ 373               		.stabn	68,0,252,.LM27-.LFBB2
+ 374               	.LM27:
+ 375 0138 0415      		cp r16,r4
+ 376 013a 1505      		cpc r17,r5
+ 377 013c 01F4      		brne .L12
+ 378               	.LBE11:
+ 251:demo.cpp      **** 	for (uint16_t k = 0; k < rep; ++k) {
+ 379               		.stabn	68,0,251,.LM28-.LFBB2
+ 380               	.LM28:
+ 381 013e FFEF      		ldi r31,-1
+ 382 0140 AF1A      		sub r10,r31
+ 383 0142 BF0A      		sbc r11,r31
+ 384 0144 00C0      		rjmp .L9
+ 385               	.L11:
+ 386               	.LBE10:
+ 267:demo.cpp      **** 		}
+ 268:demo.cpp      **** 	}
+ 269:demo.cpp      **** 	
+ 270:demo.cpp      **** 	lcm.clear();
+ 387               		.stabn	68,0,270,.LM29-.LFBB2
+ 388               	.LM29:
+ 389 0146 C701      		movw r24,r14
+ 390 0148 0E94 0000 		call _ZN3LCM5clearEv
+ 391               	/* epilogue start */
+ 392               	.LBE12:
+ 271:demo.cpp      **** }
+ 393               		.stabn	68,0,271,.LM30-.LFBB2
+ 394               	.LM30:
+ 395 014c C559      		subi r28,-107
+ 396 014e DF4F      		sbci r29,-1
+ 397 0150 0FB6      		in __tmp_reg__,__SREG__
+ 398 0152 F894      		cli
+ 399 0154 DEBF      		out __SP_H__,r29
+GAS LISTING /tmp/ccXI1DPL.s 			page 13
+
+
+ 400 0156 0FBE      		out __SREG__,__tmp_reg__
+ 401 0158 CDBF      		out __SP_L__,r28
+ 402 015a DF91      		pop r29
+ 403 015c CF91      		pop r28
+ 404 015e 1F91      		pop r17
+ 405 0160 0F91      		pop r16
+ 406 0162 FF90      		pop r15
+ 407 0164 EF90      		pop r14
+ 408 0166 DF90      		pop r13
+ 409 0168 CF90      		pop r12
+ 410 016a BF90      		pop r11
+ 411 016c AF90      		pop r10
+ 412 016e 9F90      		pop r9
+ 413 0170 8F90      		pop r8
+ 414 0172 7F90      		pop r7
+ 415 0174 6F90      		pop r6
+ 416 0176 5F90      		pop r5
+ 417 0178 4F90      		pop r4
+ 418 017a 3F90      		pop r3
+ 419 017c 2F90      		pop r2
+ 420 017e 0895      		ret
+ 421               		.size	_ZL4waveR3LCMjj, .-_ZL4waveR3LCMjj
+ 422               		.stabs	"t_per:(0,124)=ar(0,125)=r(0,125);0;0177777;;0;7;(0,67)",128,0,225,99
+ 423               		.stabs	"custom_l1:(0,126)=ar(0,125);0;48;(0,17)",128,0,238,50
+ 424               		.stabs	"custom_l2:(0,126)",128,0,242,1
+ 425               		.stabn	192,0,0,.LBB3-.LFBB2
+ 426               		.stabs	"i:r(0,67)",64,0,227,13
+ 427               		.stabn	192,0,0,.LBB4-.LFBB2
+ 428               		.stabs	"j:r(0,67)",64,0,228,24
+ 429               		.stabn	192,0,0,.LBB6-.LFBB2
+ 430               		.stabn	224,0,0,.LBE6-.LFBB2
+ 431               		.stabs	"j:r(0,67)",64,0,228,24
+ 432               		.stabn	192,0,0,.LBB7-.LFBB2
+ 433               		.stabn	224,0,0,.LBE7-.LFBB2
+ 434               		.stabn	224,0,0,.LBE4-.LFBB2
+ 435               		.stabs	"i:r(0,67)",64,0,227,13
+ 436               		.stabn	192,0,0,.LBB9-.LFBB2
+ 437               		.stabn	224,0,0,.LBE9-.LFBB2
+ 438               		.stabs	"k:r(0,69)",64,0,251,10
+ 439               		.stabn	192,0,0,.LBB10-.LFBB2
+ 440               		.stabn	224,0,0,.LBE10-.LFBB2
+ 441               		.stabn	224,0,0,.LBE3-.LFBB2
+ 442               		.stabs	"t_per:(0,124)",128,0,225,99
+ 443               		.stabs	"custom_l1:(0,126)",128,0,238,50
+ 444               		.stabs	"custom_l2:(0,126)",128,0,242,1
+ 445               		.stabn	192,0,0,.LBB12-.LFBB2
+ 446               		.stabn	224,0,0,.LBE12-.LFBB2
+ 447               	.Lscope2:
+ 448               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 449               		.stabd	78,0,0
+ 450               		.section	.rodata.str1.1
+ 451               	.LC4:
+ 452 0062 7072 656D 		.string	"premiere !"
+ 452      6965 7265 
+ 452      2021 00
+ 453               	.LC5:
+ 454 006d 776F 6F6F 		.string	"woooowww !!"
+GAS LISTING /tmp/ccXI1DPL.s 			page 14
+
+
+ 454      6F77 7777 
+ 454      2021 2100 
+ 455               	.LC6:
+ 456 0079 6E6F 7576 		.string	"nouveau truc "
+ 456      6561 7520 
+ 456      7472 7563 
+ 456      2000 
+ 457               	.LC7:
+ 458 0087 616C 6C6F 		.string	"allo"
+ 458      00
+ 459               	.LC8:
+ 460 008c 6F68 206F 		.string	"oh oui !"
+ 460      7569 2021 
+ 460      00
+ 461               	.LC9:
+ 462 0095 7E20 7965 		.string	"~ yeah! \177"
+ 462      6168 2120 
+ 462      7F00 
+ 463               	.LC10:
+ 464 009f 626F 6E6A 		.string	"bonjour le monde. voici une banniere de texte !"
+ 464      6F75 7220 
+ 464      6C65 206D 
+ 464      6F6E 6465 
+ 464      2E20 766F 
+ 465               	.LC11:
+ 466 00cf 0300      		.string	"\003"
+ 467               	.LC12:
+ 468 00d1 0700      		.string	"\007"
+ 469               		.section	.rodata
+ 470               	.LC0:
+ 471 0000 04        		.byte	4
+ 472 0001 0A        		.byte	10
+ 473 0002 1F        		.byte	31
+ 474 0003 04        		.byte	4
+ 475 0004 04        		.byte	4
+ 476 0005 04        		.byte	4
+ 477 0006 04        		.byte	4
+ 478 0007 03        		.byte	3
+ 479               	.LC1:
+ 480 0008 02        		.byte	2
+ 481 0009 04        		.byte	4
+ 482 000a 0E        		.byte	14
+ 483 000b 11        		.byte	17
+ 484 000c 1F        		.byte	31
+ 485 000d 10        		.byte	16
+ 486 000e 0E        		.byte	14
+ 487 000f 00        		.byte	0
+ 488               		.section	.rodata.str1.1
+ 489               	.LC13:
+ 490 00d3 4669 6E20 		.string	"Fin de la d\004mo !"
+ 490      6465 206C 
+ 490      6120 6404 
+ 490      6D6F 2021 
+ 490      00
+ 491               		.section	.text.startup,"ax",@progbits
+ 492               		.stabs	"main:F(0,9)",36,0,22,main
+ 493               	.global	main
+GAS LISTING /tmp/ccXI1DPL.s 			page 15
+
+
+ 494               		.type	main, @function
+ 495               	main:
+ 496               		.stabd	46,0,0
+  22:demo.cpp      **** int main(void) {	
+ 497               		.stabn	68,0,22,.LM31-.LFBB3
+ 498               	.LM31:
+ 499               	.LFBB3:
+ 500 0000 9F92      		push r9
+ 501 0002 AF92      		push r10
+ 502 0004 BF92      		push r11
+ 503 0006 CF92      		push r12
+ 504 0008 DF92      		push r13
+ 505 000a EF92      		push r14
+ 506 000c FF92      		push r15
+ 507 000e 0F93      		push r16
+ 508 0010 1F93      		push r17
+ 509 0012 CF93      		push r28
+ 510 0014 DF93      		push r29
+ 511 0016 CDB7      		in r28,__SP_L__
+ 512 0018 DEB7      		in r29,__SP_H__
+ 513 001a AB97      		sbiw r28,43
+ 514 001c 0FB6      		in __tmp_reg__,__SREG__
+ 515 001e F894      		cli
+ 516 0020 DEBF      		out __SP_H__,r29
+ 517 0022 0FBE      		out __SREG__,__tmp_reg__
+ 518 0024 CDBF      		out __SP_L__,r28
+ 519               	/* prologue: function */
+ 520               	/* frame size = 43 */
+ 521               	/* stack size = 54 */
+ 522               	.L__stack_usage = 54
+ 523               	.LBB24:
+  24:demo.cpp      **** 	LCM disp(&DEMO_DDR, &DEMO_PORT);
+ 524               		.stabn	68,0,24,.LM32-.LFBB3
+ 525               	.LM32:
+ 526 0026 48E2      		ldi r20,lo8(40)
+ 527 0028 50E0      		ldi r21,0
+ 528 002a 67E2      		ldi r22,lo8(39)
+ 529 002c 70E0      		ldi r23,0
+ 530 002e CE01      		movw r24,r28
+ 531 0030 4296      		adiw r24,18
+ 532 0032 0E94 0000 		call _ZN3LCMC1EPVhS1_
+  27:demo.cpp      **** 	disp.put('p');
+ 533               		.stabn	68,0,27,.LM33-.LFBB3
+ 534               	.LM33:
+ 535 0036 60E7      		ldi r22,lo8(112)
+ 536 0038 CE01      		movw r24,r28
+ 537 003a 4296      		adiw r24,18
+ 538 003c 0E94 0000 		call _ZN3LCM3putEc
+  28:demo.cpp      **** 	w();
+ 539               		.stabn	68,0,28,.LM34-.LFBB3
+ 540               	.LM34:
+ 541 0040 0E94 0000 		call _ZL1wv
+  31:demo.cpp      **** 	disp.put('h').put('i').put('l').put(';');
+ 542               		.stabn	68,0,31,.LM35-.LFBB3
+ 543               	.LM35:
+ 544 0044 68E6      		ldi r22,lo8(104)
+ 545 0046 CE01      		movw r24,r28
+GAS LISTING /tmp/ccXI1DPL.s 			page 16
+
+
+ 546 0048 4296      		adiw r24,18
+ 547 004a 0E94 0000 		call _ZN3LCM3putEc
+ 548 004e 69E6      		ldi r22,lo8(105)
+ 549 0050 0E94 0000 		call _ZN3LCM3putEc
+ 550 0054 6CE6      		ldi r22,lo8(108)
+ 551 0056 0E94 0000 		call _ZN3LCM3putEc
+ 552 005a 6BE3      		ldi r22,lo8(59)
+ 553 005c 0E94 0000 		call _ZN3LCM3putEc
+  32:demo.cpp      **** 	w();
+ 554               		.stabn	68,0,32,.LM36-.LFBB3
+ 555               	.LM36:
+ 556 0060 0E94 0000 		call _ZL1wv
+  35:demo.cpp      **** 	disp.clear();
+ 557               		.stabn	68,0,35,.LM37-.LFBB3
+ 558               	.LM37:
+ 559 0064 CE01      		movw r24,r28
+ 560 0066 4296      		adiw r24,18
+ 561 0068 0E94 0000 		call _ZN3LCM5clearEv
+  36:demo.cpp      **** 	w();
+ 562               		.stabn	68,0,36,.LM38-.LFBB3
+ 563               	.LM38:
+ 564 006c 0E94 0000 		call _ZL1wv
+  39:demo.cpp      **** 	disp.write("premiere !", 2);
+ 565               		.stabn	68,0,39,.LM39-.LFBB3
+ 566               	.LM39:
+ 567 0070 20E0      		ldi r18,0
+ 568 0072 42E0      		ldi r20,lo8(2)
+ 569 0074 60E0      		ldi r22,lo8(.LC4)
+ 570 0076 70E0      		ldi r23,hi8(.LC4)
+ 571 0078 CE01      		movw r24,r28
+ 572 007a 4296      		adiw r24,18
+ 573 007c 0E94 0000 		call _ZN3LCM5writeEPKchb
+  40:demo.cpp      **** 	w();
+ 574               		.stabn	68,0,40,.LM40-.LFBB3
+ 575               	.LM40:
+ 576 0080 0E94 0000 		call _ZL1wv
+  43:demo.cpp      **** 	disp << "woooowww !!";
+ 577               		.stabn	68,0,43,.LM41-.LFBB3
+ 578               	.LM41:
+ 579 0084 60E0      		ldi r22,lo8(.LC5)
+ 580 0086 70E0      		ldi r23,hi8(.LC5)
+ 581 0088 CE01      		movw r24,r28
+ 582 008a 4296      		adiw r24,18
+ 583 008c 0E94 0000 		call _ZN3LCMlsEPKc
+  44:demo.cpp      **** 	w();
+ 584               		.stabn	68,0,44,.LM42-.LFBB3
+ 585               	.LM42:
+ 586 0090 0E94 0000 		call _ZL1wv
+  47:demo.cpp      **** 	disp -= 9;
+ 587               		.stabn	68,0,47,.LM43-.LFBB3
+ 588               	.LM43:
+ 589 0094 69E0      		ldi r22,lo8(9)
+ 590 0096 CE01      		movw r24,r28
+ 591 0098 4296      		adiw r24,18
+ 592 009a 0E94 0000 		call _ZN3LCMmIEh
+  48:demo.cpp      **** 	w();
+ 593               		.stabn	68,0,48,.LM44-.LFBB3
+GAS LISTING /tmp/ccXI1DPL.s 			page 17
+
+
+ 594               	.LM44:
+ 595 009e 0E94 0000 		call _ZL1wv
+  51:demo.cpp      **** 	disp = "nouveau truc ";
+ 596               		.stabn	68,0,51,.LM45-.LFBB3
+ 597               	.LM45:
+ 598 00a2 60E0      		ldi r22,lo8(.LC6)
+ 599 00a4 70E0      		ldi r23,hi8(.LC6)
+ 600 00a6 CE01      		movw r24,r28
+ 601 00a8 4296      		adiw r24,18
+ 602 00aa 0E94 0000 		call _ZN3LCMaSEPKc
+  52:demo.cpp      **** 	w();
+ 603               		.stabn	68,0,52,.LM46-.LFBB3
+ 604               	.LM46:
+ 605 00ae 0E94 0000 		call _ZL1wv
+  55:demo.cpp      **** 	disp << 215 << ' ' << -179 << ' ' << 6;
+ 606               		.stabn	68,0,55,.LM47-.LFBB3
+ 607               	.LM47:
+ 608 00b2 67ED      		ldi r22,lo8(-41)
+ 609 00b4 70E0      		ldi r23,0
+ 610 00b6 CE01      		movw r24,r28
+ 611 00b8 4296      		adiw r24,18
+ 612 00ba 0E94 0000 		call _ZN3LCMlsEi
+ 613 00be 60E2      		ldi r22,lo8(32)
+ 614 00c0 0E94 0000 		call _ZN3LCMlsEc
+ 615 00c4 6DE4      		ldi r22,lo8(77)
+ 616 00c6 7FEF      		ldi r23,lo8(-1)
+ 617 00c8 0E94 0000 		call _ZN3LCMlsEi
+ 618 00cc 60E2      		ldi r22,lo8(32)
+ 619 00ce 0E94 0000 		call _ZN3LCMlsEc
+ 620 00d2 66E0      		ldi r22,lo8(6)
+ 621 00d4 70E0      		ldi r23,0
+ 622 00d6 0E94 0000 		call _ZN3LCMlsEi
+  56:demo.cpp      **** 	w();
+ 623               		.stabn	68,0,56,.LM48-.LFBB3
+ 624               	.LM48:
+ 625 00da 0E94 0000 		call _ZL1wv
+  60:demo.cpp      **** 	disp.clear();
+ 626               		.stabn	68,0,60,.LM49-.LFBB3
+ 627               	.LM49:
+ 628 00de CE01      		movw r24,r28
+ 629 00e0 4296      		adiw r24,18
+ 630 00e2 0E94 0000 		call _ZN3LCM5clearEv
+  61:demo.cpp      **** 	disp[27] = "allo";
+ 631               		.stabn	68,0,61,.LM50-.LFBB3
+ 632               	.LM50:
+ 633 00e6 6BE1      		ldi r22,lo8(27)
+ 634 00e8 CE01      		movw r24,r28
+ 635 00ea 4296      		adiw r24,18
+ 636 00ec 0E94 0000 		call _ZN3LCMixEh
+ 637 00f0 60E0      		ldi r22,lo8(.LC7)
+ 638 00f2 70E0      		ldi r23,hi8(.LC7)
+ 639 00f4 0E94 0000 		call _ZN3LCMaSEPKc
+  62:demo.cpp      **** 	disp[13] = "oh oui !";
+ 640               		.stabn	68,0,62,.LM51-.LFBB3
+ 641               	.LM51:
+ 642 00f8 6DE0      		ldi r22,lo8(13)
+ 643 00fa CE01      		movw r24,r28
+GAS LISTING /tmp/ccXI1DPL.s 			page 18
+
+
+ 644 00fc 4296      		adiw r24,18
+ 645 00fe 0E94 0000 		call _ZN3LCMixEh
+ 646 0102 60E0      		ldi r22,lo8(.LC8)
+ 647 0104 70E0      		ldi r23,hi8(.LC8)
+ 648 0106 0E94 0000 		call _ZN3LCMaSEPKc
+  63:demo.cpp      **** 	w();
+ 649               		.stabn	68,0,63,.LM52-.LFBB3
+ 650               	.LM52:
+ 651 010a 0E94 0000 		call _ZL1wv
+  67:demo.cpp      **** 	disp.write("\x7e yeah! \x7f", LCM_FW_HALF_CH + 5, true);
+ 652               		.stabn	68,0,67,.LM53-.LFBB3
+ 653               	.LM53:
+ 654 010e 21E0      		ldi r18,lo8(1)
+ 655 0110 45E1      		ldi r20,lo8(21)
+ 656 0112 60E0      		ldi r22,lo8(.LC9)
+ 657 0114 70E0      		ldi r23,hi8(.LC9)
+ 658 0116 CE01      		movw r24,r28
+ 659 0118 4296      		adiw r24,18
+ 660 011a 0E94 0000 		call _ZN3LCM5writeEPKchb
+  68:demo.cpp      **** 	w();
+ 661               		.stabn	68,0,68,.LM54-.LFBB3
+ 662               	.LM54:
+ 663 011e 0E94 0000 		call _ZL1wv
+  72:demo.cpp      **** 	disp.set_bc_index(9);
+ 664               		.stabn	68,0,72,.LM55-.LFBB3
+ 665               	.LM55:
+ 666 0122 69E0      		ldi r22,lo8(9)
+ 667 0124 CE01      		movw r24,r28
+ 668 0126 4296      		adiw r24,18
+ 669 0128 0E94 0000 		call _ZN3LCM12set_bc_indexEh
+  73:demo.cpp      **** 	disp.en_blink(true);
+ 670               		.stabn	68,0,73,.LM56-.LFBB3
+ 671               	.LM56:
+ 672 012c 61E0      		ldi r22,lo8(1)
+ 673 012e CE01      		movw r24,r28
+ 674 0130 4296      		adiw r24,18
+ 675 0132 0E94 0000 		call _ZN3LCM8en_blinkEb
+  74:demo.cpp      **** 	w();
+ 676               		.stabn	68,0,74,.LM57-.LFBB3
+ 677               	.LM57:
+ 678 0136 0E94 0000 		call _ZL1wv
+  78:demo.cpp      **** 	disp.en_cur(true);
+ 679               		.stabn	68,0,78,.LM58-.LFBB3
+ 680               	.LM58:
+ 681 013a 61E0      		ldi r22,lo8(1)
+ 682 013c CE01      		movw r24,r28
+ 683 013e 4296      		adiw r24,18
+ 684 0140 0E94 0000 		call _ZN3LCM6en_curEb
+  79:demo.cpp      **** 	w();
+ 685               		.stabn	68,0,79,.LM59-.LFBB3
+ 686               	.LM59:
+ 687 0144 0E94 0000 		call _ZL1wv
+  82:demo.cpp      **** 	disp.en_blink(false);
+ 688               		.stabn	68,0,82,.LM60-.LFBB3
+ 689               	.LM60:
+ 690 0148 60E0      		ldi r22,0
+ 691 014a CE01      		movw r24,r28
+GAS LISTING /tmp/ccXI1DPL.s 			page 19
+
+
+ 692 014c 4296      		adiw r24,18
+ 693 014e 0E94 0000 		call _ZN3LCM8en_blinkEb
+  83:demo.cpp      **** 	w();
+ 694               		.stabn	68,0,83,.LM61-.LFBB3
+ 695               	.LM61:
+ 696 0152 0E94 0000 		call _ZL1wv
+ 697               	.LBB25:
+  86:demo.cpp      **** 	for (uint8_t i = 0; i < LCM_FW_TOT_CH; ++i) {
+ 698               		.stabn	68,0,86,.LM62-.LFBB3
+ 699               	.LM62:
+ 700 0156 10E0      		ldi r17,0
+ 701               	.L16:
+  87:demo.cpp      **** 		disp.set_bc_index(i);
+ 702               		.stabn	68,0,87,.LM63-.LFBB3
+ 703               	.LM63:
+ 704 0158 612F      		mov r22,r17
+ 705 015a CE01      		movw r24,r28
+ 706 015c 4296      		adiw r24,18
+ 707 015e 0E94 0000 		call _ZN3LCM12set_bc_indexEh
+  88:demo.cpp      **** 		cp_wait_ms(200);
+ 708               		.stabn	68,0,88,.LM64-.LFBB3
+ 709               	.LM64:
+ 710 0162 88EC      		ldi r24,lo8(-56)
+ 711 0164 90E0      		ldi r25,0
+ 712 0166 0E94 0000 		call _Z10cp_wait_msj
+  86:demo.cpp      **** 	for (uint8_t i = 0; i < LCM_FW_TOT_CH; ++i) {
+ 713               		.stabn	68,0,86,.LM65-.LFBB3
+ 714               	.LM65:
+ 715 016a 1F5F      		subi r17,lo8(-(1))
+ 716 016c 1032      		cpi r17,lo8(32)
+ 717 016e 01F4      		brne .L16
+ 718               	.LBE25:
+  90:demo.cpp      **** 	w();
+ 719               		.stabn	68,0,90,.LM66-.LFBB3
+ 720               	.LM66:
+ 721 0170 0E94 0000 		call _ZL1wv
+  93:demo.cpp      **** 	disp.en_cur(false);
+ 722               		.stabn	68,0,93,.LM67-.LFBB3
+ 723               	.LM67:
+ 724 0174 60E0      		ldi r22,0
+ 725 0176 CE01      		movw r24,r28
+ 726 0178 4296      		adiw r24,18
+ 727 017a 0E94 0000 		call _ZN3LCM6en_curEb
+  94:demo.cpp      **** 	disp.en_blink(true);
+ 728               		.stabn	68,0,94,.LM68-.LFBB3
+ 729               	.LM68:
+ 730 017e 61E0      		ldi r22,lo8(1)
+ 731 0180 CE01      		movw r24,r28
+ 732 0182 4296      		adiw r24,18
+ 733 0184 0E94 0000 		call _ZN3LCM8en_blinkEb
+ 734               	.L18:
+ 735               	.LBB26:
+  96:demo.cpp      **** 		disp.set_bc_index(i);
+ 736               		.stabn	68,0,96,.LM69-.LFBB3
+ 737               	.LM69:
+ 738 0188 612F      		mov r22,r17
+ 739 018a CE01      		movw r24,r28
+GAS LISTING /tmp/ccXI1DPL.s 			page 20
+
+
+ 740 018c 4296      		adiw r24,18
+ 741 018e 0E94 0000 		call _ZN3LCM12set_bc_indexEh
+  97:demo.cpp      **** 		cp_wait_ms(200);
+ 742               		.stabn	68,0,97,.LM70-.LFBB3
+ 743               	.LM70:
+ 744 0192 88EC      		ldi r24,lo8(-56)
+ 745 0194 90E0      		ldi r25,0
+ 746 0196 0E94 0000 		call _Z10cp_wait_msj
+ 747 019a 1150      		subi r17,1
+ 748 019c 00F4      		brcc .L18
+ 749               	.LBE26:
+  99:demo.cpp      **** 	w();
+ 750               		.stabn	68,0,99,.LM71-.LFBB3
+ 751               	.LM71:
+ 752 019e 0E94 0000 		call _ZL1wv
+ 102:demo.cpp      **** 	disp.en_blink(false);
+ 753               		.stabn	68,0,102,.LM72-.LFBB3
+ 754               	.LM72:
+ 755 01a2 60E0      		ldi r22,0
+ 756 01a4 CE01      		movw r24,r28
+ 757 01a6 4296      		adiw r24,18
+ 758 01a8 0E94 0000 		call _ZN3LCM8en_blinkEb
+ 759               	.LBB27:
+ 760               	.LBB28:
+ 187:demo.cpp      **** 	uint16_t msg_len = cp_strlen(text);
+ 761               		.stabn	68,0,187,.LM73-.LFBB3
+ 762               	.LM73:
+ 763 01ac 80E0      		ldi r24,lo8(.LC10)
+ 764 01ae 90E0      		ldi r25,hi8(.LC10)
+ 765 01b0 0E94 0000 		call _Z9cp_strlenPKc
+ 766 01b4 8C01      		movw r16,r24
+ 190:demo.cpp      **** 	lcm.clear();
+ 767               		.stabn	68,0,190,.LM74-.LFBB3
+ 768               	.LM74:
+ 769 01b6 CE01      		movw r24,r28
+ 770 01b8 4296      		adiw r24,18
+ 771 01ba 0E94 0000 		call _ZN3LCM5clearEv
+ 191:demo.cpp      **** 	cp_wait_ms(ms_interval);
+ 772               		.stabn	68,0,191,.LM75-.LFBB3
+ 773               	.LM75:
+ 774 01be 88EC      		ldi r24,lo8(-56)
+ 775 01c0 90E0      		ldi r25,0
+ 776 01c2 0E94 0000 		call _Z10cp_wait_msj
+ 186:demo.cpp      **** 	uint8_t start = 0, stop = 1, index = 0;
+ 777               		.stabn	68,0,186,.LM76-.LFBB3
+ 778               	.LM76:
+ 779 01c6 BB24      		clr r11
+ 780 01c8 B394      		inc r11
+ 781 01ca A12C      		mov r10,__zero_reg__
+ 193:demo.cpp      **** 	while (stop <= msg_len && start < msg_len - 1) {
+ 782               		.stabn	68,0,193,.LM77-.LFBB3
+ 783               	.LM77:
+ 784 01cc 6801      		movw r12,r16
+ 785 01ce 81E0      		ldi r24,1
+ 786 01d0 C81A      		sub r12,r24
+ 787 01d2 D108      		sbc r13,__zero_reg__
+ 195:demo.cpp      **** 			index = LCM_FW_HALF_CH - stop;
+GAS LISTING /tmp/ccXI1DPL.s 			page 21
+
+
+ 788               		.stabn	68,0,195,.LM78-.LFBB3
+ 789               	.LM78:
+ 790 01d4 20E1      		ldi r18,lo8(16)
+ 791 01d6 922E      		mov r9,r18
+ 792               	.L19:
+ 193:demo.cpp      **** 	while (stop <= msg_len && start < msg_len - 1) {
+ 793               		.stabn	68,0,193,.LM79-.LFBB3
+ 794               	.LM79:
+ 795 01d8 EB2C      		mov r14,r11
+ 796 01da F12C      		mov r15,__zero_reg__
+ 797 01dc 0E15      		cp r16,r14
+ 798 01de 1F05      		cpc r17,r15
+ 799 01e0 00F0      		brlo .L24
+ 800 01e2 8A2D      		mov r24,r10
+ 801 01e4 90E0      		ldi r25,0
+ 802 01e6 8C15      		cp r24,r12
+ 803 01e8 9D05      		cpc r25,r13
+ 804 01ea 00F4      		brsh .L24
+ 194:demo.cpp      **** 		if (stop <= LCM_FW_HALF_CH) {
+ 805               		.stabn	68,0,194,.LM80-.LFBB3
+ 806               	.LM80:
+ 807 01ec 80E1      		ldi r24,lo8(16)
+ 808 01ee 8B15      		cp r24,r11
+ 809 01f0 00F0      		brlo .L20
+ 195:demo.cpp      **** 			index = LCM_FW_HALF_CH - stop;
+ 810               		.stabn	68,0,195,.LM81-.LFBB3
+ 811               	.LM81:
+ 812 01f2 492D      		mov r20,r9
+ 813 01f4 4B19      		sub r20,r11
+ 814 01f6 00C0      		rjmp .L21
+ 815               	.L20:
+ 197:demo.cpp      ****            	++start;
+ 816               		.stabn	68,0,197,.LM82-.LFBB3
+ 817               	.LM82:
+ 818 01f8 A394      		inc r10
+ 198:demo.cpp      **** 			index = 0;
+ 819               		.stabn	68,0,198,.LM83-.LFBB3
+ 820               	.LM83:
+ 821 01fa 40E0      		ldi r20,0
+ 822               	.L21:
+ 203:demo.cpp      **** 		lcm.write(text + start, index, stop == msg_len);
+ 823               		.stabn	68,0,203,.LM84-.LFBB3
+ 824               	.LM84:
+ 825 01fc 21E0      		ldi r18,lo8(1)
+ 826 01fe E016      		cp r14,r16
+ 827 0200 F106      		cpc r15,r17
+ 828 0202 01F0      		breq .L22
+ 829 0204 20E0      		ldi r18,0
+ 830               	.L22:
+ 831 0206 6A2D      		mov r22,r10
+ 832 0208 70E0      		ldi r23,0
+ 833 020a 6050      		subi r22,lo8(-(.LC10))
+ 834 020c 7040      		sbci r23,hi8(-(.LC10))
+ 835 020e CE01      		movw r24,r28
+ 836 0210 4296      		adiw r24,18
+ 837 0212 0E94 0000 		call _ZN3LCM5writeEPKchb
+ 206:demo.cpp      **** 		if (stop != msg_len) {
+GAS LISTING /tmp/ccXI1DPL.s 			page 22
+
+
+ 838               		.stabn	68,0,206,.LM85-.LFBB3
+ 839               	.LM85:
+ 840 0216 E016      		cp r14,r16
+ 841 0218 F106      		cpc r15,r17
+ 842 021a 01F0      		breq .L23
+ 207:demo.cpp      **** 			++stop;
+ 843               		.stabn	68,0,207,.LM86-.LFBB3
+ 844               	.LM86:
+ 845 021c B394      		inc r11
+ 846               	.L23:
+ 210:demo.cpp      **** 		cp_wait_ms(ms_interval);
+ 847               		.stabn	68,0,210,.LM87-.LFBB3
+ 848               	.LM87:
+ 849 021e 88EC      		ldi r24,lo8(-56)
+ 850 0220 90E0      		ldi r25,0
+ 851 0222 0E94 0000 		call _Z10cp_wait_msj
+ 852 0226 00C0      		rjmp .L19
+ 853               	.L24:
+ 213:demo.cpp      **** 	lcm.clear();
+ 854               		.stabn	68,0,213,.LM88-.LFBB3
+ 855               	.LM88:
+ 856 0228 CE01      		movw r24,r28
+ 857 022a 4296      		adiw r24,18
+ 858 022c 0E94 0000 		call _ZN3LCM5clearEv
+ 214:demo.cpp      **** 	cp_wait_ms(ms_interval);
+ 859               		.stabn	68,0,214,.LM89-.LFBB3
+ 860               	.LM89:
+ 861 0230 88EC      		ldi r24,lo8(-56)
+ 862 0232 90E0      		ldi r25,0
+ 863 0234 0E94 0000 		call _Z10cp_wait_msj
+ 864               	.LBE28:
+ 865               	.LBE27:
+ 107:demo.cpp      **** 	w();
+ 866               		.stabn	68,0,107,.LM90-.LFBB3
+ 867               	.LM90:
+ 868 0238 0E94 0000 		call _ZL1wv
+ 120:demo.cpp      **** 	};
+ 869               		.stabn	68,0,120,.LM91-.LFBB3
+ 870               	.LM91:
+ 871 023c 88E0      		ldi r24,lo8(8)
+ 872 023e E0E0      		ldi r30,lo8(.LC0)
+ 873 0240 F0E0      		ldi r31,hi8(.LC0)
+ 874 0242 DE01      		movw r26,r28
+ 875 0244 9496      		adiw r26,36
+ 876               		0:
+ 877 0246 0190      		ld r0,Z+
+ 878 0248 0D92      		st X+,r0
+ 879 024a 8A95      		dec r24
+ 880 024c 01F4      		brne 0b
+ 121:demo.cpp      **** 	disp.build_cc(3, cc);
+ 881               		.stabn	68,0,121,.LM92-.LFBB3
+ 882               	.LM92:
+ 883 024e AE01      		movw r20,r28
+ 884 0250 4C5D      		subi r20,-36
+ 885 0252 5F4F      		sbci r21,-1
+ 886 0254 63E0      		ldi r22,lo8(3)
+ 887 0256 CE01      		movw r24,r28
+GAS LISTING /tmp/ccXI1DPL.s 			page 23
+
+
+ 888 0258 4296      		adiw r24,18
+ 889 025a 0E94 0000 		call _ZN3LCM8build_ccEhPKh
+ 125:demo.cpp      **** 	disp.write("\x03", 7, true);
+ 890               		.stabn	68,0,125,.LM93-.LFBB3
+ 891               	.LM93:
+ 892 025e 21E0      		ldi r18,lo8(1)
+ 893 0260 47E0      		ldi r20,lo8(7)
+ 894 0262 60E0      		ldi r22,lo8(.LC11)
+ 895 0264 70E0      		ldi r23,hi8(.LC11)
+ 896 0266 CE01      		movw r24,r28
+ 897 0268 4296      		adiw r24,18
+ 898 026a 0E94 0000 		call _ZN3LCM5writeEPKchb
+ 126:demo.cpp      **** 	w();
+ 899               		.stabn	68,0,126,.LM94-.LFBB3
+ 900               	.LM94:
+ 901 026e 0E94 0000 		call _ZL1wv
+ 902 0272 FE01      		movw r30,r28
+ 903 0274 B496      		adiw r30,36
+ 904 0276 80E0      		ldi r24,0
+ 905 0278 90E0      		ldi r25,0
+ 906               	.LBB29:
+ 131:demo.cpp      **** 		cc[i] = _BV(i) >> (i > 4 ? 5 : 0);
+ 907               		.stabn	68,0,131,.LM95-.LFBB3
+ 908               	.LM95:
+ 909 027a 41E0      		ldi r20,lo8(1)
+ 910 027c 50E0      		ldi r21,0
+ 911               	.L28:
+ 912 027e 9A01      		movw r18,r20
+ 913 0280 082E      		mov r0,r24
+ 914 0282 00C0      		rjmp 2f
+ 915               		1:
+ 916 0284 220F      		lsl r18
+ 917 0286 331F      		rol r19
+ 918               		2:
+ 919 0288 0A94      		dec r0
+ 920 028a 02F4      		brpl 1b
+ 921 028c 8530      		cpi r24,lo8(5)
+ 922 028e 00F0      		brlo .L35
+ 923 0290 65E0      		ldi r22,lo8(5)
+ 924 0292 00C0      		rjmp .L26
+ 925               	.L35:
+ 926 0294 60E0      		ldi r22,0
+ 927               	.L26:
+ 131:demo.cpp      **** 		cc[i] = _BV(i) >> (i > 4 ? 5 : 0);
+ 928               		.stabn	68,0,131,.LM96-.LFBB3
+ 929               	.LM96:
+ 930 0296 00C0      		rjmp 2f
+ 931               		1:
+ 932 0298 3595      		asr r19
+ 933 029a 2795      		ror r18
+ 934               		2:
+ 935 029c 6A95      		dec r22
+ 936 029e 02F4      		brpl 1b
+ 937 02a0 2193      		st Z+,r18
+ 938 02a2 0196      		adiw r24,1
+ 130:demo.cpp      **** 	for (uint8_t i = 0; i < 8; ++i) {
+ 939               		.stabn	68,0,130,.LM97-.LFBB3
+GAS LISTING /tmp/ccXI1DPL.s 			page 24
+
+
+ 940               	.LM97:
+ 941 02a4 8830      		cpi r24,8
+ 942 02a6 9105      		cpc r25,__zero_reg__
+ 943 02a8 01F4      		brne .L28
+ 944               	.LBE29:
+ 133:demo.cpp      **** 	disp.build_cc(7, cc);
+ 945               		.stabn	68,0,133,.LM98-.LFBB3
+ 946               	.LM98:
+ 947 02aa AE01      		movw r20,r28
+ 948 02ac 4C5D      		subi r20,-36
+ 949 02ae 5F4F      		sbci r21,-1
+ 950 02b0 67E0      		ldi r22,lo8(7)
+ 951 02b2 CE01      		movw r24,r28
+ 952 02b4 4296      		adiw r24,18
+ 953 02b6 0E94 0000 		call _ZN3LCM8build_ccEhPKh
+ 954               	.LBB30:
+ 134:demo.cpp      **** 	for (uint8_t i = LCM_FW_HALF_CH; i < LCM_FW_TOT_CH; ++i) {
+ 955               		.stabn	68,0,134,.LM99-.LFBB3
+ 956               	.LM99:
+ 957 02ba 10E1      		ldi r17,lo8(16)
+ 958               	.L30:
+ 135:demo.cpp      **** 		disp.write("\x07", i);
+ 959               		.stabn	68,0,135,.LM100-.LFBB3
+ 960               	.LM100:
+ 961 02bc 20E0      		ldi r18,0
+ 962 02be 412F      		mov r20,r17
+ 963 02c0 60E0      		ldi r22,lo8(.LC12)
+ 964 02c2 70E0      		ldi r23,hi8(.LC12)
+ 965 02c4 CE01      		movw r24,r28
+ 966 02c6 4296      		adiw r24,18
+ 967 02c8 0E94 0000 		call _ZN3LCM5writeEPKchb
+ 134:demo.cpp      **** 	for (uint8_t i = LCM_FW_HALF_CH; i < LCM_FW_TOT_CH; ++i) {
+ 968               		.stabn	68,0,134,.LM101-.LFBB3
+ 969               	.LM101:
+ 970 02cc 1F5F      		subi r17,lo8(-(1))
+ 971 02ce 1032      		cpi r17,lo8(32)
+ 972 02d0 01F4      		brne .L30
+ 973               	.LBE30:
+ 137:demo.cpp      **** 	w();
+ 974               		.stabn	68,0,137,.LM102-.LFBB3
+ 975               	.LM102:
+ 976 02d2 0E94 0000 		call _ZL1wv
+ 140:demo.cpp      **** 	wave(disp, 10, 10);
+ 977               		.stabn	68,0,140,.LM103-.LFBB3
+ 978               	.LM103:
+ 979 02d6 4AE0      		ldi r20,lo8(10)
+ 980 02d8 50E0      		ldi r21,0
+ 981 02da 6AE0      		ldi r22,lo8(10)
+ 982 02dc 70E0      		ldi r23,0
+ 983 02de CE01      		movw r24,r28
+ 984 02e0 4296      		adiw r24,18
+ 985 02e2 0E94 0000 		call _ZL4waveR3LCMjj
+ 141:demo.cpp      **** 	w();
+ 986               		.stabn	68,0,141,.LM104-.LFBB3
+ 987               	.LM104:
+ 988 02e6 0E94 0000 		call _ZL1wv
+ 144:demo.cpp      **** 	wave(disp, 5, 40);
+GAS LISTING /tmp/ccXI1DPL.s 			page 25
+
+
+ 989               		.stabn	68,0,144,.LM105-.LFBB3
+ 990               	.LM105:
+ 991 02ea 48E2      		ldi r20,lo8(40)
+ 992 02ec 50E0      		ldi r21,0
+ 993 02ee 65E0      		ldi r22,lo8(5)
+ 994 02f0 70E0      		ldi r23,0
+ 995 02f2 CE01      		movw r24,r28
+ 996 02f4 4296      		adiw r24,18
+ 997 02f6 0E94 0000 		call _ZL4waveR3LCMjj
+ 145:demo.cpp      **** 	w();
+ 998               		.stabn	68,0,145,.LM106-.LFBB3
+ 999               	.LM106:
+ 1000 02fa 0E94 0000 		call _ZL1wv
+ 149:demo.cpp      **** 	disp.clear();
+ 1001               		.stabn	68,0,149,.LM107-.LFBB3
+ 1002               	.LM107:
+ 1003 02fe CE01      		movw r24,r28
+ 1004 0300 4296      		adiw r24,18
+ 1005 0302 0E94 0000 		call _ZN3LCM5clearEv
+ 1006 0306 00E2      		ldi r16,lo8(32)
+ 1007               	.L31:
+ 1008               	.LBB31:
+ 134:demo.cpp      **** 	for (uint8_t i = LCM_FW_HALF_CH; i < LCM_FW_TOT_CH; ++i) {
+ 1009               		.stabn	68,0,134,.LM108-.LFBB3
+ 1010               	.LM108:
+ 1011 0308 11E2      		ldi r17,lo8(33)
+ 1012               	.L34:
+ 1013               	.LBE31:
+ 1014               	.LBB32:
+ 1015               	.LBB33:
+ 1016               	.LBB34:
+ 152:demo.cpp      **** 			disp.put(c);
+ 1017               		.stabn	68,0,152,.LM109-.LFBB3
+ 1018               	.LM109:
+ 1019 030a 612F      		mov r22,r17
+ 1020 030c CE01      		movw r24,r28
+ 1021 030e 4296      		adiw r24,18
+ 1022 0310 0E94 0000 		call _ZN3LCM3putEc
+ 153:demo.cpp      **** 			disp -= 1;
+ 1023               		.stabn	68,0,153,.LM110-.LFBB3
+ 1024               	.LM110:
+ 1025 0314 61E0      		ldi r22,lo8(1)
+ 1026 0316 CE01      		movw r24,r28
+ 1027 0318 4296      		adiw r24,18
+ 1028 031a 0E94 0000 		call _ZN3LCMmIEh
+ 151:demo.cpp      **** 		for (char c = 0x21; c <= 0xdf; ++c) {
+ 1029               		.stabn	68,0,151,.LM111-.LFBB3
+ 1030               	.LM111:
+ 1031 031e 1F5F      		subi r17,lo8(-(1))
+ 1032 0320 103E      		cpi r17,lo8(-32)
+ 1033 0322 01F4      		brne .L34
+ 1034               	.LBE34:
+ 155:demo.cpp      **** 		disp.put(0xff);
+ 1035               		.stabn	68,0,155,.LM112-.LFBB3
+ 1036               	.LM112:
+ 1037 0324 6FEF      		ldi r22,lo8(-1)
+ 1038 0326 CE01      		movw r24,r28
+GAS LISTING /tmp/ccXI1DPL.s 			page 26
+
+
+ 1039 0328 4296      		adiw r24,18
+ 1040 032a 0E94 0000 		call _ZN3LCM3putEc
+ 1041 032e 0150      		subi r16,lo8(-(-1))
+ 1042               	.LBE33:
+ 150:demo.cpp      **** 	for (uint8_t i = 0; i < LCM_FW_TOT_CH; ++i) {
+ 1043               		.stabn	68,0,150,.LM113-.LFBB3
+ 1044               	.LM113:
+ 1045 0330 01F4      		brne .L31
+ 1046               	.LBE32:
+ 157:demo.cpp      **** 	w();
+ 1047               		.stabn	68,0,157,.LM114-.LFBB3
+ 1048               	.LM114:
+ 1049 0332 0E94 0000 		call _ZL1wv
+ 169:demo.cpp      **** 	};
+ 1050               		.stabn	68,0,169,.LM115-.LFBB3
+ 1051               	.LM115:
+ 1052 0336 88E0      		ldi r24,lo8(8)
+ 1053 0338 E0E0      		ldi r30,lo8(.LC1)
+ 1054 033a F0E0      		ldi r31,hi8(.LC1)
+ 1055 033c DE01      		movw r26,r28
+ 1056 033e 5C96      		adiw r26,28
+ 1057               		0:
+ 1058 0340 0190      		ld r0,Z+
+ 1059 0342 0D92      		st X+,r0
+ 1060 0344 8A95      		dec r24
+ 1061 0346 01F4      		brne 0b
+ 170:demo.cpp      **** 	disp.build_cc(4, cc2);
+ 1062               		.stabn	68,0,170,.LM116-.LFBB3
+ 1063               	.LM116:
+ 1064 0348 AE01      		movw r20,r28
+ 1065 034a 445E      		subi r20,-28
+ 1066 034c 5F4F      		sbci r21,-1
+ 1067 034e 64E0      		ldi r22,lo8(4)
+ 1068 0350 CE01      		movw r24,r28
+ 1069 0352 4296      		adiw r24,18
+ 1070 0354 0E94 0000 		call _ZN3LCM8build_ccEhPKh
+ 171:demo.cpp      **** 	char end [] = "Fin de la d\x04mo !";
+ 1071               		.stabn	68,0,171,.LM117-.LFBB3
+ 1072               	.LM117:
+ 1073 0358 81E1      		ldi r24,lo8(17)
+ 1074 035a E0E0      		ldi r30,lo8(.LC13)
+ 1075 035c F0E0      		ldi r31,hi8(.LC13)
+ 1076 035e DE01      		movw r26,r28
+ 1077 0360 1196      		adiw r26,1
+ 1078               		0:
+ 1079 0362 0190      		ld r0,Z+
+ 1080 0364 0D92      		st X+,r0
+ 1081 0366 8A95      		dec r24
+ 1082 0368 01F4      		brne 0b
+ 172:demo.cpp      **** 	disp = end;
+ 1083               		.stabn	68,0,172,.LM118-.LFBB3
+ 1084               	.LM118:
+ 1085 036a BE01      		movw r22,r28
+ 1086 036c 6F5F      		subi r22,-1
+ 1087 036e 7F4F      		sbci r23,-1
+ 1088 0370 CE01      		movw r24,r28
+ 1089 0372 4296      		adiw r24,18
+GAS LISTING /tmp/ccXI1DPL.s 			page 27
+
+
+ 1090 0374 0E94 0000 		call _ZN3LCMaSEPKc
+ 173:demo.cpp      **** 	disp << end;
+ 1091               		.stabn	68,0,173,.LM119-.LFBB3
+ 1092               	.LM119:
+ 1093 0378 BE01      		movw r22,r28
+ 1094 037a 6F5F      		subi r22,-1
+ 1095 037c 7F4F      		sbci r23,-1
+ 1096 037e CE01      		movw r24,r28
+ 1097 0380 4296      		adiw r24,18
+ 1098 0382 0E94 0000 		call _ZN3LCMlsEPKc
+ 175:demo.cpp      **** 	return 0;
+ 1099               		.stabn	68,0,175,.LM120-.LFBB3
+ 1100               	.LM120:
+ 1101 0386 CE01      		movw r24,r28
+ 1102 0388 4296      		adiw r24,18
+ 1103 038a 0E94 0000 		call _ZN3LCMD1Ev
+ 1104               	.LBE24:
+ 176:demo.cpp      **** }
+ 1105               		.stabn	68,0,176,.LM121-.LFBB3
+ 1106               	.LM121:
+ 1107 038e 80E0      		ldi r24,0
+ 1108 0390 90E0      		ldi r25,0
+ 1109               	/* epilogue start */
+ 1110 0392 AB96      		adiw r28,43
+ 1111 0394 0FB6      		in __tmp_reg__,__SREG__
+ 1112 0396 F894      		cli
+ 1113 0398 DEBF      		out __SP_H__,r29
+ 1114 039a 0FBE      		out __SREG__,__tmp_reg__
+ 1115 039c CDBF      		out __SP_L__,r28
+ 1116 039e DF91      		pop r29
+ 1117 03a0 CF91      		pop r28
+ 1118 03a2 1F91      		pop r17
+ 1119 03a4 0F91      		pop r16
+ 1120 03a6 FF90      		pop r15
+ 1121 03a8 EF90      		pop r14
+ 1122 03aa DF90      		pop r13
+ 1123 03ac CF90      		pop r12
+ 1124 03ae BF90      		pop r11
+ 1125 03b0 AF90      		pop r10
+ 1126 03b2 9F90      		pop r9
+ 1127 03b4 0895      		ret
+ 1128               		.size	main, .-main
+ 1129               		.stabs	"disp:(0,97)",128,0,24,18
+ 1130               		.stabs	"cc:(0,124)",128,0,111,36
+ 1131               		.stabs	"cc2:(0,124)",128,0,160,28
+ 1132               		.stabs	"end:(0,127)=ar(0,125);0;16;(0,17)",128,0,171,1
+ 1133               		.stabn	192,0,0,.LBB24-.LFBB3
+ 1134               		.stabs	"i:r(0,67)",64,0,86,17
+ 1135               		.stabn	192,0,0,.LBB25-.LFBB3
+ 1136               		.stabn	224,0,0,.LBE25-.LFBB3
+ 1137               		.stabs	"i:r(0,66)",64,0,95,17
+ 1138               		.stabn	192,0,0,.LBB26-.LFBB3
+ 1139               		.stabn	224,0,0,.LBE26-.LFBB3
+ 1140               		.stabs	"start:r(0,67)",64,0,186,10
+ 1141               		.stabs	"stop:r(0,67)",64,0,186,11
+ 1142               		.stabs	"index:r(0,67)",64,0,186,20
+ 1143               		.stabs	"msg_len:r(0,69)",64,0,187,16
+GAS LISTING /tmp/ccXI1DPL.s 			page 28
+
+
+ 1144               		.stabn	192,0,0,.LBB28-.LFBB3
+ 1145               		.stabn	224,0,0,.LBE28-.LFBB3
+ 1146               		.stabs	"i:r(0,67)",64,0,134,17
+ 1147               		.stabn	192,0,0,.LBB30-.LFBB3
+ 1148               		.stabn	224,0,0,.LBE30-.LFBB3
+ 1149               		.stabs	"i:r(0,67)",64,0,134,17
+ 1150               		.stabn	192,0,0,.LBB31-.LFBB3
+ 1151               		.stabn	224,0,0,.LBE31-.LFBB3
+ 1152               		.stabs	"c:r(0,17)",64,0,151,17
+ 1153               		.stabn	192,0,0,.LBB34-.LFBB3
+ 1154               		.stabn	224,0,0,.LBE34-.LFBB3
+ 1155               		.stabn	224,0,0,.LBE24-.LFBB3
+ 1156               	.Lscope3:
+ 1157               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 1158               		.stabd	78,0,0
+ 1159               		.text
+ 1160               		.stabs	"",100,0,0,.Letext0
+ 1161               	.Letext0:
+ 1162               		.ident	"GCC: (Fedora 4.8.2-2.fc20) 4.8.2"
+ 1163               	.global __do_copy_data
+GAS LISTING /tmp/ccXI1DPL.s 			page 29
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 demo.cpp
+     /tmp/ccXI1DPL.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccXI1DPL.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccXI1DPL.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccXI1DPL.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccXI1DPL.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccXI1DPL.s:115    .text:0000000000000000 _ZL1wv
+     /tmp/ccXI1DPL.s:144    .text:0000000000000008 _ZL4waveR3LCMjj
+     /tmp/ccXI1DPL.s:495    .text.startup:0000000000000000 main
+
+UNDEFINED SYMBOLS
+_Z10cp_wait_msj
+_ZN3LCM8build_ccEhPKh
+_ZN3LCM5clearEv
+_ZN3LCM5writeEPKchb
+_ZN3LCMC1EPVhS1_
+_ZN3LCM3putEc
+_ZN3LCMlsEPKc
+_ZN3LCMmIEh
+_ZN3LCMaSEPKc
+_ZN3LCMlsEi
+_ZN3LCMlsEc
+_ZN3LCMixEh
+_ZN3LCM12set_bc_indexEh
+_ZN3LCM8en_blinkEb
+_ZN3LCM6en_curEb
+_Z9cp_strlenPKc
+_ZN3LCMD1Ev
+__do_copy_data

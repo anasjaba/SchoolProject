@@ -1,0 +1,56 @@
+{% extends "base.twig" %}
+{% set active_page = "editor_inreview" %}
+
+{% block title %}Submissions in review{% endblock %}
+
+{% block content %}
+  <h1 class="page-header">Active reviews</h1>
+   <ol class="breadcrumb">
+    <li><a href="{{ app.url_generator.generate('editor_dashboard') }}">Home</a></li>
+    <li class="active">Review</li>
+  </ol>
+
+  <!-- Table -->
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th> Author </th>
+        <th> Title </th>
+        <th> Section </th>
+        <th> Submission date </th>
+        <th> Due date </th>
+        <th> Round </th>
+      </tr>
+    </thead>
+
+    <tr>
+      <td> <a>Rondeau, S</a> </td>
+      <td> <a href="{{ app.url_generator.generate('editor_submission_detail', {id: 1}) }}">The Physics of Stein;Gate</a> </td>
+      <td> Physics </td>
+      <td> 2015-02-25 </td>
+      <td> 2015-03-25 </td>
+      <td> 1 </td>
+    </tr>
+
+    <tr>
+      <td> <a>Rondeau, S</a> </td>
+      <td> <a href="{{ app.url_generator.generate('editor_submission_detail', {id: 2}) }}">The Physics of Stein;Gate</a> </td>
+      <td> Physics </td>
+      <td> 2015-02-25 </td>
+      <td> 2015-03-25 </td>
+      <td> 1 </td>
+    </tr>
+
+    <tr>
+      <td> <a>Rondeau, S</a> </td>
+      <td> <a href="{{ app.url_generator.generate('editor_submission_detail', {id: 3}) }}">The Physics of Stein;Gate</a> </td>
+      <td> Physics </td>
+      <td> 2015-02-25 </td>
+      <td> 2015-03-25 </td>
+      <td> 1 </td>
+    </tr>
+
+  </table>
+
+{% endblock %}

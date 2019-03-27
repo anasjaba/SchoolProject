@@ -1,0 +1,197 @@
+{% extends "base.twig" %}
+{% set active_page = "author_submissions" %}
+
+{% block title %}My submissions{% endblock %}
+
+{% block content %}
+  <h1 class="page-header">My submissions</h1>
+  <ol class="breadcrumb">
+    <li><a href="{{ app.url_generator.generate('author_dashboard') }}">Home</a></li>
+    <li class="active">My submissions</li>
+  </ol>
+1
+  <form>
+    Action:
+    <select>
+      <option>Select...</option>
+      <option>Delete</option>
+    </select>
+    <input type="submit" value="Execute" />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <select>
+      <option>All journals</option>
+      <option>Journal 1</option>
+      <option>Journal 2</option>
+    </select>
+    <select>
+      <option>All sections</option>
+      <option>Programming</option>
+      <option>Music</option>
+      <option>Philosophy</option>
+      <option>Psychology</option>
+      <option>Business</option>
+      <option>Serious</option>
+      <option>Environnement</option>
+    </select>
+    <select>
+      <option>All status</option>
+      <option>Published</option>
+      <option>In review</option>
+      <option>In editing</option>
+      <option>Refused</option>
+    </select>
+    <input type="submit" value="Filter" />
+
+    <a type="button" class="btn btn-primary pull-right" href="{{ app.url_generator.generate('author_new_submission', {id: 1}) }}">
+      <span class="glyphicon glyphicon-plus"></span> New submission
+    </a>
+  </form>
+
+  <br />
+  <div class="panel panel-default">
+    <table class="table">
+      <thead>
+        <tr>
+          <th style="width:25px;"><input type="checkbox" /></th>
+          <th>Title</th>
+          <th>Journal</th>
+          <th>Section</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 1}) }}"> Latex programming language tutorial</a></td>
+          <td>Journal title</td>
+          <td>Programming</td>
+          <td>2015-01-04<br /><a href="#"> In review</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 2}) }}"> You spin my head right round</a></td>
+          <td>Journal title</td>
+          <td>Music</td>
+          <td>2015-02-02<br /><a href="#"> In review</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 3}) }}"> The purpose of human rights</a></td>
+          <td>Journal title</td>
+          <td>Philosophy</td>
+          <td>2015-01-15<br /><a href="#"> In review</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 4}) }}"> Effect of popcorn on human behavior</a></td>
+          <td>Journal title</td>
+          <td>Psychology</td>
+          <td>2014-12-15<br /><a href="#"> Published</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 5}) }}"> Using PHP with symfony2 and AngularJS</a></td>
+          <td>Journal title</td>
+          <td>Programming</td>
+          <td>2014-12-03<br /><a href="#"> Published</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 6}) }}"> Long term customer relationship</a></td>
+          <td>Journal title</td>
+          <td>Business</td>
+          <td>2014-11-13<br /><a href="#"> Published</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 7}) }}"> Do you even lift bro?</a></td>
+          <td>Journal title</td>
+          <td>Serious</td>
+          <td>2014-11-10<br /><a href="#"> Refused</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 8}) }}"> Caffeinated computer for developpers</a></td>
+          <td>Journal title</td>
+          <td>Programming</td>
+          <td>2014-10-17<br /><a href="#"> Published</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 9}) }}"> Business model for C++ monkeys</a></td>
+          <td>Journal title</td>
+          <td>Business</td>
+          <td>2014-09-30<br /><a href="#"> Published</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 10}) }}"> Keyston XL environnemental studies</a></td>
+          <td>Journal title</td>
+          <td>Environnement</td>
+          <td>2014-09-01<br /><a href="#"> Published</a></td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th style="width:25px;"><input type="checkbox" /></th>
+          <th>Title</th>
+          <th>Journal</th>
+          <th>Section</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <form>
+    Action:
+    <select>
+      <option>Select...</option>
+      <option>Delete</option>
+    </select>
+    <input type="submit" value="Execute" />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <select>
+      <option>All journals</option>
+      <option>Journal 1</option>
+      <option>Journal 2</option>
+    </select>
+    <select>
+      <option>All sections</option>
+      <option>Programming</option>
+      <option>Music</option>
+      <option>Philosophy</option>
+      <option>Psychology</option>
+      <option>Business</option>
+      <option>Serious</option>
+      <option>Environnement</option>
+    </select>
+    <select>
+      <option>All status</option>
+      <option>Published</option>
+      <option>In review</option>
+      <option>In editing</option>
+      <option>Refused</option>
+    </select>
+    <input type="submit" value="Filter" />
+  </form>
+
+  <nav>
+    <ul class="pagination">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+{% endblock %}

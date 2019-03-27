@@ -1,0 +1,12 @@
+{% extends "base.twig" %}
+{% set active_page = "journals" %}
+
+{% block title %}Journals{% endblock %}
+
+{% block content %}
+  <h1 class="page-header">Journals</h1>
+   <ol class="breadcrumb">
+    <li><a href="{{ app.url_generator.generate('admin_dashboard') }}">Home</a></li>
+    <li class="active">Journals</li>
+  </ol>
+{% endblock %}

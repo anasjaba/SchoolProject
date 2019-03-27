@@ -1,0 +1,192 @@
+{% extends "base.twig" %}
+{% set active_page = "editor_archives" %}
+
+{% block title %}Archives{% endblock %}
+
+{% block content %}
+  <h1 class="page-header">Archives</h1>
+   <ol class="breadcrumb">
+    <li><a href="{{ app.url_generator.generate('editor_dashboard') }}">Home</a></li>
+    <li class="active">Archives</li>
+  </ol>
+
+  <form>
+  <select>
+    <option>Author</option>
+    <option>Title</option>
+    <option>Tags</option>
+  </select>
+  <select>
+    <option>contains</option>
+    <option>equals</option>
+    <option>starts with</option>
+  </select>
+  <input type="search" value="" />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <select>
+      <option>All journals</option>
+      <option>Journal 1</option>
+      <option>Journal 2</option>
+    </select>
+    <select>
+      <option>All sections</option>
+      <option>Programming</option>
+      <option>Music</option>
+      <option>Philosophy</option>
+      <option>Psychology</option>
+      <option>Business</option>
+      <option>Serious</option>
+      <option>Environnement</option>
+    </select>
+    <input type="submit" value="Filter" />
+
+  </form>
+
+  <br />
+  <div class="panel panel-default">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Author</th>
+          <th>Title</th>
+          <th>Journal</th>
+          <th>Section</th>
+          <th>Publication date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a>Racicot, L.</a></td>
+          <td><a href="{{ app.url_generator.generate('editor_submission_detail', {id: 1}) }}"> Latex programming language tutorial</a></td>
+          <td>Journal title</td>
+          <td>Programming</td>
+          <td>2015-01-04</td>
+        </tr>
+        <tr>
+          <td><a>Racicot, L.</a></td>
+          <td><a href="{{ app.url_generator.generate('editor_submission_detail', {id: 2}) }}"> You spin my head right round</a></td>
+          <td>Journal title</td>
+          <td>Music</td>
+          <td>2015-02-02</td>
+        </tr>
+        <tr>
+          <td><a>Racicot, L.</a></td>
+          <td><a href="{{ app.url_generator.generate('editor_submission_detail', {id: 3}) }}"> The purpose of human rights</a></td>
+          <td>Journal title</td>
+          <td>Philosophy</td>
+          <td>2015-01-15</td>
+        </tr>
+        <tr>
+          <td><a>Racicot, L.</a></td>
+          <td><a href="{{ app.url_generator.generate('editor_submission_detail', {id: 4}) }}"> Effect of popcorn on human behavior</a></td>
+          <td>Journal title</td>
+          <td>Psychology</td>
+          <td>2014-12-15</td>
+        </tr>
+        <tr>
+          <td><a>Racicot, L.</a></td>
+          <td><a href="{{ app.url_generator.generate('editor_submission_detail', {id: 5}) }}"> Using PHP with symfony2 and AngularJS</a></td>
+          <td>Journal title</td>
+          <td>Programming</td>
+          <td>2014-12-03</td>
+        </tr>
+        <tr>
+          <td><a>Racicot, L.</a></td>
+          <td><a href="{{ app.url_generator.generate('editor_submission_detail', {id: 6}) }}"> Long term customer relationship</a></td>
+          <td>Journal title</td>
+          <td>Business</td>
+          <td>2014-11-13</td>
+        </tr>
+        <tr>
+          <td><a>Racicot, L.</a></td>
+          <td><a href="{{ app.url_generator.generate('editor_submission_detail', {id: 7}) }}"> Do you even lift bro?</a></td>
+          <td>Journal title</td>
+          <td>Serious</td>
+          <td>2014-11-10</td>
+        </tr>
+        <tr>
+          <td><a>Racicot, L.</a></td>
+          <td><a href="{{ app.url_generator.generate('editor_submission_detail', {id: 8}) }}"> Caffeinated computer for developpers</a></td>
+          <td>Journal title</td>
+          <td>Programming</td>
+          <td>2014-10-17</td>
+        </tr>
+        <tr>
+          <td><a>Racicot, L.</a></td>
+          <td><a href="{{ app.url_generator.generate('editor_submission_detail', {id: 9}) }}"> Business model for C++ monkeys</a></td>
+          <td>Journal title</td>
+          <td>Business</td>
+          <td>2014-09-30</td>
+        </tr>
+        <tr>
+          <td><a>Racicot, L.</a></td>
+          <td><a href="{{ app.url_generator.generate('editor_submission_detail', {id: 10}) }}"> Keyston XL environnemental studies</a></td>
+          <td>Journal title</td>
+          <td>Environnement</td>
+          <td>2014-09-01</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>Author</th>
+          <th>Title</th>
+          <th>Journal</th>
+          <th>Section</th>
+          <th>Publication date</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <form>
+  <select>
+    <option>Author</option>
+    <option>Title</option>
+    <option>Tags</option>
+  </select>
+  <select>
+    <option>contains</option>
+    <option>equals</option>
+    <option>starts with</option>
+  </select>
+  <input type="search" value="" />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <select>
+      <option>All journals</option>
+      <option>Journal 1</option>
+      <option>Journal 2</option>
+    </select>
+    <select>
+      <option>All sections</option>
+      <option>Programming</option>
+      <option>Music</option>
+      <option>Philosophy</option>
+      <option>Psychology</option>
+      <option>Business</option>
+      <option>Serious</option>
+      <option>Environnement</option>
+    </select>
+    <input type="submit" value="Filter" />
+
+  </form>
+
+  <nav>
+    <ul class="pagination">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+{% endblock %}

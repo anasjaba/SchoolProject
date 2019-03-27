@@ -1,0 +1,57 @@
+Équipe #0723 "The Wilds"
+> Louis Racicot
+> Samuel Rondeau
+> Feriel Charfeddine
+> Liang Weiwei
+
+
+Ce projet final utilise une architecture séparée en différents travaux pratiques
+(TP) répartis comme suit:
+
+TP1: Détection de lignes, mouvement en ligne droite en suivant une ligne et
+	 tourner
+	 Dossiers séparés pour le Cytron et le Lynxmotion
+
+TP2: Émission et réception infrarouge
+	 Dossiers séparés pour l'émission et la réception
+
+TP3: Capteur de distance - détecter un obstacle à distance et tourner pour
+	 l'éviter
+
+TP4: Code à barres et écran LCD - lire un code à barres, l'interpréter et
+	 afficher son code
+	 Dossiers séparés pour le lecteur de code à barres et pour l'écran LCD
+
+
+Ces quatre travaux pratiques ont été réalisés indépendamment des autres TP afin
+de maîtriser chaque composante avant son intégration. Ils ont été réalisés selon
+une répartition de la charge de travail parmis les quatre membres d'équipe.
+Chaque membre était responsable d'un TP et/ou d'un sous-TP, mais pas le seul à y
+travailler.
+
+Outre ces 4 TP, le répertoire principal comporte les dossiers suivants:
+
+emetteur/  : contient les fichiers du robot-émetteur et son Makefile
+
+recepteur/ : contient les fichiers du robot-récepteur et son Makefile
+
+libpout/   : contient les fichiers de la librairie 'libpout' et son Makefile
+
+Les fichiers de code source (.cpp) et leurs en-têtes (.h) se trouvent dans le
+sous-répertoire src/.
+
+La librairie libpout contient plusieurs classes et fonctions pratiques créées
+lors de travaux précédents et des 4 TP de ce projet. Convertisseur analogique-
+numérique, PWM pour les moteurs, l'émission infrarouge et le piézoélectrique,
+écran LCD, gestion de la mémoire, etc.
+
+Important! -> Compiler la librairie avant de compiler l'émetteur et le récepteur!
+
+Pour toute autre information concernant une classe, se référer aux commentaires
+fournis dans le code et aux en-têtes.
+
+
+Les "Wilds" aimeraient remercier leurs familles de leur compréhension et tout le
+support moral apporté pendant ce projet. Nous avons dû vous négliger sans cesse,
+nous avons passé bien plus de temps au laboratoire qu'avec vous, mais votre
+appui nous a grandement aidé dans nos périodes sombres. Merci infiniement!

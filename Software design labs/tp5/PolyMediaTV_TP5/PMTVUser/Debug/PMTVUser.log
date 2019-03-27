@@ -1,0 +1,19 @@
+﻿La génération a démarré 2015-03-23 09:01:11.
+     1>Projet "X:\Bureau\PolyMediaTV_TP5_VS2010\PolyMediaTV_TP5_VS2010\PolyMediaTV\PMTVUser\PMTVUser.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../ /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt PMTVUser_Permission.cpp PMTVUser_User.cpp PMTVUser_UserManagement.cpp
+         PMTVUser_UserManagement.cpp
+         PMTVUser_User.cpp
+         PMTVUser_Permission.cpp
+         Génération de code en cours...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"X:\Bureau\PolyMediaTV_TP5_VS2010\PolyMediaTV_TP5_VS2010\PolyMediaTV\Debug\PMTVUser.lib" /NOLOGO Debug\PMTVUser_Permission.obj
+         Debug\PMTVUser_User.obj
+         Debug\PMTVUser_UserManagement.obj
+     1>PMTVUser_User.obj : warning LNK4221: Ce fichier objet ne dÚfinit pas de symboles publics jusqu'ici non dÚfinis. Par consÚquent, il ne sera utilisÚ par aucune opÚration de lien utilisant cette bibliothÞque
+         PMTVUser.vcxproj -> X:\Bureau\PolyMediaTV_TP5_VS2010\PolyMediaTV_TP5_VS2010\PolyMediaTV\Debug\PMTVUser.lib
+     1>Génération du projet "X:\Bureau\PolyMediaTV_TP5_VS2010\PolyMediaTV_TP5_VS2010\PolyMediaTV\PMTVUser\PMTVUser.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:03.36

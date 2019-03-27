@@ -1,0 +1,419 @@
+GAS LISTING /tmp/ccKK79M0.s 			page 1
+
+
+   1               		.file	"sleep.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/sirius/inf1995/inf1995-0723/codeCommun/tp/projet/libpout/",100,0,4,.Ltext0
+   8               		.stabs	"src/sleep.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/ccKK79M0.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,122,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,123,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,124,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,125,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,126,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,127,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,129,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,130,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,143,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,148,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,160,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,165,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,170,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,175,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,180,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,185,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,193,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,200,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,214,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,219,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,224,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,229,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,234,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,239,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,247,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,254,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,274,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,279,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"_Z6msleepi:F(0,4)",36,0,18,_Z6msleepi
+ 103               		.stabs	"ms:P(0,9)",64,0,18,24
+ 104               	.global	_Z6msleepi
+ 105               		.type	_Z6msleepi, @function
+ 106               	_Z6msleepi:
+ 107               		.stabd	46,0,0
+   1:src/sleep.cpp **** /**
+   2:src/sleep.cpp ****  * Copyright © 2014
+   3:src/sleep.cpp ****  * Louis Racicot <info@louisracicot.com>, Samuel Rondeau, Weiwei Liang, Feriel Charfeddine
+   4:src/sleep.cpp ****  *
+   5:src/sleep.cpp ****  * This program is free software. It comes without any warranty, to
+   6:src/sleep.cpp ****  * the extent permitted by applicable law. You can redistribute it
+   7:src/sleep.cpp ****  * and/or modify it under the terms of the Do What The Fuck You Want
+GAS LISTING /tmp/ccKK79M0.s 			page 3
+
+
+   8:src/sleep.cpp ****  * To Public License, Version 2, as published by Sam Hocevar. See
+   9:src/sleep.cpp ****  * http://www.wtfpl.net/ for more details.
+  10:src/sleep.cpp ****  */
+  11:src/sleep.cpp **** #ifndef F_CPU
+  12:src/sleep.cpp **** # warning "F_CPU pas defini pour 'sleep.cpp'"
+  13:src/sleep.cpp **** # define F_CPU 8000000UL
+  14:src/sleep.cpp **** #endif
+  15:src/sleep.cpp **** 
+  16:src/sleep.cpp **** #include "sleep.h"
+  17:src/sleep.cpp **** 
+  18:src/sleep.cpp **** void msleep(int ms) {
+ 108               		.stabn	68,0,18,.LM0-.LFBB1
+ 109               	.LM0:
+ 110               	.LFBB1:
+ 111               	/* prologue: function */
+ 112               	/* frame size = 0 */
+ 113               	/* stack size = 0 */
+ 114               	.L__stack_usage = 0
+ 115               	.LBB8:
+  19:src/sleep.cpp ****     for(int i = 0; i < ms; i++){
+ 116               		.stabn	68,0,19,.LM1-.LFBB1
+ 117               	.LM1:
+ 118 0000 20E0      		ldi r18,0
+ 119 0002 30E0      		ldi r19,0
+ 120               	.LBB9:
+ 121               	.LBB10:
+ 122               		.stabs	"/usr/avr/include/util/delay_basic.h",132,0,0,.Ltext1
+ 123               	.Ltext1:
+   1:/usr/avr/include/util/delay_basic.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/avr/include/util/delay_basic.h ****    Copyright (c) 2007 Joerg Wunsch
+   3:/usr/avr/include/util/delay_basic.h ****    All rights reserved.
+   4:/usr/avr/include/util/delay_basic.h **** 
+   5:/usr/avr/include/util/delay_basic.h ****    Redistribution and use in source and binary forms, with or without
+   6:/usr/avr/include/util/delay_basic.h ****    modification, are permitted provided that the following conditions are met:
+   7:/usr/avr/include/util/delay_basic.h **** 
+   8:/usr/avr/include/util/delay_basic.h ****    * Redistributions of source code must retain the above copyright
+   9:/usr/avr/include/util/delay_basic.h ****      notice, this list of conditions and the following disclaimer.
+  10:/usr/avr/include/util/delay_basic.h **** 
+  11:/usr/avr/include/util/delay_basic.h ****    * Redistributions in binary form must reproduce the above copyright
+  12:/usr/avr/include/util/delay_basic.h ****      notice, this list of conditions and the following disclaimer in
+  13:/usr/avr/include/util/delay_basic.h ****      the documentation and/or other materials provided with the
+  14:/usr/avr/include/util/delay_basic.h ****      distribution.
+  15:/usr/avr/include/util/delay_basic.h **** 
+  16:/usr/avr/include/util/delay_basic.h ****    * Neither the name of the copyright holders nor the names of
+  17:/usr/avr/include/util/delay_basic.h ****      contributors may be used to endorse or promote products derived
+  18:/usr/avr/include/util/delay_basic.h ****      from this software without specific prior written permission.
+  19:/usr/avr/include/util/delay_basic.h **** 
+  20:/usr/avr/include/util/delay_basic.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  21:/usr/avr/include/util/delay_basic.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  22:/usr/avr/include/util/delay_basic.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  23:/usr/avr/include/util/delay_basic.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  24:/usr/avr/include/util/delay_basic.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  25:/usr/avr/include/util/delay_basic.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  26:/usr/avr/include/util/delay_basic.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  27:/usr/avr/include/util/delay_basic.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  28:/usr/avr/include/util/delay_basic.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  29:/usr/avr/include/util/delay_basic.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+GAS LISTING /tmp/ccKK79M0.s 			page 4
+
+
+  30:/usr/avr/include/util/delay_basic.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  31:/usr/avr/include/util/delay_basic.h **** 
+  32:/usr/avr/include/util/delay_basic.h **** /* $Id: delay_basic.h 2143 2010-06-08 21:19:51Z joerg_wunsch $ */
+  33:/usr/avr/include/util/delay_basic.h **** 
+  34:/usr/avr/include/util/delay_basic.h **** #ifndef _UTIL_DELAY_BASIC_H_
+  35:/usr/avr/include/util/delay_basic.h **** #define _UTIL_DELAY_BASIC_H_ 1
+  36:/usr/avr/include/util/delay_basic.h **** 
+  37:/usr/avr/include/util/delay_basic.h **** #include <inttypes.h>
+  38:/usr/avr/include/util/delay_basic.h **** 
+  39:/usr/avr/include/util/delay_basic.h **** #if !defined(__DOXYGEN__)
+  40:/usr/avr/include/util/delay_basic.h **** static inline void _delay_loop_1(uint8_t __count) __attribute__((always_inline));
+  41:/usr/avr/include/util/delay_basic.h **** static inline void _delay_loop_2(uint16_t __count) __attribute__((always_inline));
+  42:/usr/avr/include/util/delay_basic.h **** #endif
+  43:/usr/avr/include/util/delay_basic.h **** 
+  44:/usr/avr/include/util/delay_basic.h **** /** \file */
+  45:/usr/avr/include/util/delay_basic.h **** /** \defgroup util_delay_basic <util/delay_basic.h>: Basic busy-wait delay loops
+  46:/usr/avr/include/util/delay_basic.h ****     \code
+  47:/usr/avr/include/util/delay_basic.h ****     #include <util/delay_basic.h>
+  48:/usr/avr/include/util/delay_basic.h ****     \endcode
+  49:/usr/avr/include/util/delay_basic.h **** 
+  50:/usr/avr/include/util/delay_basic.h ****     The functions in this header file implement simple delay loops
+  51:/usr/avr/include/util/delay_basic.h ****     that perform a busy-waiting.  They are typically used to
+  52:/usr/avr/include/util/delay_basic.h ****     facilitate short delays in the program execution.  They are
+  53:/usr/avr/include/util/delay_basic.h ****     implemented as count-down loops with a well-known CPU cycle
+  54:/usr/avr/include/util/delay_basic.h ****     count per loop iteration.  As such, no other processing can
+  55:/usr/avr/include/util/delay_basic.h ****     occur simultaneously.  It should be kept in mind that the
+  56:/usr/avr/include/util/delay_basic.h ****     functions described here do not disable interrupts.
+  57:/usr/avr/include/util/delay_basic.h **** 
+  58:/usr/avr/include/util/delay_basic.h ****     In general, for long delays, the use of hardware timers is
+  59:/usr/avr/include/util/delay_basic.h ****     much preferrable, as they free the CPU, and allow for
+  60:/usr/avr/include/util/delay_basic.h ****     concurrent processing of other events while the timer is
+  61:/usr/avr/include/util/delay_basic.h ****     running.  However, in particular for very short delays, the
+  62:/usr/avr/include/util/delay_basic.h ****     overhead of setting up a hardware timer is too much compared
+  63:/usr/avr/include/util/delay_basic.h ****     to the overall delay time.
+  64:/usr/avr/include/util/delay_basic.h **** 
+  65:/usr/avr/include/util/delay_basic.h ****     Two inline functions are provided for the actual delay algorithms.
+  66:/usr/avr/include/util/delay_basic.h **** 
+  67:/usr/avr/include/util/delay_basic.h **** */
+  68:/usr/avr/include/util/delay_basic.h **** 
+  69:/usr/avr/include/util/delay_basic.h **** /** \ingroup util_delay_basic
+  70:/usr/avr/include/util/delay_basic.h **** 
+  71:/usr/avr/include/util/delay_basic.h ****     Delay loop using an 8-bit counter \c __count, so up to 256
+  72:/usr/avr/include/util/delay_basic.h ****     iterations are possible.  (The value 256 would have to be passed
+  73:/usr/avr/include/util/delay_basic.h ****     as 0.)  The loop executes three CPU cycles per iteration, not
+  74:/usr/avr/include/util/delay_basic.h ****     including the overhead the compiler needs to setup the counter
+  75:/usr/avr/include/util/delay_basic.h ****     register.
+  76:/usr/avr/include/util/delay_basic.h **** 
+  77:/usr/avr/include/util/delay_basic.h ****     Thus, at a CPU speed of 1 MHz, delays of up to 768 microseconds
+  78:/usr/avr/include/util/delay_basic.h ****     can be achieved.
+  79:/usr/avr/include/util/delay_basic.h **** */
+  80:/usr/avr/include/util/delay_basic.h **** void
+  81:/usr/avr/include/util/delay_basic.h **** _delay_loop_1(uint8_t __count)
+  82:/usr/avr/include/util/delay_basic.h **** {
+  83:/usr/avr/include/util/delay_basic.h **** 	__asm__ volatile (
+  84:/usr/avr/include/util/delay_basic.h **** 		"1: dec %0" "\n\t"
+  85:/usr/avr/include/util/delay_basic.h **** 		"brne 1b"
+  86:/usr/avr/include/util/delay_basic.h **** 		: "=r" (__count)
+GAS LISTING /tmp/ccKK79M0.s 			page 5
+
+
+  87:/usr/avr/include/util/delay_basic.h **** 		: "0" (__count)
+  88:/usr/avr/include/util/delay_basic.h **** 	);
+  89:/usr/avr/include/util/delay_basic.h **** }
+  90:/usr/avr/include/util/delay_basic.h **** 
+  91:/usr/avr/include/util/delay_basic.h **** /** \ingroup util_delay_basic
+  92:/usr/avr/include/util/delay_basic.h **** 
+  93:/usr/avr/include/util/delay_basic.h ****     Delay loop using a 16-bit counter \c __count, so up to 65536
+  94:/usr/avr/include/util/delay_basic.h ****     iterations are possible.  (The value 65536 would have to be
+  95:/usr/avr/include/util/delay_basic.h ****     passed as 0.)  The loop executes four CPU cycles per iteration,
+  96:/usr/avr/include/util/delay_basic.h ****     not including the overhead the compiler requires to setup the
+  97:/usr/avr/include/util/delay_basic.h ****     counter register pair.
+  98:/usr/avr/include/util/delay_basic.h **** 
+  99:/usr/avr/include/util/delay_basic.h ****     Thus, at a CPU speed of 1 MHz, delays of up to about 262.1
+ 100:/usr/avr/include/util/delay_basic.h ****     milliseconds can be achieved.
+ 101:/usr/avr/include/util/delay_basic.h ****  */
+ 102:/usr/avr/include/util/delay_basic.h **** void
+ 103:/usr/avr/include/util/delay_basic.h **** _delay_loop_2(uint16_t __count)
+ 104:/usr/avr/include/util/delay_basic.h **** {
+ 105:/usr/avr/include/util/delay_basic.h **** 	__asm__ volatile (
+ 106:/usr/avr/include/util/delay_basic.h **** 		"1: sbiw %0,1" "\n\t"
+ 107:/usr/avr/include/util/delay_basic.h **** 		"brne 1b"
+ 108:/usr/avr/include/util/delay_basic.h **** 		: "=w" (__count)
+ 109:/usr/avr/include/util/delay_basic.h **** 		: "0" (__count)
+ 110:/usr/avr/include/util/delay_basic.h **** 	);
+ 124               		.stabn	68,0,110,.LM2-.LFBB1
+ 125               	.LM2:
+ 126 0004 40ED      		ldi r20,lo8(-48)
+ 127 0006 57E0      		ldi r21,lo8(7)
+ 128               	.L2:
+ 129               	.LBE10:
+ 130               	.LBE9:
+ 131               		.stabs	"src/sleep.cpp",132,0,0,.Ltext2
+ 132               	.Ltext2:
+ 133               		.stabn	68,0,19,.LM3-.LFBB1
+ 134               	.LM3:
+ 135 0008 2817      		cp r18,r24
+ 136 000a 3907      		cpc r19,r25
+ 137 000c 04F4      		brge .L5
+ 138               	.LBB12:
+ 139               	.LBB11:
+ 140               		.stabs	"/usr/avr/include/util/delay_basic.h",132,0,0,.Ltext3
+ 141               	.Ltext3:
+ 142               		.stabn	68,0,110,.LM4-.LFBB1
+ 143               	.LM4:
+ 144 000e FA01      		movw r30,r20
+ 145               	/* #APP */
+ 146               	 ;  110 "/usr/avr/include/util/delay_basic.h" 1
+ 147 0010 3197      		1: sbiw r30,1
+ 148 0012 01F4      		brne 1b
+ 149               	 ;  0 "" 2
+ 150               	/* #NOAPP */
+ 151               	.LBE11:
+ 152               	.LBE12:
+ 153               		.stabs	"src/sleep.cpp",132,0,0,.Ltext4
+ 154               	.Ltext4:
+ 155               		.stabn	68,0,19,.LM5-.LFBB1
+ 156               	.LM5:
+GAS LISTING /tmp/ccKK79M0.s 			page 6
+
+
+ 157 0014 2F5F      		subi r18,-1
+ 158 0016 3F4F      		sbci r19,-1
+ 159 0018 00C0      		rjmp .L2
+ 160               	.L5:
+ 161               	/* epilogue start */
+ 162               	.LBE8:
+  20:src/sleep.cpp ****         _delay_loop_2(2000);
+  21:src/sleep.cpp ****     }
+  22:src/sleep.cpp **** }
+ 163               		.stabn	68,0,22,.LM6-.LFBB1
+ 164               	.LM6:
+ 165 001a 0895      		ret
+ 166               		.size	_Z6msleepi, .-_Z6msleepi
+ 167               		.stabs	"i:r(0,9)",64,0,19,18
+ 168               		.stabn	192,0,0,.LBB8-.LFBB1
+ 169               		.stabn	224,0,0,.LBE8-.LFBB1
+ 170               	.Lscope1:
+ 171               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 172               		.stabd	78,0,0
+ 173               		.stabs	"_Z6usleepi:F(0,4)",36,0,24,_Z6usleepi
+ 174               		.stabs	"us:P(0,9)",64,0,24,24
+ 175               	.global	_Z6usleepi
+ 176               		.type	_Z6usleepi, @function
+ 177               	_Z6usleepi:
+ 178               		.stabd	46,0,0
+  23:src/sleep.cpp **** 
+  24:src/sleep.cpp **** void usleep(int us) {
+ 179               		.stabn	68,0,24,.LM7-.LFBB2
+ 180               	.LM7:
+ 181               	.LFBB2:
+ 182               	/* prologue: function */
+ 183               	/* frame size = 0 */
+ 184               	/* stack size = 0 */
+ 185               	.L__stack_usage = 0
+ 186               	.LBB13:
+  25:src/sleep.cpp ****     for(int i = 0; i < us; i++){
+ 187               		.stabn	68,0,25,.LM8-.LFBB2
+ 188               	.LM8:
+ 189 001c 20E0      		ldi r18,0
+ 190 001e 30E0      		ldi r19,0
+ 191               	.LBB14:
+ 192               	.LBB15:
+ 193               		.stabs	"/usr/avr/include/util/delay_basic.h",132,0,0,.Ltext5
+ 194               	.Ltext5:
+ 195               		.stabn	68,0,110,.LM9-.LFBB2
+ 196               	.LM9:
+ 197 0020 42E0      		ldi r20,lo8(2)
+ 198 0022 50E0      		ldi r21,0
+ 199               	.L7:
+ 200               	.LBE15:
+ 201               	.LBE14:
+ 202               		.stabs	"src/sleep.cpp",132,0,0,.Ltext6
+ 203               	.Ltext6:
+ 204               		.stabn	68,0,25,.LM10-.LFBB2
+ 205               	.LM10:
+ 206 0024 2817      		cp r18,r24
+ 207 0026 3907      		cpc r19,r25
+GAS LISTING /tmp/ccKK79M0.s 			page 7
+
+
+ 208 0028 04F4      		brge .L9
+ 209               	.LBB17:
+ 210               	.LBB16:
+ 211               		.stabs	"/usr/avr/include/util/delay_basic.h",132,0,0,.Ltext7
+ 212               	.Ltext7:
+ 213               		.stabn	68,0,110,.LM11-.LFBB2
+ 214               	.LM11:
+ 215 002a FA01      		movw r30,r20
+ 216               	/* #APP */
+ 217               	 ;  110 "/usr/avr/include/util/delay_basic.h" 1
+ 218 002c 3197      		1: sbiw r30,1
+ 219 002e 01F4      		brne 1b
+ 220               	 ;  0 "" 2
+ 221               	/* #NOAPP */
+ 222               	.LBE16:
+ 223               	.LBE17:
+ 224               		.stabs	"src/sleep.cpp",132,0,0,.Ltext8
+ 225               	.Ltext8:
+ 226               		.stabn	68,0,25,.LM12-.LFBB2
+ 227               	.LM12:
+ 228 0030 2F5F      		subi r18,-1
+ 229 0032 3F4F      		sbci r19,-1
+ 230 0034 00C0      		rjmp .L7
+ 231               	.L9:
+ 232               	/* epilogue start */
+ 233               	.LBE13:
+  26:src/sleep.cpp ****         _delay_loop_2(2);
+  27:src/sleep.cpp ****     }
+  28:src/sleep.cpp **** }...
+ 234               		.stabn	68,0,28,.LM13-.LFBB2
+ 235               	.LM13:
+ 236 0036 0895      		ret
+ 237               		.size	_Z6usleepi, .-_Z6usleepi
+ 238               		.stabs	"i:r(0,9)",64,0,25,18
+ 239               		.stabn	192,0,0,.LBB13-.LFBB2
+ 240               		.stabn	224,0,0,.LBE13-.LFBB2
+ 241               	.Lscope2:
+ 242               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 243               		.stabd	78,0,0
+ 244               		.stabs	"",100,0,0,.Letext0
+ 245               	.Letext0:
+ 246               		.ident	"GCC: (GNU) 4.9.2"
+GAS LISTING /tmp/ccKK79M0.s 			page 8
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 sleep.cpp
+     /tmp/ccKK79M0.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccKK79M0.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccKK79M0.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccKK79M0.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccKK79M0.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccKK79M0.s:106    .text:0000000000000000 _Z6msleepi
+     /tmp/ccKK79M0.s:177    .text:000000000000001c _Z6usleepi
+
+NO UNDEFINED SYMBOLS

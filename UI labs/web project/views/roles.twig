@@ -1,0 +1,15 @@
+{% extends "base.twig" %}
+{% set active_page = "roles" %}
+
+{% block title %}Roles{% endblock %}
+
+{% block content %}
+  <h1 class="page-header">Roles</h1>
+
+  <ul>
+  	<li><a href="{{ app.url_generator.generate('admin_dashboard') }}">Admin</a> </li>
+  	<li><a href="{{ app.url_generator.generate('editor_journals') }}">Editor</a> </li>
+  	<li><a href="{{ app.url_generator.generate('author_dashboard') }}">Author</a> </li>
+  	<li><a href="{{ app.url_generator.generate('reviewer_dashboard') }}">Reviewer</a> </li>
+  </ul>
+{% endblock %}

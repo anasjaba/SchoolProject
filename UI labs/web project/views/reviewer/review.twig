@@ -1,0 +1,238 @@
+{% extends "base.twig" %}
+{% set active_page = "reviewer_review" %}
+
+{% block title %}Review submission{% endblock %}
+
+{% block content %}
+
+<h1 class="page-header">Review submission</h1>
+   <ol class="breadcrumb">
+    <li><a href="{{ app.url_generator.generate('reviewer_dashboard') }}">Home</a></li>
+    <li><a href="{{ app.url_generator.generate('reviewer_reviewing') }}">Active reviewing</a></li>
+    <li class="active">Review submission</li>
+  </ol>
+
+<h2>Submission informations</h2>
+<div class="row">
+
+<div class="col-md-9">
+  
+  <br />
+
+  <div id="main-summary">
+    <table>
+      <tbody>
+          <tr>
+            <th>Title</th>
+            <td>
+              Analyse d'un interface graphique
+            </td>
+          </tr>
+          <tr>
+            <th>Abstract</th>
+            <td>
+             Suspendisse potenti. Vivamus tempus tellus vel erat porta, ut semper ipsum rhoncus. Ut ut vulputate risus. Sed vitae convallis nunc. Nunc sed urna et tortor imperdiet ultricies sed quis dolor. Nam sed laoreet tellus. Curabitur mattis est vel mauris faucibus, vitae maximus dui fringilla.
+            </td>
+          </tr>
+          <tr>
+            <th>Journal</th>
+            <td>
+              Section 3
+            </td>
+          </tr>
+          <tr>
+            <th style="width: 100px;">Author</th>
+            <td>
+              Maxime Clavel
+              <a href="mailto:#"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>,
+              Pierre-Olivier Guimond-Cataford 
+              <a href="mailto:#"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+            </td>
+          </tr>
+          <tr>
+            <th>Editor</th>
+            <td>
+              Michel Desmarais
+              <a href="mailto:#"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+            </td>
+          </tr>
+          <tr>
+            <th>Contributors</th>
+            <td>
+              Louis Racicot 
+              <a href="mailto:#"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+            </td>
+          </tr>
+          <tr>
+            <th>Section</th>
+            <td>Articles</td>
+          </tr>
+          <tr>
+            <th>Langage</th>
+            <td>
+              French
+            </td>
+          </tr>
+          <tr>
+            <th>References</th>
+            <td>
+              http://www.groupes.polymtl.ca/log2420/
+              </td>
+            </td>
+          </tr>
+      </tboy>
+    </table>
+  </div>
+
+<hr />
+
+<h2>Review schedule</h2>
+
+  <div id="main-summary">
+    <table>
+      <tbody>
+          <tr>
+            <th style="width: 150px;">Editor's Request</th>
+            <td>
+              2015-02-25
+            </td>
+          </tr>
+
+          <tr>
+            <th>Your Response</th>
+            <td>
+              2015-02-25
+            </td>
+          </tr>
+
+          <tr>
+            <th>Review Submitted</th>
+            <td>
+              ---
+            </td>
+          </tr>
+
+          <tr>
+            <th>Review Due</th>
+            <td>
+              2015-02-25
+            </td>
+          </tr>
+	      </tbody>
+      </table>
+  </div>
+
+  <hr />
+
+
+<h2>Review steps</h2>
+
+<div id="main-summary">
+    <table>
+      <tbody>
+          <tr>
+            <th style="width: 250px;">1. Notify the submission's editor:</th>
+            <td>
+              Michel Desmarais
+              <a href="mailto:#"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+            </td>
+          </tr>
+
+          <tr>
+            <th>2. Receive respons:</th>
+            <td>
+             Accepte
+            </td>
+          </tr>
+
+          <tr>
+            <th>3. Download the files:</th>
+            <td>
+			  <table>
+				  <tbody>
+				      <tr>
+				        <th style="width: 125px;">Original file</th>
+				        <td>
+				          <div class="well">
+				            <a href="#"><span class="glyphicon glyphicon-file"></span> 1-2-2.CFD.docx</a>&nbsp;&nbsp;&nbsp;<small>2015-01-04</small>
+				          </div>
+				        </td>
+				      </tr>
+				      <tr>
+				        <th>Suppl. files</th>
+				        <td>
+				          <a href="#">1-SP.docx</a>&nbsp;&nbsp;&nbsp;<small>2015-01-04</small>
+				        </td>
+				      </tr>
+				      <tr>
+				        <th>&nbsp;</th>
+				        <td>
+				          <a href="#">figure1.png</a>&nbsp;&nbsp;&nbsp;<small>2015-01-05</small>
+				        </td>
+				      </tr>
+				      <tr>
+				        <th>&nbsp;</th>
+				        <td>
+				          <a href="#">readme.txt</a>&nbsp;&nbsp;&nbsp;<small>2015-01-07</small>
+				        </td>
+				      </tr>
+				      <tr>
+				        <th>&nbsp;</th>
+				       </tr>
+				    </tbody>
+				 </table>
+            </td>
+          </tr>
+
+          <tr>
+            <th>4. Fill in the review form:</th>
+            <td>
+              <a type="button" class="btn btn-lg" href="www.google.ca">
+     		 <span class="glyphicon glyphicon-list-alt"></span> Review form
+            </td>
+          </tr>
+
+          <tr>
+            <th>5. Upload other files for author/editor:</th>
+            <td>
+		        <form class="form-inline">
+		          <div class="form-group">
+		            <div class="form-group">
+		              <input type="file" id="exampleInputFile">
+		            </div>
+		            <button type="button" class="btn btn-default btn-sm">Upload</button>
+		          </div>
+		        </form>
+            </td>
+          </tr>
+
+          <tr>
+            <th>6. Select a recommendation:</th>
+            <td>
+              <select class="form-control">
+                <option>No recommendation selected</option>
+                <option>Accept submission</option>
+                <option>Revisions required</option>
+                <option>Resubmit for review</option>
+                <option>Resubmit elsewhere</option>
+                <option>Resubmit elsewhere</option>
+                <option>Decline submission</option>
+                <option>See comments</option>
+              </select>
+
+            </td>
+          </tr>
+
+	      </tbody>
+      </table>
+  </div>
+
+
+        	<div class="modal-footer">
+	              <a type="button" class="btn btn-primary btn-lg" href="{{ app.url_generator.generate('reviewer_dashboard', {id: 1}) }}">
+	              Submit review to editor
+	              </a>
+              </div>
+
+
+{% endblock %}

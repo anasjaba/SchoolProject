@@ -1,0 +1,110 @@
+{% extends "base.twig" %}
+{% set active_page = "reviewer_dashboard" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h1 class="page-header">Dashboard</h1>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><a href="{{ app.url_generator.generate('reviewer_inbox') }}">Inbox</a></div>
+
+  <!-- Table -->
+  <table class="table">
+
+    <thead>
+        <tr>
+            <th> Due date </th>
+            <th> Author </th>
+            <th> Title </th>
+            <th> Section </th>
+            <th> Submission date </th>
+            <th> Action </th>
+        </tr>
+    </thead>
+
+    <tr>
+      <td> 2015-03-26 </td>
+        <td> <a>Rondeau, S</a> </td>
+        <td> <a href="{{ app.url_generator.generate('reviewer_review') }}">The Physics of Stein;Gate</a> </td>
+        <td> Physics </td>
+        <td> 2015-02-06 </td>
+        <td> <a class="btn btn-success" href="{{ app.url_generator.generate('reviewer_reviewing') }}" role="button">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Accept</a>
+        <a class="btn btn-danger" href="{{ app.url_generator.generate('reviewer_dashboard') }}" role="button">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Decline</a> </td>
+    </tr>
+
+    <tr>
+      <td> 2015-03-26 </td>
+        <td> <a>Rondeau, S</a> </td>
+        <td> <a href="{{ app.url_generator.generate('reviewer_review') }}">The Physics of Stein;Gate</a> </td>
+        <td> Physics </td>
+        <td> 2015-02-06 </td>
+        <td> <a class="btn btn-success" href="{{ app.url_generator.generate('reviewer_reviewing') }}" role="button">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Accept</a>
+        <a class="btn btn-danger" href="{{ app.url_generator.generate('reviewer_dashboard') }}" role="button">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Decline</a> </td>
+    </tr>
+
+    <tr>
+      <td> 2015-03-26 </td>
+        <td> <a>Rondeau, S</a> </td>
+        <td> <a href="{{ app.url_generator.generate('reviewer_review') }}">The Physics of Stein;Gate</a> </td>
+        <td> Physics </td>
+        <td> 2015-02-06 </td>
+        <td> <a class="btn btn-success" href="{{ app.url_generator.generate('reviewer_reviewing') }}" role="button">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Accept</a>
+        <a class="btn btn-danger" href="{{ app.url_generator.generate('reviewer_dashboard') }}" role="button">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Decline</a> </td>
+    </tr>
+
+  </table>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><a href="{{ app.url_generator.generate('reviewer_reviewing') }}">Active reviews</a></div>
+
+  <!-- Table -->
+  <table class="table">
+
+    <thead>
+        <tr>
+            <th> Due date </th>
+            <th> Author </th>
+            <th> Title </th>
+            <th> Section </th>
+            <th> Submission date </th>
+        </tr>
+    </thead>
+
+    <tr>
+        <td> 2015-05-13 </td>
+        <td> <a>Rondeau, S</a> </td>
+        <td> <a href="{{ app.url_generator.generate('reviewer_review') }}">The Physics of Stein;Gate</a> </td>
+        <td> Physics </td>
+        <td> 2014-02-25 </td>
+    </tr>
+
+    <tr>
+        <td> 2015-12-22 </td>
+        <td> <a>Rondeau, S</a> </td>
+        <td> <a href="{{ app.url_generator.generate('reviewer_review') }}">The Physics of Stein;Gate</a> </td>
+        <td> Physics </td>
+        <td> 2014-21-25 </td>
+    </tr>
+
+    <tr>
+        <td> 2017-01-15 </td>
+        <td> <a>Rondeau, S</a> </td>
+        <td> <a href="{{ app.url_generator.generate('reviewer_review') }}">The Physics of Stein;Gate</a> </td>
+        <td> Physics </td>
+        <td> 2014-02-05 </td>
+    </tr>
+
+  </table>
+</div>
+
+{% endblock %}

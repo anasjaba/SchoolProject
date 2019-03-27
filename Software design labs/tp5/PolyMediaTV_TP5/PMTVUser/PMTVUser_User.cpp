@@ -1,0 +1,8 @@
+///////////////////////////////////////////////////////////
+//  PMTVUser_User.cpp
+//  Implementation of the Class PMTVUser_User
+//  Created on:      31-oct.-2010 16:07:49
+//  Original author: David Dubé
+///////////////////////////////////////////////////////////
+
+#include "PMTVUser_User.h"

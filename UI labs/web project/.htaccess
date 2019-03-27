@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^(/index\.php|/img|/js|/css|/robots\.txt|/font|/favicon\.ico)
+RewriteRule !\.(js|ico|gif|jpg|png|css|font)$ index.php [L]

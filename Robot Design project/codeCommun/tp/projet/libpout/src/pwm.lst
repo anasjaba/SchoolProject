@@ -1,0 +1,490 @@
+GAS LISTING /tmp/ccblX4L2.s 			page 1
+
+
+   1               		.file	"pwm.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/sirius/inf1995/inf1995-0723/codeCommun/tp/projet/libpout/",100,0,4,.Ltext0
+   8               		.stabs	"src/pwm.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/ccblX4L2.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,122,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,123,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,124,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,125,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,126,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,127,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,129,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,130,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,143,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,148,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,160,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,165,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,170,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,175,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,180,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,185,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,193,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,200,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,214,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,219,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,224,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,229,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,234,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,239,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,247,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,254,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,274,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,279,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"OCR:t(0,89)=@s8;eA0:0,A1:1,B1:2,;",128,0,20,0
+ 105               		.stabs	"PWM:Tt(0,90)=s1port_:/0(0,89),0,8;__base_ctor ::(0,91)=#(0,90),(0,4),(0,92)=*(0,90),(0,4);
+ 106               		.stabs	"_ZN7libpout3PWM4initEv:F(0,4)",36,0,34,_ZN7libpout3PWM4initEv
+ 107               		.stabs	"this:P(0,96)=k(0,92)",64,0,34,24
+ 108               	.global	_ZN7libpout3PWM4initEv
+ 109               		.type	_ZN7libpout3PWM4initEv, @function
+ 110               	_ZN7libpout3PWM4initEv:
+ 111               		.stabd	46,0,0
+   1:src/pwm.cpp   **** /**
+   2:src/pwm.cpp   ****  * Copyright © 2014
+   3:src/pwm.cpp   ****  * Louis Racicot <info@louisracicot.com>, Samuel Rondeau, Weiwei Liang, Feriel Charfeddine
+GAS LISTING /tmp/ccblX4L2.s 			page 3
+
+
+   4:src/pwm.cpp   ****  *
+   5:src/pwm.cpp   ****  * This program is free software. It comes without any warranty, to
+   6:src/pwm.cpp   ****  * the extent permitted by applicable law. You can redistribute it
+   7:src/pwm.cpp   ****  * and/or modify it under the terms of the Do What The Fuck You Want
+   8:src/pwm.cpp   ****  * To Public License, Version 2, as published by Sam Hocevar. See
+   9:src/pwm.cpp   ****  * http://www.wtfpl.net/ for more details.
+  10:src/pwm.cpp   ****  */
+  11:src/pwm.cpp   **** #ifndef F_CPU
+  12:src/pwm.cpp   **** # warning "F_CPU pas defini pour 'pwm.cpp'"
+  13:src/pwm.cpp   **** # define F_CPU 8000000UL
+  14:src/pwm.cpp   **** #endif
+  15:src/pwm.cpp   **** 
+  16:src/pwm.cpp   **** #include "pwm.h"
+  17:src/pwm.cpp   **** 
+  18:src/pwm.cpp   **** using namespace libpout;
+  19:src/pwm.cpp   **** 
+  20:src/pwm.cpp   **** 
+  21:src/pwm.cpp   **** PWM::PWM(OCR port)
+  22:src/pwm.cpp   **** {
+  23:src/pwm.cpp   **** 	port_ = port;
+  24:src/pwm.cpp   **** 	init();
+  25:src/pwm.cpp   **** }
+  26:src/pwm.cpp   **** 
+  27:src/pwm.cpp   **** PWM::PWM(OCR port, uint8_t ratio255)
+  28:src/pwm.cpp   **** {
+  29:src/pwm.cpp   **** 	port_ = port;
+  30:src/pwm.cpp   **** 	init();
+  31:src/pwm.cpp   **** 	adjust(ratio255);
+  32:src/pwm.cpp   **** }
+  33:src/pwm.cpp   **** 
+  34:src/pwm.cpp   **** void PWM::init()
+  35:src/pwm.cpp   **** {
+ 112               		.stabn	68,0,35,.LM0-.LFBB1
+ 113               	.LM0:
+ 114               	.LFBB1:
+ 115               	/* prologue: function */
+ 116               	/* frame size = 0 */
+ 117               	/* stack size = 0 */
+ 118               	.L__stack_usage = 0
+  36:src/pwm.cpp   ****     // Counter to 0
+  37:src/pwm.cpp   ****     TCNT1 = 0;
+ 119               		.stabn	68,0,37,.LM1-.LFBB1
+ 120               	.LM1:
+ 121 0000 1092 8500 		sts 132+1,__zero_reg__
+ 122 0004 1092 8400 		sts 132,__zero_reg__
+  38:src/pwm.cpp   **** 
+  39:src/pwm.cpp   ****     TCCR1A |= _BV(WGM10); // PWM, Phase Correct, 8-bit
+ 123               		.stabn	68,0,39,.LM2-.LFBB1
+ 124               	.LM2:
+ 125 0008 E0E8      		ldi r30,lo8(-128)
+ 126 000a F0E0      		ldi r31,0
+ 127 000c 8081      		ld r24,Z
+ 128 000e 8160      		ori r24,lo8(1)
+ 129 0010 8083      		st Z,r24
+  40:src/pwm.cpp   **** 
+  41:src/pwm.cpp   **** 	// division d'horloge par 8 - implique une frequence de PWM fixe
+  42:src/pwm.cpp   ****     TCCR1B = _BV(CS11);
+GAS LISTING /tmp/ccblX4L2.s 			page 4
+
+
+ 130               		.stabn	68,0,42,.LM3-.LFBB1
+ 131               	.LM3:
+ 132 0012 82E0      		ldi r24,lo8(2)
+ 133 0014 8093 8100 		sts 129,r24
+ 134 0018 0895      		ret
+ 135               		.size	_ZN7libpout3PWM4initEv, .-_ZN7libpout3PWM4initEv
+ 136               	.Lscope1:
+ 137               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 138               		.stabd	78,0,0
+ 139               		.stabs	"_ZN7libpout3PWMC2ENS_3OCRE:F(0,4)",36,0,21,_ZN7libpout3PWMC2ENS_3OCRE
+ 140               		.stabs	"this:P(0,96)",64,0,21,24
+ 141               		.stabs	"port:P(0,89)",64,0,21,22
+ 142               	.global	_ZN7libpout3PWMC2ENS_3OCRE
+ 143               		.type	_ZN7libpout3PWMC2ENS_3OCRE, @function
+ 144               	_ZN7libpout3PWMC2ENS_3OCRE:
+ 145               		.stabd	46,0,0
+  21:src/pwm.cpp   **** {
+ 146               		.stabn	68,0,21,.LM4-.LFBB2
+ 147               	.LM4:
+ 148               	.LFBB2:
+ 149               	/* prologue: function */
+ 150               	/* frame size = 0 */
+ 151               	/* stack size = 0 */
+ 152               	.L__stack_usage = 0
+ 153               	.LBB2:
+  23:src/pwm.cpp   **** 	init();
+ 154               		.stabn	68,0,23,.LM5-.LFBB2
+ 155               	.LM5:
+ 156 001a FC01      		movw r30,r24
+ 157 001c 6083      		st Z,r22
+  24:src/pwm.cpp   **** }
+ 158               		.stabn	68,0,24,.LM6-.LFBB2
+ 159               	.LM6:
+ 160 001e 0C94 0000 		jmp _ZN7libpout3PWM4initEv
+ 161               	.LBE2:
+ 162               		.size	_ZN7libpout3PWMC2ENS_3OCRE, .-_ZN7libpout3PWMC2ENS_3OCRE
+ 163               	.Lscope2:
+ 164               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 165               		.stabd	78,0,0
+ 166               	.global	_ZN7libpout3PWMC1ENS_3OCRE
+ 167               		.set	_ZN7libpout3PWMC1ENS_3OCRE,_ZN7libpout3PWMC2ENS_3OCRE
+ 168               		.stabs	"_ZN7libpout3PWM6adjustEh:F(0,4)",36,0,45,_ZN7libpout3PWM6adjustEh
+ 169               		.stabs	"this:P(0,96)",64,0,45,24
+ 170               		.stabs	"ratio255:P(0,59)",64,0,45,22
+ 171               	.global	_ZN7libpout3PWM6adjustEh
+ 172               		.type	_ZN7libpout3PWM6adjustEh, @function
+ 173               	_ZN7libpout3PWM6adjustEh:
+ 174               		.stabd	46,0,0
+  43:src/pwm.cpp   **** }
+  44:src/pwm.cpp   **** 
+  45:src/pwm.cpp   **** void PWM::adjust(uint8_t ratio255)
+  46:src/pwm.cpp   **** {
+ 175               		.stabn	68,0,46,.LM7-.LFBB3
+ 176               	.LM7:
+ 177               	.LFBB3:
+ 178               	/* prologue: function */
+ 179               	/* frame size = 0 */
+GAS LISTING /tmp/ccblX4L2.s 			page 5
+
+
+ 180               	/* stack size = 0 */
+ 181               	.L__stack_usage = 0
+  47:src/pwm.cpp   **** 	switch(port_) {
+ 182               		.stabn	68,0,47,.LM8-.LFBB3
+ 183               	.LM8:
+ 184 0022 FC01      		movw r30,r24
+ 185 0024 8081      		ld r24,Z
+ 186 0026 8130      		cpi r24,lo8(1)
+ 187 0028 01F0      		breq .L5
+ 188 002a 00F0      		brlo .L6
+ 189 002c 8230      		cpi r24,lo8(2)
+ 190 002e 01F0      		breq .L7
+ 191 0030 0895      		ret
+ 192               	.L6:
+  48:src/pwm.cpp   **** 		case A0:
+  49:src/pwm.cpp   **** 			OCR0A = ratio255;
+ 193               		.stabn	68,0,49,.LM9-.LFBB3
+ 194               	.LM9:
+ 195 0032 67BD      		out 0x27,r22
+  50:src/pwm.cpp   **** 			break;
+ 196               		.stabn	68,0,50,.LM10-.LFBB3
+ 197               	.LM10:
+ 198 0034 0895      		ret
+ 199               	.L5:
+  51:src/pwm.cpp   **** 		case A1:
+  52:src/pwm.cpp   **** 			OCR1A = ratio255;
+ 200               		.stabn	68,0,52,.LM11-.LFBB3
+ 201               	.LM11:
+ 202 0036 70E0      		ldi r23,0
+ 203 0038 7093 8900 		sts 136+1,r23
+ 204 003c 6093 8800 		sts 136,r22
+  53:src/pwm.cpp   **** 			break;
+ 205               		.stabn	68,0,53,.LM12-.LFBB3
+ 206               	.LM12:
+ 207 0040 0895      		ret
+ 208               	.L7:
+  54:src/pwm.cpp   **** 		case B1:
+  55:src/pwm.cpp   **** 			OCR1B = ratio255;
+ 209               		.stabn	68,0,55,.LM13-.LFBB3
+ 210               	.LM13:
+ 211 0042 70E0      		ldi r23,0
+ 212 0044 7093 8B00 		sts 138+1,r23
+ 213 0048 6093 8A00 		sts 138,r22
+ 214 004c 0895      		ret
+ 215               		.size	_ZN7libpout3PWM6adjustEh, .-_ZN7libpout3PWM6adjustEh
+ 216               	.Lscope3:
+ 217               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 218               		.stabd	78,0,0
+ 219               		.stabs	"_ZN7libpout3PWMC2ENS_3OCREh:F(0,4)",36,0,27,_ZN7libpout3PWMC2ENS_3OCREh
+ 220               		.stabs	"this:P(0,96)",64,0,27,16
+ 221               		.stabs	"port:P(0,89)",64,0,27,22
+ 222               		.stabs	"ratio255:P(0,59)",64,0,27,20
+ 223               	.global	_ZN7libpout3PWMC2ENS_3OCREh
+ 224               		.type	_ZN7libpout3PWMC2ENS_3OCREh, @function
+ 225               	_ZN7libpout3PWMC2ENS_3OCREh:
+ 226               		.stabd	46,0,0
+  27:src/pwm.cpp   **** {
+GAS LISTING /tmp/ccblX4L2.s 			page 6
+
+
+ 227               		.stabn	68,0,27,.LM14-.LFBB4
+ 228               	.LM14:
+ 229               	.LFBB4:
+ 230 004e 0F93      		push r16
+ 231 0050 1F93      		push r17
+ 232 0052 CF93      		push r28
+ 233 0054 DF93      		push r29
+ 234 0056 1F92      		push __zero_reg__
+ 235 0058 CDB7      		in r28,__SP_L__
+ 236 005a DEB7      		in r29,__SP_H__
+ 237               	/* prologue: function */
+ 238               	/* frame size = 1 */
+ 239               	/* stack size = 5 */
+ 240               	.L__stack_usage = 5
+ 241 005c 8C01      		movw r16,r24
+ 242               	.LBB3:
+  29:src/pwm.cpp   **** 	init();
+ 243               		.stabn	68,0,29,.LM15-.LFBB4
+ 244               	.LM15:
+ 245 005e FC01      		movw r30,r24
+ 246 0060 6083      		st Z,r22
+  30:src/pwm.cpp   **** 	adjust(ratio255);
+ 247               		.stabn	68,0,30,.LM16-.LFBB4
+ 248               	.LM16:
+ 249 0062 4983      		std Y+1,r20
+ 250 0064 0E94 0000 		call _ZN7libpout3PWM4initEv
+  31:src/pwm.cpp   **** }
+ 251               		.stabn	68,0,31,.LM17-.LFBB4
+ 252               	.LM17:
+ 253 0068 4981      		ldd r20,Y+1
+ 254 006a 642F      		mov r22,r20
+ 255 006c C801      		movw r24,r16
+ 256               	/* epilogue start */
+ 257               	.LBE3:
+  32:src/pwm.cpp   **** 
+ 258               		.stabn	68,0,32,.LM18-.LFBB4
+ 259               	.LM18:
+ 260 006e 0F90      		pop __tmp_reg__
+ 261 0070 DF91      		pop r29
+ 262 0072 CF91      		pop r28
+ 263 0074 1F91      		pop r17
+ 264 0076 0F91      		pop r16
+ 265               	.LBB4:
+  31:src/pwm.cpp   **** }
+ 266               		.stabn	68,0,31,.LM19-.LFBB4
+ 267               	.LM19:
+ 268 0078 0C94 0000 		jmp _ZN7libpout3PWM6adjustEh
+ 269               	.LBE4:
+ 270               		.size	_ZN7libpout3PWMC2ENS_3OCREh, .-_ZN7libpout3PWMC2ENS_3OCREh
+ 271               	.Lscope4:
+ 272               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 273               		.stabd	78,0,0
+ 274               	.global	_ZN7libpout3PWMC1ENS_3OCREh
+ 275               		.set	_ZN7libpout3PWMC1ENS_3OCREh,_ZN7libpout3PWMC2ENS_3OCREh
+ 276               		.stabs	"_ZN7libpout3PWM5startEv:F(0,4)",36,0,60,_ZN7libpout3PWM5startEv
+ 277               		.stabs	"this:P(0,96)",64,0,60,24
+ 278               	.global	_ZN7libpout3PWM5startEv
+GAS LISTING /tmp/ccblX4L2.s 			page 7
+
+
+ 279               		.type	_ZN7libpout3PWM5startEv, @function
+ 280               	_ZN7libpout3PWM5startEv:
+ 281               		.stabd	46,0,0
+  56:src/pwm.cpp   **** 			break;
+  57:src/pwm.cpp   **** 	}
+  58:src/pwm.cpp   **** }
+  59:src/pwm.cpp   **** 
+  60:src/pwm.cpp   **** void PWM::start()
+  61:src/pwm.cpp   **** {
+ 282               		.stabn	68,0,61,.LM20-.LFBB5
+ 283               	.LM20:
+ 284               	.LFBB5:
+ 285               	/* prologue: function */
+ 286               	/* frame size = 0 */
+ 287               	/* stack size = 0 */
+ 288               	.L__stack_usage = 0
+  62:src/pwm.cpp   **** 	switch(port_) {
+ 289               		.stabn	68,0,62,.LM21-.LFBB5
+ 290               	.LM21:
+ 291 007c FC01      		movw r30,r24
+ 292 007e 8081      		ld r24,Z
+ 293 0080 8130      		cpi r24,lo8(1)
+ 294 0082 01F0      		breq .L12
+ 295 0084 8230      		cpi r24,lo8(2)
+ 296 0086 01F0      		breq .L13
+ 297 0088 0895      		ret
+ 298               	.L12:
+  63:src/pwm.cpp   **** 		case A1:
+  64:src/pwm.cpp   **** 			TCCR1A |= _BV(COM1A1) | _BV(COM1A0); // Set OC1A on Compare Match (Set output to high level).
+ 299               		.stabn	68,0,64,.LM22-.LFBB5
+ 300               	.LM22:
+ 301 008a 8091 8000 		lds r24,128
+ 302 008e 806C      		ori r24,lo8(-64)
+ 303 0090 00C0      		rjmp .L14
+ 304               	.L13:
+  65:src/pwm.cpp   **** 			break;
+  66:src/pwm.cpp   **** 		case B1:
+  67:src/pwm.cpp   **** 			TCCR1A |= _BV(COM1B1) | _BV(COM1B0); // Set OC1B on Compare Match (Set output to high level).
+ 305               		.stabn	68,0,67,.LM23-.LFBB5
+ 306               	.LM23:
+ 307 0092 8091 8000 		lds r24,128
+ 308 0096 8063      		ori r24,lo8(48)
+ 309               	.L14:
+ 310 0098 8093 8000 		sts 128,r24
+ 311 009c 0895      		ret
+ 312               		.size	_ZN7libpout3PWM5startEv, .-_ZN7libpout3PWM5startEv
+ 313               	.Lscope5:
+ 314               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 315               		.stabd	78,0,0
+ 316               		.stabs	"_ZN7libpout3PWM4stopEv:F(0,4)",36,0,72,_ZN7libpout3PWM4stopEv
+ 317               		.stabs	"this:P(0,96)",64,0,72,24
+ 318               	.global	_ZN7libpout3PWM4stopEv
+ 319               		.type	_ZN7libpout3PWM4stopEv, @function
+ 320               	_ZN7libpout3PWM4stopEv:
+ 321               		.stabd	46,0,0
+  68:src/pwm.cpp   **** 			break;
+  69:src/pwm.cpp   **** 	}
+GAS LISTING /tmp/ccblX4L2.s 			page 8
+
+
+  70:src/pwm.cpp   **** }
+  71:src/pwm.cpp   **** 
+  72:src/pwm.cpp   **** void PWM::stop()
+  73:src/pwm.cpp   **** {
+ 322               		.stabn	68,0,73,.LM24-.LFBB6
+ 323               	.LM24:
+ 324               	.LFBB6:
+ 325               	/* prologue: function */
+ 326               	/* frame size = 0 */
+ 327               	/* stack size = 0 */
+ 328               	.L__stack_usage = 0
+  74:src/pwm.cpp   **** 	switch(port_) {
+ 329               		.stabn	68,0,74,.LM25-.LFBB6
+ 330               	.LM25:
+ 331 009e FC01      		movw r30,r24
+ 332 00a0 8081      		ld r24,Z
+ 333 00a2 8130      		cpi r24,lo8(1)
+ 334 00a4 01F0      		breq .L17
+ 335 00a6 8230      		cpi r24,lo8(2)
+ 336 00a8 01F0      		breq .L18
+ 337 00aa 0895      		ret
+ 338               	.L17:
+  75:src/pwm.cpp   **** 		case A1:
+  76:src/pwm.cpp   **** 			TCCR1A &= ~(_BV(COM1A1)) & ~(_BV(COM1A0)); 
+ 339               		.stabn	68,0,76,.LM26-.LFBB6
+ 340               	.LM26:
+ 341 00ac 8091 8000 		lds r24,128
+ 342 00b0 8F73      		andi r24,lo8(63)
+ 343 00b2 00C0      		rjmp .L19
+ 344               	.L18:
+  77:src/pwm.cpp   **** 			break;
+  78:src/pwm.cpp   **** 		case B1:
+  79:src/pwm.cpp   **** 			TCCR1A &= ~(_BV(COM1B1)) & ~(_BV(COM1B0));
+ 345               		.stabn	68,0,79,.LM27-.LFBB6
+ 346               	.LM27:
+ 347 00b4 8091 8000 		lds r24,128
+ 348 00b8 8F7C      		andi r24,lo8(-49)
+ 349               	.L19:
+ 350 00ba 8093 8000 		sts 128,r24
+ 351 00be 0895      		ret
+ 352               		.size	_ZN7libpout3PWM4stopEv, .-_ZN7libpout3PWM4stopEv
+ 353               	.Lscope6:
+ 354               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 355               		.stabd	78,0,0
+ 356               		.stabs	"",100,0,0,.Letext0
+ 357               	.Letext0:
+ 358               		.ident	"GCC: (GNU) 4.9.2"
+GAS LISTING /tmp/ccblX4L2.s 			page 9
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 pwm.cpp
+     /tmp/ccblX4L2.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccblX4L2.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccblX4L2.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccblX4L2.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccblX4L2.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccblX4L2.s:110    .text:0000000000000000 _ZN7libpout3PWM4initEv
+     /tmp/ccblX4L2.s:144    .text:000000000000001a _ZN7libpout3PWMC2ENS_3OCRE
+     /tmp/ccblX4L2.s:144    .text:000000000000001a _ZN7libpout3PWMC1ENS_3OCRE
+     /tmp/ccblX4L2.s:173    .text:0000000000000022 _ZN7libpout3PWM6adjustEh
+     /tmp/ccblX4L2.s:225    .text:000000000000004e _ZN7libpout3PWMC2ENS_3OCREh
+     /tmp/ccblX4L2.s:225    .text:000000000000004e _ZN7libpout3PWMC1ENS_3OCREh
+     /tmp/ccblX4L2.s:280    .text:000000000000007c _ZN7libpout3PWM5startEv
+     /tmp/ccblX4L2.s:320    .text:000000000000009e _ZN7libpout3PWM4stopEv
+
+NO UNDEFINED SYMBOLS

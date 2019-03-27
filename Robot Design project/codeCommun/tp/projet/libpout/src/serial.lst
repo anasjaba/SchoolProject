@@ -1,0 +1,275 @@
+GAS LISTING /tmp/ccgY8Jva.s 			page 1
+
+
+   1               		.file	"serial.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/sirius/inf1995/inf1995-0723/codeCommun/tp/projet/libpout/",100,0,4,.Ltext0
+   8               		.stabs	"src/serial.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/ccgY8Jva.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,122,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,123,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,124,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,125,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,126,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,127,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,129,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,130,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,143,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,148,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,160,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,165,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,170,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,175,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,180,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,185,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,193,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,200,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,214,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,219,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,224,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,229,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,234,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,239,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,247,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,254,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,274,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,279,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"Serial:Tt(0,89)=s1__base_ctor ::(0,90)=#(0,89),(0,4),(0,91)=*(0,89),(0,4);:_ZN7libpout6Ser
+ 105               		.stabs	"_ZN7libpout6Serial4initEv:F(0,4)",36,0,25,_ZN7libpout6Serial4initEv
+ 106               		.stabs	"this:P(0,93)=k(0,91)",64,0,25,24
+ 107               	.global	_ZN7libpout6Serial4initEv
+ 108               		.type	_ZN7libpout6Serial4initEv, @function
+ 109               	_ZN7libpout6Serial4initEv:
+ 110               		.stabd	46,0,0
+   1:src/serial.cpp **** /**
+   2:src/serial.cpp ****  * Copyright © 2014
+   3:src/serial.cpp ****  * Louis Racicot <info@louisracicot.com>, Samuel Rondeau, Weiwei Liang, Feriel Charfeddine
+   4:src/serial.cpp ****  *
+GAS LISTING /tmp/ccgY8Jva.s 			page 3
+
+
+   5:src/serial.cpp ****  * This program is free software. It comes without any warranty, to
+   6:src/serial.cpp ****  * the extent permitted by applicable law. You can redistribute it
+   7:src/serial.cpp ****  * and/or modify it under the terms of the Do What The Fuck You Want
+   8:src/serial.cpp ****  * To Public License, Version 2, as published by Sam Hocevar. See
+   9:src/serial.cpp ****  * http://www.wtfpl.net/ for more details.
+  10:src/serial.cpp ****  */
+  11:src/serial.cpp **** #ifndef F_CPU
+  12:src/serial.cpp **** # warning "F_CPU pas defini pour 'serial.cpp'"
+  13:src/serial.cpp **** # define F_CPU 8000000UL
+  14:src/serial.cpp **** #endif
+  15:src/serial.cpp **** 
+  16:src/serial.cpp **** #include "serial.h"
+  17:src/serial.cpp **** 
+  18:src/serial.cpp **** using namespace libpout;
+  19:src/serial.cpp **** 
+  20:src/serial.cpp **** Serial::Serial()
+  21:src/serial.cpp **** {
+  22:src/serial.cpp **** 	init();
+  23:src/serial.cpp **** }
+  24:src/serial.cpp **** 
+  25:src/serial.cpp **** void Serial::init()
+  26:src/serial.cpp **** {
+ 111               		.stabn	68,0,26,.LM0-.LFBB1
+ 112               	.LM0:
+ 113               	.LFBB1:
+ 114               	/* prologue: function */
+ 115               	/* frame size = 0 */
+ 116               	/* stack size = 0 */
+ 117               	.L__stack_usage = 0
+  27:src/serial.cpp **** 	// 2400 bauds. Nous vous donnons la valeur des deux
+  28:src/serial.cpp **** 	// premier registres pour vous éviter des complications
+  29:src/serial.cpp **** 	UBRR0H = 0;
+ 118               		.stabn	68,0,29,.LM1-.LFBB1
+ 119               	.LM1:
+ 120 0000 1092 C500 		sts 197,__zero_reg__
+  30:src/serial.cpp **** 	UBRR0L = 0xCF;
+ 121               		.stabn	68,0,30,.LM2-.LFBB1
+ 122               	.LM2:
+ 123 0004 8FEC      		ldi r24,lo8(-49)
+ 124 0006 8093 C400 		sts 196,r24
+  31:src/serial.cpp **** 
+  32:src/serial.cpp **** 	// permettre la reception et la transmission par le UART0
+  33:src/serial.cpp **** 	UCSR0A = _BV(UDRE0);
+ 125               		.stabn	68,0,33,.LM3-.LFBB1
+ 126               	.LM3:
+ 127 000a 80E2      		ldi r24,lo8(32)
+ 128 000c 8093 C000 		sts 192,r24
+  34:src/serial.cpp **** 	UCSR0B = _BV(RXEN0)| _BV(TXEN0);
+ 129               		.stabn	68,0,34,.LM4-.LFBB1
+ 130               	.LM4:
+ 131 0010 88E1      		ldi r24,lo8(24)
+ 132 0012 8093 C100 		sts 193,r24
+  35:src/serial.cpp **** 
+  36:src/serial.cpp **** 	// Format des trames: 8 bits, 1 stop bits, none parity
+  37:src/serial.cpp **** 	UCSR0C = _BV(UCSZ01) | _BV(UCSZ00);
+ 133               		.stabn	68,0,37,.LM5-.LFBB1
+ 134               	.LM5:
+GAS LISTING /tmp/ccgY8Jva.s 			page 4
+
+
+ 135 0016 86E0      		ldi r24,lo8(6)
+ 136 0018 8093 C200 		sts 194,r24
+ 137 001c 0895      		ret
+ 138               		.size	_ZN7libpout6Serial4initEv, .-_ZN7libpout6Serial4initEv
+ 139               	.Lscope1:
+ 140               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 141               		.stabd	78,0,0
+ 142               		.stabs	"_ZN7libpout6SerialC2Ev:F(0,4)",36,0,20,_ZN7libpout6SerialC2Ev
+ 143               		.stabs	"this:P(0,93)",64,0,20,24
+ 144               	.global	_ZN7libpout6SerialC2Ev
+ 145               		.type	_ZN7libpout6SerialC2Ev, @function
+ 146               	_ZN7libpout6SerialC2Ev:
+ 147               		.stabd	46,0,0
+  20:src/serial.cpp **** {
+ 148               		.stabn	68,0,20,.LM6-.LFBB2
+ 149               	.LM6:
+ 150               	.LFBB2:
+ 151               	/* prologue: function */
+ 152               	/* frame size = 0 */
+ 153               	/* stack size = 0 */
+ 154               	.L__stack_usage = 0
+ 155               	.LBB2:
+  22:src/serial.cpp **** }
+ 156               		.stabn	68,0,22,.LM7-.LFBB2
+ 157               	.LM7:
+ 158 001e 0C94 0000 		jmp _ZN7libpout6Serial4initEv
+ 159               	.LBE2:
+ 160               		.size	_ZN7libpout6SerialC2Ev, .-_ZN7libpout6SerialC2Ev
+ 161               	.Lscope2:
+ 162               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 163               		.stabd	78,0,0
+ 164               	.global	_ZN7libpout6SerialC1Ev
+ 165               		.set	_ZN7libpout6SerialC1Ev,_ZN7libpout6SerialC2Ev
+ 166               		.stabs	"_ZN7libpout6Serial4sendEh:F(0,4)",36,0,40,_ZN7libpout6Serial4sendEh
+ 167               		.stabs	"this:P(0,93)",64,0,40,24
+ 168               		.stabs	"data:P(0,59)",64,0,40,22
+ 169               	.global	_ZN7libpout6Serial4sendEh
+ 170               		.type	_ZN7libpout6Serial4sendEh, @function
+ 171               	_ZN7libpout6Serial4sendEh:
+ 172               		.stabd	46,0,0
+  38:src/serial.cpp **** }
+  39:src/serial.cpp **** 
+  40:src/serial.cpp **** void Serial::send(uint8_t data)
+  41:src/serial.cpp **** {
+ 173               		.stabn	68,0,41,.LM8-.LFBB3
+ 174               	.LM8:
+ 175               	.LFBB3:
+ 176               	/* prologue: function */
+ 177               	/* frame size = 0 */
+ 178               	/* stack size = 0 */
+ 179               	.L__stack_usage = 0
+ 180               	.L4:
+  42:src/serial.cpp **** 	/* Wait for empty transmit buffer */
+  43:src/serial.cpp **** 	while (!( UCSR0A & (1<<UDRE0)));
+ 181               		.stabn	68,0,43,.LM9-.LFBB3
+ 182               	.LM9:
+ 183 0022 8091 C000 		lds r24,192
+GAS LISTING /tmp/ccgY8Jva.s 			page 5
+
+
+ 184 0026 85FF      		sbrs r24,5
+ 185 0028 00C0      		rjmp .L4
+  44:src/serial.cpp **** 
+  45:src/serial.cpp **** 	/* Put data into buffer, sends the data */
+  46:src/serial.cpp **** 	UDR0 = data;
+ 186               		.stabn	68,0,46,.LM10-.LFBB3
+ 187               	.LM10:
+ 188 002a 6093 C600 		sts 198,r22
+ 189 002e 0895      		ret
+ 190               		.size	_ZN7libpout6Serial4sendEh, .-_ZN7libpout6Serial4sendEh
+ 191               	.Lscope3:
+ 192               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 193               		.stabd	78,0,0
+ 194               		.stabs	"",100,0,0,.Letext0
+ 195               	.Letext0:
+ 196               		.ident	"GCC: (GNU) 4.9.2"
+GAS LISTING /tmp/ccgY8Jva.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 serial.cpp
+     /tmp/ccgY8Jva.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccgY8Jva.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccgY8Jva.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccgY8Jva.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccgY8Jva.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccgY8Jva.s:109    .text:0000000000000000 _ZN7libpout6Serial4initEv
+     /tmp/ccgY8Jva.s:146    .text:000000000000001e _ZN7libpout6SerialC2Ev
+     /tmp/ccgY8Jva.s:146    .text:000000000000001e _ZN7libpout6SerialC1Ev
+     /tmp/ccgY8Jva.s:171    .text:0000000000000022 _ZN7libpout6Serial4sendEh
+
+NO UNDEFINED SYMBOLS

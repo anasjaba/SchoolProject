@@ -1,0 +1,375 @@
+GAS LISTING /tmp/cciMlBbs.s 			page 1
+
+
+   1               		.file	"pwmSon.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/sirius/inf1995/inf1995-0723/codeCommun/tp/projet/libpout/",100,0,4,.Ltext0
+   8               		.stabs	"src/pwmSon.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/cciMlBbs.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,122,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,123,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,124,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,125,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,126,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,127,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,129,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,130,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,143,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,148,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,160,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,165,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,170,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,175,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,180,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,185,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,193,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,200,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,214,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,219,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,224,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,229,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,234,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,239,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,247,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,254,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,274,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,279,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"pwmSon:Tt(0,89)=s1__base_ctor ::(0,90)=#(0,89),(0,4),(0,91)=*(0,89),(0,4);:_ZN7libpout6pwm
+ 105               		.stabs	"_ZN7libpout6pwmSon4initEv:F(0,4)",36,0,32,_ZN7libpout6pwmSon4initEv
+ 106               		.stabs	"this:P(0,93)=k(0,91)",64,0,32,24
+ 107               	.global	_ZN7libpout6pwmSon4initEv
+ 108               		.type	_ZN7libpout6pwmSon4initEv, @function
+ 109               	_ZN7libpout6pwmSon4initEv:
+ 110               		.stabd	46,0,0
+   1:src/pwmSon.cpp **** /**
+   2:src/pwmSon.cpp ****  * Copyright © 2014
+   3:src/pwmSon.cpp ****  * Louis Racicot <info@louisracicot.com>, Samuel Rondeau, Weiwei Liang, Feriel Charfeddine
+   4:src/pwmSon.cpp ****  *
+GAS LISTING /tmp/cciMlBbs.s 			page 3
+
+
+   5:src/pwmSon.cpp ****  * This program is free software. It comes without any warranty, to
+   6:src/pwmSon.cpp ****  * the extent permitted by applicable law. You can redistribute it
+   7:src/pwmSon.cpp ****  * and/or modify it under the terms of the Do What The Fuck You Want
+   8:src/pwmSon.cpp ****  * To Public License, Version 2, as published by Sam Hocevar. See
+   9:src/pwmSon.cpp ****  * http://www.wtfpl.net/ for more details.
+  10:src/pwmSon.cpp ****  */
+  11:src/pwmSon.cpp **** #ifndef F_CPU
+  12:src/pwmSon.cpp **** # warning "F_CPU pas defini pour 'pwmSon.cpp'"
+  13:src/pwmSon.cpp **** # define F_CPU 8000000UL
+  14:src/pwmSon.cpp **** #endif
+  15:src/pwmSon.cpp **** 
+  16:src/pwmSon.cpp **** #include "pwmSon.h"
+  17:src/pwmSon.cpp **** 
+  18:src/pwmSon.cpp **** using namespace libpout;
+  19:src/pwmSon.cpp **** 
+  20:src/pwmSon.cpp **** 
+  21:src/pwmSon.cpp **** pwmSon::pwmSon()
+  22:src/pwmSon.cpp **** {
+  23:src/pwmSon.cpp **** 	init();
+  24:src/pwmSon.cpp **** }
+  25:src/pwmSon.cpp **** 
+  26:src/pwmSon.cpp **** pwmSon::pwmSon(uint8_t max)
+  27:src/pwmSon.cpp **** {
+  28:src/pwmSon.cpp **** 	init();
+  29:src/pwmSon.cpp **** 	adjust(max);
+  30:src/pwmSon.cpp **** }
+  31:src/pwmSon.cpp **** 
+  32:src/pwmSon.cpp **** void pwmSon::init()
+  33:src/pwmSon.cpp **** {
+ 111               		.stabn	68,0,33,.LM0-.LFBB1
+ 112               	.LM0:
+ 113               	.LFBB1:
+ 114               	/* prologue: function */
+ 115               	/* frame size = 0 */
+ 116               	/* stack size = 0 */
+ 117               	.L__stack_usage = 0
+  34:src/pwmSon.cpp ****     // Counter to 0
+  35:src/pwmSon.cpp ****     TCNT0 = 0;
+ 118               		.stabn	68,0,35,.LM1-.LFBB1
+ 119               	.LM1:
+ 120 0000 16BC      		out 0x26,__zero_reg__
+  36:src/pwmSon.cpp **** 
+  37:src/pwmSon.cpp ****     TCCR0A |= _BV(WGM01); // CTC
+ 121               		.stabn	68,0,37,.LM2-.LFBB1
+ 122               	.LM2:
+ 123 0002 84B5      		in r24,0x24
+ 124 0004 8260      		ori r24,lo8(2)
+ 125 0006 84BD      		out 0x24,r24
+  38:src/pwmSon.cpp **** 
+  39:src/pwmSon.cpp **** 	// division d'horloge par 256
+  40:src/pwmSon.cpp ****     TCCR0B |= _BV(CS02);
+ 126               		.stabn	68,0,40,.LM3-.LFBB1
+ 127               	.LM3:
+ 128 0008 85B5      		in r24,0x25
+ 129 000a 8460      		ori r24,lo8(4)
+ 130 000c 85BD      		out 0x25,r24
+ 131 000e 0895      		ret
+GAS LISTING /tmp/cciMlBbs.s 			page 4
+
+
+ 132               		.size	_ZN7libpout6pwmSon4initEv, .-_ZN7libpout6pwmSon4initEv
+ 133               	.Lscope1:
+ 134               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 135               		.stabd	78,0,0
+ 136               		.stabs	"_ZN7libpout6pwmSonC2Ev:F(0,4)",36,0,21,_ZN7libpout6pwmSonC2Ev
+ 137               		.stabs	"this:P(0,93)",64,0,21,24
+ 138               	.global	_ZN7libpout6pwmSonC2Ev
+ 139               		.type	_ZN7libpout6pwmSonC2Ev, @function
+ 140               	_ZN7libpout6pwmSonC2Ev:
+ 141               		.stabd	46,0,0
+  21:src/pwmSon.cpp **** {
+ 142               		.stabn	68,0,21,.LM4-.LFBB2
+ 143               	.LM4:
+ 144               	.LFBB2:
+ 145               	/* prologue: function */
+ 146               	/* frame size = 0 */
+ 147               	/* stack size = 0 */
+ 148               	.L__stack_usage = 0
+ 149               	.LBB5:
+  23:src/pwmSon.cpp **** }
+ 150               		.stabn	68,0,23,.LM5-.LFBB2
+ 151               	.LM5:
+ 152 0010 0C94 0000 		jmp _ZN7libpout6pwmSon4initEv
+ 153               	.LBE5:
+ 154               		.size	_ZN7libpout6pwmSonC2Ev, .-_ZN7libpout6pwmSonC2Ev
+ 155               	.Lscope2:
+ 156               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 157               		.stabd	78,0,0
+ 158               	.global	_ZN7libpout6pwmSonC1Ev
+ 159               		.set	_ZN7libpout6pwmSonC1Ev,_ZN7libpout6pwmSonC2Ev
+ 160               		.stabs	"_ZN7libpout6pwmSonC2Eh:F(0,4)",36,0,26,_ZN7libpout6pwmSonC2Eh
+ 161               		.stabs	"this:P(0,93)",64,0,26,24
+ 162               		.stabs	"max:P(0,59)",64,0,26,22
+ 163               	.global	_ZN7libpout6pwmSonC2Eh
+ 164               		.type	_ZN7libpout6pwmSonC2Eh, @function
+ 165               	_ZN7libpout6pwmSonC2Eh:
+ 166               		.stabd	46,0,0
+  26:src/pwmSon.cpp **** {
+ 167               		.stabn	68,0,26,.LM6-.LFBB3
+ 168               	.LM6:
+ 169               	.LFBB3:
+ 170 0014 CF93      		push r28
+ 171 0016 DF93      		push r29
+ 172 0018 1F92      		push __zero_reg__
+ 173 001a CDB7      		in r28,__SP_L__
+ 174 001c DEB7      		in r29,__SP_H__
+ 175               	/* prologue: function */
+ 176               	/* frame size = 1 */
+ 177               	/* stack size = 3 */
+ 178               	.L__stack_usage = 3
+ 179               	.LBB6:
+  28:src/pwmSon.cpp **** 	adjust(max);
+ 180               		.stabn	68,0,28,.LM7-.LFBB3
+ 181               	.LM7:
+ 182 001e 6983      		std Y+1,r22
+ 183 0020 0E94 0000 		call _ZN7libpout6pwmSon4initEv
+ 184               	.LBB7:
+GAS LISTING /tmp/cciMlBbs.s 			page 5
+
+
+ 185               	.LBB8:
+  41:src/pwmSon.cpp **** }
+  42:src/pwmSon.cpp **** 
+  43:src/pwmSon.cpp **** void pwmSon::adjust(uint8_t max)
+  44:src/pwmSon.cpp **** {
+  45:src/pwmSon.cpp **** 	OCR0A = max;
+ 186               		.stabn	68,0,45,.LM8-.LFBB3
+ 187               	.LM8:
+ 188 0024 6981      		ldd r22,Y+1
+ 189 0026 67BD      		out 0x27,r22
+ 190               	/* epilogue start */
+ 191               	.LBE8:
+ 192               	.LBE7:
+ 193               	.LBE6:
+  30:src/pwmSon.cpp **** 
+ 194               		.stabn	68,0,30,.LM9-.LFBB3
+ 195               	.LM9:
+ 196 0028 0F90      		pop __tmp_reg__
+ 197 002a DF91      		pop r29
+ 198 002c CF91      		pop r28
+ 199 002e 0895      		ret
+ 200               		.size	_ZN7libpout6pwmSonC2Eh, .-_ZN7libpout6pwmSonC2Eh
+ 201               	.Lscope3:
+ 202               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 203               		.stabd	78,0,0
+ 204               	.global	_ZN7libpout6pwmSonC1Eh
+ 205               		.set	_ZN7libpout6pwmSonC1Eh,_ZN7libpout6pwmSonC2Eh
+ 206               		.stabs	"_ZN7libpout6pwmSon6adjustEh:F(0,4)",36,0,43,_ZN7libpout6pwmSon6adjustEh
+ 207               		.stabs	"this:P(0,93)",64,0,43,24
+ 208               		.stabs	"max:P(0,59)",64,0,43,22
+ 209               	.global	_ZN7libpout6pwmSon6adjustEh
+ 210               		.type	_ZN7libpout6pwmSon6adjustEh, @function
+ 211               	_ZN7libpout6pwmSon6adjustEh:
+ 212               		.stabd	46,0,0
+  44:src/pwmSon.cpp **** 	OCR0A = max;
+ 213               		.stabn	68,0,44,.LM10-.LFBB4
+ 214               	.LM10:
+ 215               	.LFBB4:
+ 216               	/* prologue: function */
+ 217               	/* frame size = 0 */
+ 218               	/* stack size = 0 */
+ 219               	.L__stack_usage = 0
+ 220               		.stabn	68,0,45,.LM11-.LFBB4
+ 221               	.LM11:
+ 222 0030 67BD      		out 0x27,r22
+ 223 0032 0895      		ret
+ 224               		.size	_ZN7libpout6pwmSon6adjustEh, .-_ZN7libpout6pwmSon6adjustEh
+ 225               	.Lscope4:
+ 226               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 227               		.stabd	78,0,0
+ 228               		.stabs	"_ZN7libpout6pwmSon5startEv:F(0,4)",36,0,48,_ZN7libpout6pwmSon5startEv
+ 229               		.stabs	"this:P(0,93)",64,0,48,24
+ 230               	.global	_ZN7libpout6pwmSon5startEv
+ 231               		.type	_ZN7libpout6pwmSon5startEv, @function
+ 232               	_ZN7libpout6pwmSon5startEv:
+ 233               		.stabd	46,0,0
+  46:src/pwmSon.cpp **** }
+GAS LISTING /tmp/cciMlBbs.s 			page 6
+
+
+  47:src/pwmSon.cpp **** 
+  48:src/pwmSon.cpp **** void pwmSon::start()
+  49:src/pwmSon.cpp **** {
+ 234               		.stabn	68,0,49,.LM12-.LFBB5
+ 235               	.LM12:
+ 236               	.LFBB5:
+ 237               	/* prologue: function */
+ 238               	/* frame size = 0 */
+ 239               	/* stack size = 0 */
+ 240               	.L__stack_usage = 0
+  50:src/pwmSon.cpp **** 	TCCR0A |= _BV(COM0A0); // Toggle OC0A on Compare Match (Set output to high level).
+ 241               		.stabn	68,0,50,.LM13-.LFBB5
+ 242               	.LM13:
+ 243 0034 84B5      		in r24,0x24
+ 244 0036 8064      		ori r24,lo8(64)
+ 245 0038 84BD      		out 0x24,r24
+ 246 003a 0895      		ret
+ 247               		.size	_ZN7libpout6pwmSon5startEv, .-_ZN7libpout6pwmSon5startEv
+ 248               	.Lscope5:
+ 249               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 250               		.stabd	78,0,0
+ 251               		.stabs	"_ZN7libpout6pwmSon4stopEv:F(0,4)",36,0,53,_ZN7libpout6pwmSon4stopEv
+ 252               		.stabs	"this:P(0,93)",64,0,53,24
+ 253               	.global	_ZN7libpout6pwmSon4stopEv
+ 254               		.type	_ZN7libpout6pwmSon4stopEv, @function
+ 255               	_ZN7libpout6pwmSon4stopEv:
+ 256               		.stabd	46,0,0
+  51:src/pwmSon.cpp **** }
+  52:src/pwmSon.cpp **** 
+  53:src/pwmSon.cpp **** void pwmSon::stop()
+  54:src/pwmSon.cpp **** {
+ 257               		.stabn	68,0,54,.LM14-.LFBB6
+ 258               	.LM14:
+ 259               	.LFBB6:
+ 260               	/* prologue: function */
+ 261               	/* frame size = 0 */
+ 262               	/* stack size = 0 */
+ 263               	.L__stack_usage = 0
+  55:src/pwmSon.cpp **** 	TCCR0A &= ~(_BV(COM0A1)) & ~(_BV(COM0A0)); 
+ 264               		.stabn	68,0,55,.LM15-.LFBB6
+ 265               	.LM15:
+ 266 003c 84B5      		in r24,0x24
+ 267 003e 8F73      		andi r24,lo8(63)
+ 268 0040 84BD      		out 0x24,r24
+ 269 0042 0895      		ret
+ 270               		.size	_ZN7libpout6pwmSon4stopEv, .-_ZN7libpout6pwmSon4stopEv
+ 271               	.Lscope6:
+ 272               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 273               		.stabd	78,0,0
+ 274               		.stabs	"",100,0,0,.Letext0
+ 275               	.Letext0:
+ 276               		.ident	"GCC: (GNU) 4.9.2"
+GAS LISTING /tmp/cciMlBbs.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 pwmSon.cpp
+     /tmp/cciMlBbs.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cciMlBbs.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cciMlBbs.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cciMlBbs.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cciMlBbs.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cciMlBbs.s:109    .text:0000000000000000 _ZN7libpout6pwmSon4initEv
+     /tmp/cciMlBbs.s:140    .text:0000000000000010 _ZN7libpout6pwmSonC2Ev
+     /tmp/cciMlBbs.s:140    .text:0000000000000010 _ZN7libpout6pwmSonC1Ev
+     /tmp/cciMlBbs.s:165    .text:0000000000000014 _ZN7libpout6pwmSonC2Eh
+     /tmp/cciMlBbs.s:165    .text:0000000000000014 _ZN7libpout6pwmSonC1Eh
+     /tmp/cciMlBbs.s:211    .text:0000000000000030 _ZN7libpout6pwmSon6adjustEh
+     /tmp/cciMlBbs.s:232    .text:0000000000000034 _ZN7libpout6pwmSon5startEv
+     /tmp/cciMlBbs.s:255    .text:000000000000003c _ZN7libpout6pwmSon4stopEv
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,52 @@
+{% extends "base.twig" %}
+{% set active_page = "dashboard" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+  <h1 class="page-header">Dashboard</h1>
+
+  <p>
+    <a type="button" class="btn btn-primary btn-lg" href="{{ app.url_generator.generate('author_new_submission', {id: 1}) }}">
+      <span class="glyphicon glyphicon-plus"></span> New submission
+    </a>
+  </p>
+
+  <h2>Active submissions </h2>
+  <div class="panel panel-default">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Journal</th>
+          <th>Section</th>
+          <th>New refbacks</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 1}) }}"> Latex programming language tutorial</a></td>
+          <td>Journal title</td>
+          <td>Programmation</td>
+          <td><a href="#"><span class="badge">4</span></a></td>
+          <td>2015-01-04<br /><a href="#"> In review</a></td>
+        </tr>
+        <tr>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 2}) }}"> You spin my head right round</a></td>
+          <td>Journal title</td>
+          <td>Music</td>
+          <td><a href="#"><span class="badge">1</span></a></td>
+          <td>2015-02-02<br /><a href="#"> In review</a></td>
+        </tr>
+        <tr>
+          <td><a href="{{ app.url_generator.generate('author_submission_detail', {id: 3}) }}"> The purpose of human rights</a></td>
+          <td>Journal title</td>
+          <td>Philosophy</td>
+          <td><a href="#"><span class="badge disable">0</span></a></td>
+          <td>2015-01-15<br /><a href="#"> In review</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>      
+{% endblock %}

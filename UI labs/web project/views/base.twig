@@ -1,0 +1,257 @@
+{% set active_page = active_page|default('dashboard') %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>{% block title %}{% endblock %} - Open Journal System</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="/css/dashboard.css" rel="stylesheet">
+      <link href="/css/sticky-footer.css" rel="stylesheet">
+      <link href="/css/style.css" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    {% endblock %}
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ app.url_generator.generate('roles') }}">Open Journal System</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="label label-danger label-as-badge">4 notifications</span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation" class="dropdown-header">
+                  NOTIFICATIONS<span class="pull-right"><button class="btn btn-xs"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></button></span>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">
+                    <div>
+                      <small>02 Mar 2015 21:10:00<button type="button" class="close">×</button></small><br />
+                      A new article, "This is a test", has been submitted.
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">
+                    <div>
+                      <small>
+                        27 Feb 2015 10:18:01
+                        <button type="button" class="close">×</button>
+                      </small><br />
+                      "Cookbook's" metadata has been modified.
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">
+                    <div>
+                      <small>27 Feb 2015 10:19:09<button type="button" class="close">×</button></small><br />
+                      A new article, "Hey", has been submitted.
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">
+                    <div>
+                      <small>25 Feb 2015 23:15:27<button type="button" class="close">×</button></small><br />
+                      Please give us 20/20
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+              Visit Site
+            </a></li>
+
+            {% if role == 'admin'%}
+              <li><a href="{{ app.url_generator.generate('admin_dashboard') }}">
+                  <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                Dashboard
+              </a></li>
+            {% endif %}
+
+            {% if role == 'author'%}
+              <li><a href="{{ app.url_generator.generate('author_dashboard') }}">
+                  <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                Dashboard
+              </a></li>
+            {% endif %}
+
+            {% if role == 'editor'%}
+              <li><a href="{{ app.url_generator.generate('editor_dashboard') }}">
+                  <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                Dashboard
+              </a></li>
+            {% endif %}
+
+            {% if role == 'reviewer'%}
+              <li><a href="{{ app.url_generator.generate('reviewer_dashboard') }}">
+                  <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                Dashboard
+              </a></li>
+            {% endif %}
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                Michel Desmarais <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation" class="dropdown-header">{{ role|upper}}</li>
+                <li class="divider"></li>
+                <li><a href="#">Edit my profile</a></li>
+                <li><a href="#">Change my password</a></li>
+                <li class="divider"></li>
+                <li><a href="#">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                Logout
+              </a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+
+          {% if role == 'admin'%}
+            <ul class="nav nav-sidebar">
+                <li{% if 'dashboard' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('admin_dashboard') }}"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp;Dashboard</a>
+                </li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li{% if 'journals' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('admin_journals') }}">Journals</a>
+                </li>
+            </ul>
+          {% endif %}
+
+          {% if role == 'editor'%}
+            <ul class="nav nav-sidebar">
+              <li{% if 'editor_journals' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('editor_journals') }}"><span class="glyphicon glyphicon-font" aria-hidden="true"></span>&nbsp;Journals</a>
+                </li>
+                {% if 'editor_journals' != active_page %}
+                <li{% if 'editor_dashboard' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('editor_dashboard') }}"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp;Dashboard</a>
+                </li>
+                {% endif %}
+            </ul>
+            {% if 'editor_journals' != active_page %}
+            <ul class="nav nav-sidebar">
+                <li{% if 'editor_unassigned' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('editor_unassigned') }}">New submissions</a>
+                </li>
+                <li{% if 'editor_inediting' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('editor_inediting') }}">Active editing</a>
+                </li>
+                <li{% if 'editor_inreview' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('editor_inreview') }}">Active reviews</a>
+                </li>
+                <li{% if 'editor_archives' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('editor_archives') }}">Archives</a>
+                </li>
+            </ul>
+            {% endif %}
+          {% endif %}
+
+          {% if role == 'author'%}
+            <ul class="nav nav-sidebar">
+                <li{% if 'dashboard' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('author_dashboard') }}"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp;Dashboard</a>
+                </li>
+            </ul>
+            <ul class="nav nav-sidebar">
+              <li{% if 'author_submissions' == active_page %} class="active"{% endif %}>
+                <a href="{{ app.url_generator.generate('author_submissions') }}">My submissions</a>
+              </li>
+            </ul>
+          {% endif %}
+
+          {% if role == 'reviewer'%}
+            <ul class="nav nav-sidebar">
+                <li{% if 'reviewer_dashboard' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('reviewer_dashboard') }}"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp;Dashboard</a>
+                </li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li{% if 'reviewer_inbox' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('reviewer_inbox') }}">Inbox</a>
+                </li>
+                <li{% if 'reviewer_reviewing' == active_page
+                      or 'reviewer_review' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('reviewer_reviewing') }}">Active reviewing</a>
+                </li>
+                <li{% if 'reviewer_archives' == active_page %} class="active"{% endif %}>
+                  <a href="{{ app.url_generator.generate('reviewer_archives') }}">Archives</a>
+                </li>
+            </ul>
+          {% endif %}
+
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        {% block footer %}
+          <p class="text-muted">
+            Powered by <a href="http://pkp.sfu.ca/ojs/" target="_blank">Open Journal Systems</a>
+            <span class="pull-right">
+              <button class="btn"><span style="font-size:10px">A</span>A<span class="glyphicon glyphicon-menu-up"></span></button>
+              <button class="btn">A<span style="font-size:10px">A</span><span class="glyphicon glyphicon-menu-down"></span></button>
+            </span>
+          </p>
+        {% endblock %}
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/docs.min.js"></script>
+  </body>
+</html>

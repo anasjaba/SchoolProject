@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Media">
+      <UniqueIdentifier>{4bc2116a-7ba6-4f55-8930-e74cf159f4d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Movie">
+      <UniqueIdentifier>{8616eec5-a53e-4546-8dfe-0f083b96b4d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{2a8f1db3-9d84-4b1a-bdb5-107b99039228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Music">
+      <UniqueIdentifier>{fdab02db-40a8-4066-ad78-5363dadb0119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Filter">
+      <UniqueIdentifier>{fcc24741-80f7-467f-9a13-c58cc68b1b36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PMTVMedia_Media.cpp">
+      <Filter>Media</Filter>
+    </ClCompile>
+    <ClCompile Include="PMTVMedia_MediaInfo.cpp">
+      <Filter>Media</Filter>
+    </ClCompile>
+    <ClCompile Include="PMTVMedia_Movie.cpp">
+      <Filter>Movie</Filter>
+    </ClCompile>
+    <ClCompile Include="PMTVMedia_MovieInfo.cpp">
+      <Filter>Movie</Filter>
+    </ClCompile>
+    <ClCompile Include="PMTVMedia_MediaLibrary.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="PMTVMedia_LogicFilter.cpp">
+      <Filter>Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="PMTVMedia_MediaFilter.cpp">
+      <Filter>Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="PMTVMedia_MovieRatingFilter.cpp">
+      <Filter>Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="PMTVMedia_MovieThemeFilter.cpp">
+      <Filter>Filter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PMTVMedia_Media.h">
+      <Filter>Media</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVMedia_MediaInfo.h">
+      <Filter>Media</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVMedia_Movie.h">
+      <Filter>Movie</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVMedia_MovieInfo.h">
+      <Filter>Movie</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVMedia_MediaLibrary.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVMedia_LogicFilter.h">
+      <Filter>Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVMedia_MediaFilter.h">
+      <Filter>Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVMedia_MovieRatingFilter.h">
+      <Filter>Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVMedia_MovieThemeFilter.h">
+      <Filter>Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVMedia_MediaManager.h" />
+    <ClInclude Include="PMTVMedia_MediaType.h" />
+  </ItemGroup>
+</Project>

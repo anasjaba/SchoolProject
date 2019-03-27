@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PMTVCore", "PMTVCore\PMTVCore.vcxproj", "{AD15453E-A6F4-4D50-9442-566DD7C87CA7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PMTVTest", "PMTVTest\PMTVTest.vcxproj", "{140D8E16-DA15-451C-9F4E-99297898C934}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PMTVUser", "PMTVUser\PMTVUser.vcxproj", "{DD401388-002C-4926-9055-1D1D03DA8EB8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PMTVMedia", "PMTVMedia\PMTVMedia.vcxproj", "{38692F56-70AA-4A19-8172-B1295196DAAD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PMTVOnlineStore", "PMTVOnlineStore\PMTVOnlineStore.vcxproj", "{5B78C16A-52D5-42C4-B2FB-A24B6A67F34B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PMTVCodec", "PMTVCodec\PMTVCodec.vcxproj", "{F8E6CF09-2B73-42B6-90EA-8C76053AFFAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD15453E-A6F4-4D50-9442-566DD7C87CA7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AD15453E-A6F4-4D50-9442-566DD7C87CA7}.Debug|Win32.Build.0 = Debug|Win32
+		{AD15453E-A6F4-4D50-9442-566DD7C87CA7}.Release|Win32.ActiveCfg = Release|Win32
+		{AD15453E-A6F4-4D50-9442-566DD7C87CA7}.Release|Win32.Build.0 = Release|Win32
+		{140D8E16-DA15-451C-9F4E-99297898C934}.Debug|Win32.ActiveCfg = Debug|Win32
+		{140D8E16-DA15-451C-9F4E-99297898C934}.Debug|Win32.Build.0 = Debug|Win32
+		{140D8E16-DA15-451C-9F4E-99297898C934}.Release|Win32.ActiveCfg = Release|Win32
+		{140D8E16-DA15-451C-9F4E-99297898C934}.Release|Win32.Build.0 = Release|Win32
+		{DD401388-002C-4926-9055-1D1D03DA8EB8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD401388-002C-4926-9055-1D1D03DA8EB8}.Debug|Win32.Build.0 = Debug|Win32
+		{DD401388-002C-4926-9055-1D1D03DA8EB8}.Release|Win32.ActiveCfg = Release|Win32
+		{DD401388-002C-4926-9055-1D1D03DA8EB8}.Release|Win32.Build.0 = Release|Win32
+		{38692F56-70AA-4A19-8172-B1295196DAAD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{38692F56-70AA-4A19-8172-B1295196DAAD}.Debug|Win32.Build.0 = Debug|Win32
+		{38692F56-70AA-4A19-8172-B1295196DAAD}.Release|Win32.ActiveCfg = Release|Win32
+		{38692F56-70AA-4A19-8172-B1295196DAAD}.Release|Win32.Build.0 = Release|Win32
+		{5B78C16A-52D5-42C4-B2FB-A24B6A67F34B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5B78C16A-52D5-42C4-B2FB-A24B6A67F34B}.Debug|Win32.Build.0 = Debug|Win32
+		{5B78C16A-52D5-42C4-B2FB-A24B6A67F34B}.Release|Win32.ActiveCfg = Release|Win32
+		{5B78C16A-52D5-42C4-B2FB-A24B6A67F34B}.Release|Win32.Build.0 = Release|Win32
+		{F8E6CF09-2B73-42B6-90EA-8C76053AFFAA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F8E6CF09-2B73-42B6-90EA-8C76053AFFAA}.Debug|Win32.Build.0 = Debug|Win32
+		{F8E6CF09-2B73-42B6-90EA-8C76053AFFAA}.Release|Win32.ActiveCfg = Release|Win32
+		{F8E6CF09-2B73-42B6-90EA-8C76053AFFAA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

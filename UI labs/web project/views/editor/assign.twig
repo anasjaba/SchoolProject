@@ -1,0 +1,183 @@
+{% extends "base.twig" %}
+{% set active_page = "editor_assign" %}
+
+{% block title %}Assign a reviewer to article{% endblock %}
+
+{% block content %}
+  <h1 class="page-header">Assign a reviewer to article</h1>
+   <ol class="breadcrumb">
+    <li><a href="{{ app.url_generator.generate('editor_dashboard') }}">Home</a></li>
+    <li><a href="{{ app.url_generator.generate('editor_unassigned') }}">New</a></li>
+    <li class="active">Assign a reviewer</li>
+  </ol>
+
+<h2>The Physics of Steins;Gate</h2>
+<h4>Rondeau, Samuel.</h4>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          View metadatas <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+
+        <h4>Author</h4>
+        <table width="100%" class="data">
+          <tbody>
+            <tr valign="top">
+              <td width="20%">Name</td>
+              <td width="80%" class="value">Samuel Rondeau</td>
+            </tr>
+            <tr valign="top">
+              <td>Affiliation</td>
+                <td class="value">École Polytechnique de Montréal</td>
+            </tr>
+            <tr valign="top">
+              <td>Country</td>
+              <td class="value">Canada</td>
+            </tr>
+            <tr valign="top">
+              <td>Bio Statement</td>
+              <td class="value">—</td>
+            </tr>
+            <tr valign="top">
+              <td colspan="2">Principal contact for editorial correspondence.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>Title and abstract</h4>
+        <table width="100%" class="data">
+          <tbody>
+            <tr valign="top">
+              <td width="20%">Title</td>
+              <td width="80%" class="value">The Physics of Steins;Gate</td>
+            </tr>
+            <tr valign="top">
+              <td>Abstract</td>
+                <td class="value">A study of the physics in the science fiction novel and anime Steins;Gate.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>Indexing</h4>
+        <table width="100%" class="data">
+          <tbody>
+            <tr valign="top">
+              <td width="20%">Language</td>
+              <td width="80%" class="value">english</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>Supporting agencies</h4>
+        <table width="100%" class="data">
+          <tbody>
+            <tr valign="top">
+              <td width="20%">Agencies</td>
+              <td width="80%" class="value">SERN</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>References</h4>
+        <table width="100%" class="data">
+          <tbody>
+            <tr valign="top">
+              <td width="20%">References</td>
+              <td width="80%" class="value">Hououin Kyouma</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Select reviewer</h2>
+<div class="pull-right">
+<input class="btn btn-default" type="submit" value="Create new reviewer">
+</div>
+<form class="pull-left">
+  <select>
+    <option>Reviewers</option>
+    <option>All users</option>
+  </select>
+  <select>
+    <option>First name</option>
+    <option>Last name</option>
+    <option>Username</option>
+    <option>Email</option>
+    <option>Interests</option>
+  </select>
+  <select>
+    <option>contains</option>
+    <option>equals</option>
+    <option>starts with</option>
+  </select>
+  <input type="search" value="" />
+  <input type="submit" value="Search" />
+</form>
+<br><br>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+
+  <!-- Table -->
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th> Reviewer name </th>
+        <th> Interests </th>
+        <th> Reviews done </th>
+        <th> Average time </th>
+        <th> Latest </th>
+        <th> Active reviews </th>
+        <th> Assign </th>
+      </tr>
+    </thead>
+
+    <tr>
+      <td> <a href="https://www.facebook.com/samuelrz">sirius</a> </td>
+      <td> Astrophysics, Particles ph. </td>
+      <td> 42 </td>
+      <td> 3 d </td>
+      <td> 03-01 </td>
+      <td> 2 </td>
+      <td> <a class="btn btn-primary" href="{{ app.url_generator.generate('editor_inreview') }}" role="button">
+        <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a> </td>
+    </tr>
+
+    <tr>
+      <td> <a href="https://www.facebook.com/samuelrz">lorac</a> </td>
+      <td> Java, Microsoft </td>
+      <td> 13 </td>
+      <td> 4 d </td>
+      <td> 02-26 </td>
+      <td> 1 </td>
+      <td> <a class="btn btn-primary" href="{{ app.url_generator.generate('editor_inreview') }}" role="button">
+        <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a> </td>
+    </tr>
+
+    <tr>
+      <td> <a href="https://www.facebook.com/samuelrz">interfacenn</a> </td>
+      <td> Apple </td>
+      <td> 100 </td>
+      <td> 7 d </td>
+      <td> 02-11 </td>
+      <td> 5 </td>
+      <td> <a class="btn btn-primary" href="{{ app.url_generator.generate('editor_inreview') }}" role="button">
+        <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a> </td>
+    </tr>
+
+  </table>
+</div>
+
+{% endblock %}

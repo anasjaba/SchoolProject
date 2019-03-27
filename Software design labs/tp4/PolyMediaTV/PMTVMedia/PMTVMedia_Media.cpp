@@ -1,0 +1,9 @@
+///////////////////////////////////////////////////////////
+//  PMTVMedia_Media.cpp
+//  Implementation of the Class PMTVMedia_Media
+//  Created on:      03-nov.-2010 15:14:23
+//  Original author: David Dubé
+///////////////////////////////////////////////////////////
+
+#include "PMTVMedia_Media.h"
+

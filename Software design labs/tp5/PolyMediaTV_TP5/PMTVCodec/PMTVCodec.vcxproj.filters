@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="factory">
+      <UniqueIdentifier>{7980c643-caad-434c-9646-1738cdc07d0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codec">
+      <UniqueIdentifier>{98fd1279-c370-4be8-8dd3-cb6dd93ed667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codec\raw">
+      <UniqueIdentifier>{3bacc56a-b97c-4f57-9763-f21ad45bd1b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codec\qpeg">
+      <UniqueIdentifier>{eb005bf1-1fef-407b-bc2f-7ddd696e1cd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codec\indeo">
+      <UniqueIdentifier>{b446ec22-6b08-4eb9-a094-aeeae0ac1177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codec\mpeg4">
+      <UniqueIdentifier>{12de82b3-50a4-4a20-8185-53e2c863f3df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PMTVCodec_CodecFactory.cpp">
+      <Filter>factory</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PMTVCodec_CodecFactory.h">
+      <Filter>factory</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVCodec_INDEOCodecInterface.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVCodec_MPEG4CodecInterface.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVCodec_RAWCodecInterface.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="PMTVCodec_CodecInterface.h" />
+    <ClInclude Include="PMTVCodec_InterfaceType.h" />
+  </ItemGroup>
+</Project>
